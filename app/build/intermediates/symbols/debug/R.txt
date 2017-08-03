@@ -761,7 +761,6 @@ int id clip_horizontal 0x7f0e0033
 int id clip_vertical 0x7f0e0034
 int id collapseActionView 0x7f0e003c
 int id container 0x7f0e0075
-int id content 0x7f0e0076
 int id contentPanel 0x7f0e0050
 int id custom 0x7f0e0057
 int id customPanel 0x7f0e0056
@@ -804,7 +803,7 @@ int id media_actions 0x7f0e008a
 int id middle 0x7f0e003a
 int id mini 0x7f0e0038
 int id multiply 0x7f0e0020
-int id navigation 0x7f0e0077
+int id nav_tb 0x7f0e0077
 int id navigation_dashboard 0x7f0e009e
 int id navigation_header_container 0x7f0e007e
 int id navigation_home 0x7f0e009d
@@ -879,6 +878,7 @@ int id transition_scene_layoutid_cache 0x7f0e000d
 int id up 0x7f0e000e
 int id useLogo 0x7f0e0019
 int id view_offset_helper 0x7f0e000f
+int id view_pager 0x7f0e0076
 int id visible 0x7f0e009b
 int id withText 0x7f0e003f
 int id wrap_content 0x7f0e0025

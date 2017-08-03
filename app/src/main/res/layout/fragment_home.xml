@@ -3,6 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lazytomatostudios.svceinterrupt.Home"
-    android:background="@drawable/profile_gradient">
+    android:background="#f00">
 
 </FrameLayout>

@@ -48,15 +48,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/drpayyne/.android/build-cache/bd671b3b6c20ebe92c07fbbd7f4f0d3eda10f78f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="89ba8466f3e32427af7aa725eb7be31a15c78a77">
-        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fa4a88159f58b996254331284820f5274a8b62a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -90,6 +81,15 @@
         revision="26.0.0"
         sha1="9935891f23923f39d002087085d9696568a9f657">
         <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b65cdffe8d23239f2fc04bb98b91227a30b20746/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="dce3b09be94e30554913f3e3e537b3517478bfd7">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bc95ffe7be48dddb8b8e1f9a29ac3862bab6b730/classes.dex" />
     </item>
     <item
         is-multidex="true"

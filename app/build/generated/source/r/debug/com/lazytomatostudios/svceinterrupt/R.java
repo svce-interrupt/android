@@ -2938,7 +2938,6 @@ containing a value of this type.
         public static final int clip_vertical=0x7f0e0034;
         public static final int collapseActionView=0x7f0e003c;
         public static final int container=0x7f0e0075;
-        public static final int content=0x7f0e0076;
         public static final int contentPanel=0x7f0e0050;
         public static final int custom=0x7f0e0057;
         public static final int customPanel=0x7f0e0056;
@@ -2981,7 +2980,7 @@ containing a value of this type.
         public static final int middle=0x7f0e003a;
         public static final int mini=0x7f0e0038;
         public static final int multiply=0x7f0e0020;
-        public static final int navigation=0x7f0e0077;
+        public static final int nav_tb=0x7f0e0077;
         public static final int navigation_dashboard=0x7f0e009e;
         public static final int navigation_header_container=0x7f0e007e;
         public static final int navigation_home=0x7f0e009d;
@@ -3056,6 +3055,7 @@ containing a value of this type.
         public static final int up=0x7f0e000e;
         public static final int useLogo=0x7f0e0019;
         public static final int view_offset_helper=0x7f0e000f;
+        public static final int view_pager=0x7f0e0076;
         public static final int visible=0x7f0e009b;
         public static final int withText=0x7f0e003f;
         public static final int wrap_content=0x7f0e0025;
