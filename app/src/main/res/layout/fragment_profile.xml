@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.lazytomatostudios.svceinterrupt.Profile"
-    android:background="@drawable/profile_gradient">
-
-
+    android:background="#000">
 
 </FrameLayout>
