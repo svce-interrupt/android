@@ -21,6 +21,8 @@ import ai.api.model.AIResponse;
 import ai.api.model.Result;
 import com.google.gson.JsonElement;
 
+import com.stfalcon.chatkit.messages.MessagesList;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -31,6 +33,8 @@ public class Chat extends Fragment implements MyInterface, AIListener {
     TextView resultTextView;
 
     AIService aiService;
+
+    MessagesList messagesList;
 
 
     public Chat() {

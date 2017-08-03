@@ -7,6 +7,9 @@
         <item>#dd6495</item>
         <item>#72d3b4</item>
     </string-array>
+    <attr format="reference" name="DialogsListView"/>
+    <attr format="reference" name="MessageInput"/>
+    <attr format="reference" name="MessagesList"/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -28,6 +31,8 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#000000</color>
+    <color name="blue">#031cd7</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -36,6 +41,13 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <color name="cornflower_blue_light_40">#64bec5f7</color>
+    <color name="cornflower_blue_two">#4f62d7</color>
+    <color name="cornflower_blue_two_24">#3d4f62d7</color>
+    <color name="cornflower_blue_two_dark">#475bd4</color>
+    <color name="dark_gray">#282a2b</color>
+    <color name="dark_grey_two">#191a1b</color>
+    <color name="dark_mint">#51c05c</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -47,6 +59,12 @@
     <color name="design_snackbar_background_color">#323232</color>
     <color name="design_textinput_error_color_dark">#FFFF6E6E</color>
     <color name="design_textinput_error_color_light">#FFD50000</color>
+    <color name="dialog_date_text">@color/warm_grey_two</color>
+    <color name="dialog_divider">@color/white_three</color>
+    <color name="dialog_message_text">@color/warm_grey</color>
+    <color name="dialog_title_text">@color/dark_gray</color>
+    <color name="dialog_unread_bubble">@color/dark_mint</color>
+    <color name="dialog_unread_text">@color/white</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -54,6 +72,7 @@
     <color name="divider">#BDBDBD</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="gray">#333333</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="icon_orange_color">#f26c29</color>
@@ -98,6 +117,17 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="transparent">#00000000</color>
+    <color name="warm_grey">#7f7f7f</color>
+    <color name="warm_grey_four">#979797</color>
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="warm_grey_two">#9c9c9c</color>
+    <color name="white">#ffffff</color>
+    <color name="white60">#a0ffffff</color>
+    <color name="white_five">#dadada</color>
+    <color name="white_four">#e0e0e0</color>
+    <color name="white_three">#ebebeb</color>
+    <color name="white_two">#efefef</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -292,7 +322,89 @@
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
+    <declare-styleable name="DialogsList"><attr format="color|reference" name="dialogTitleTextColor"/><attr format="dimension|reference" name="dialogTitleTextSize"/><attr name="dialogTitleTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogUnreadTitleTextColor"/><attr name="dialogUnreadTitleTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogMessageTextColor"/><attr format="dimension|reference" name="dialogMessageTextSize"/><attr name="dialogMessageTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogUnreadMessageTextColor"/><attr name="dialogUnreadMessageTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogDateColor"/><attr format="dimension|reference" name="dialogDateSize"/><attr name="dialogDateStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogUnreadDateColor"/><attr name="dialogUnreadDateStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="boolean" name="dialogUnreadBubbleEnabled"/><attr format="color|reference" name="dialogUnreadBubbleTextColor"/><attr format="dimension|reference" name="dialogUnreadBubbleTextSize"/><attr name="dialogUnreadBubbleTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="dialogUnreadBubbleBackgroundColor"/><attr format="dimension|reference" name="dialogAvatarWidth"/><attr format="dimension|reference" name="dialogAvatarHeight"/><attr format="boolean" name="dialogMessageAvatarEnabled"/><attr format="dimension|reference" name="dialogMessageAvatarWidth"/><attr format="dimension|reference" name="dialogMessageAvatarHeight"/><attr format="boolean" name="dialogDividerEnabled"/><attr format="color|reference" name="dialogDividerColor"/><attr format="dimension|reference" name="dialogDividerLeftPadding"/><attr format="dimension|reference" name="dialogDividerRightPadding"/><attr format="color|reference" name="dialogItemBackground"/><attr format="color|reference" name="dialogUnreadItemBackground"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="FlexboxLayout"><attr name="flexDirection">
+            <enum name="row" value="0"/>
+            <enum name="row_reverse" value="1"/>
+            <enum name="column" value="2"/>
+            <enum name="column_reverse" value="3"/>
+        </attr><attr name="flexWrap">
+            <enum name="nowrap" value="0"/>
+            <enum name="wrap" value="1"/>
+            <enum name="wrap_reverse" value="2"/>
+        </attr><attr name="justifyContent">
+            <enum name="flex_start" value="0"/>
+            <enum name="flex_end" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="space_between" value="3"/>
+            <enum name="space_around" value="4"/>
+        </attr><attr name="alignItems">
+            <enum name="flex_start" value="0"/>
+            <enum name="flex_end" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="baseline" value="3"/>
+            <enum name="stretch" value="4"/>
+        </attr><attr name="alignContent">
+            <enum name="flex_start" value="0"/>
+            <enum name="flex_end" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="space_between" value="3"/>
+            <enum name="space_around" value="4"/>
+            <enum name="stretch" value="5"/>
+        </attr><attr format="reference" name="dividerDrawable"/><attr format="reference" name="dividerDrawableHorizontal"/><attr format="reference" name="dividerDrawableVertical"/><attr name="showDivider">
+            <flag name="none" value="0"/>
+            <flag name="beginning" value="1"/>
+            <flag name="middle" value="2"/>
+            <flag name="end" value="4"/>
+        </attr><attr name="showDividerHorizontal">
+            <flag name="none" value="0"/>
+            <flag name="beginning" value="1"/>
+            <flag name="middle" value="2"/>
+            <flag name="end" value="4"/>
+        </attr><attr name="showDividerVertical">
+            <flag name="none" value="0"/>
+            <flag name="beginning" value="1"/>
+            <flag name="middle" value="2"/>
+            <flag name="end" value="4"/>
+        </attr></declare-styleable>
+    <declare-styleable name="FlexboxLayout_Layout"><attr format="integer" name="layout_order"/><attr format="float" name="layout_flexGrow"/><attr format="float" name="layout_flexShrink"/><attr format="fraction" name="layout_flexBasisPercent"/><attr name="layout_alignSelf">
+            <enum name="auto" value="-1"/>
+            
+            <enum name="flex_start" value="0"/>
+            <enum name="flex_end" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="baseline" value="3"/>
+            <enum name="stretch" value="4"/>
+        </attr><attr format="dimension" name="layout_minWidth"/><attr format="dimension" name="layout_minHeight"/><attr format="dimension" name="layout_maxWidth"/><attr format="dimension" name="layout_maxHeight"/><attr format="boolean" name="layout_wrapBefore"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
             <enum name="auto" value="-1"/>
@@ -326,6 +438,43 @@
             <flag name="collapseActionView" value="8"/>
         </attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/><attr format="string" name="contentDescription"/><attr format="string" name="tooltipText"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/><attr format="reference" name="subMenuArrow"/></declare-styleable>
+    <declare-styleable name="MessageInput"><attr format="reference" name="inputButtonBackground"/><attr format="color|reference" name="inputButtonDefaultBgColor"/><attr format="color|reference" name="inputButtonDefaultBgPressedColor"/><attr format="color|reference" name="inputButtonDefaultBgDisabledColor"/><attr format="reference" name="inputButtonIcon"/><attr format="color|reference" name="inputButtonDefaultIconColor"/><attr format="color|reference" name="inputButtonDefaultIconPressedColor"/><attr format="color|reference" name="inputButtonDefaultIconDisabledColor"/><attr format="dimension|reference" name="inputButtonMargin"/><attr format="dimension|reference" name="inputButtonWidth"/><attr format="dimension|reference" name="inputButtonHeight"/><attr format="boolean" name="showAttachmentButton"/><attr format="reference" name="attachmentButtonBackground"/><attr format="color|reference" name="attachmentButtonDefaultBgColor"/><attr format="color|reference" name="attachmentButtonDefaultBgPressedColor"/><attr format="color|reference" name="attachmentButtonDefaultBgDisabledColor"/><attr format="reference" name="attachmentButtonIcon"/><attr format="color|reference" name="attachmentButtonDefaultIconColor"/><attr format="color|reference" name="attachmentButtonDefaultIconPressedColor"/><attr format="color|reference" name="attachmentButtonDefaultIconDisabledColor"/><attr format="dimension|reference" name="attachmentButtonMargin"/><attr format="dimension|reference" name="attachmentButtonWidth"/><attr format="dimension|reference" name="attachmentButtonHeight"/><attr format="integer" name="inputMaxLines"/><attr format="string" name="inputHint"/><attr format="string" name="inputText"/><attr format="dimension|reference" name="inputTextSize"/><attr format="color|reference" name="inputTextColor"/><attr format="color|reference" name="inputHintColor"/><attr format="reference" name="inputBackground"/><attr format="reference" name="inputCursorDrawable"/></declare-styleable>
+    <declare-styleable name="MessagesList"><attr name="textAutoLink">
+            <flag name="all" value="15"/>
+            <flag name="email" value="2"/>
+            <flag name="map" value="8"/>
+            <flag name="none" value="0"/>
+            <flag name="phone" value="4"/>
+            <flag name="web" value="1"/>
+        </attr><attr format="color|reference" name="incomingTextLinkColor"/><attr format="color|reference" name="outcomingTextLinkColor"/><attr format="dimension|reference" name="incomingAvatarWidth"/><attr format="dimension|reference" name="incomingAvatarHeight"/><attr format="reference" name="incomingBubbleDrawable"/><attr format="color|reference" name="incomingDefaultBubbleColor"/><attr format="color|reference" name="incomingDefaultBubblePressedColor"/><attr format="color|reference" name="incomingDefaultBubbleSelectedColor"/><attr format="reference" name="incomingImageOverlayDrawable"/><attr format="color|reference" name="incomingDefaultImageOverlayPressedColor"/><attr format="color|reference" name="incomingDefaultImageOverlaySelectedColor"/><attr format="dimension|reference" name="incomingBubblePaddingLeft"/><attr format="dimension|reference" name="incomingBubblePaddingRight"/><attr format="dimension|reference" name="incomingBubblePaddingTop"/><attr format="dimension|reference" name="incomingBubblePaddingBottom"/><attr format="color|reference" name="incomingTextColor"/><attr format="dimension|reference" name="incomingTextSize"/><attr name="incomingTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="incomingTimeTextColor"/><attr format="dimension|reference" name="incomingTimeTextSize"/><attr name="incomingTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="incomingImageTimeTextColor"/><attr format="dimension|reference" name="incomingImageTimeTextSize"/><attr name="incomingImageTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="reference" name="outcomingBubbleDrawable"/><attr format="color|reference" name="outcomingDefaultBubbleColor"/><attr format="color|reference" name="outcomingDefaultBubblePressedColor"/><attr format="color|reference" name="outcomingDefaultBubbleSelectedColor"/><attr format="reference" name="outcomingImageOverlayDrawable"/><attr format="color|reference" name="outcomingDefaultImageOverlayPressedColor"/><attr format="color|reference" name="outcomingDefaultImageOverlaySelectedColor"/><attr format="dimension|reference" name="outcomingBubblePaddingLeft"/><attr format="dimension|reference" name="outcomingBubblePaddingRight"/><attr format="dimension|reference" name="outcomingBubblePaddingTop"/><attr format="dimension|reference" name="outcomingBubblePaddingBottom"/><attr format="color|reference" name="outcomingTextColor"/><attr format="dimension|reference" name="outcomingTextSize"/><attr name="outcomingTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="outcomingTimeTextColor"/><attr format="dimension|reference" name="outcomingTimeTextSize"/><attr name="outcomingTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="color|reference" name="outcomingImageTimeTextColor"/><attr format="dimension|reference" name="outcomingImageTimeTextSize"/><attr name="outcomingImageTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr><attr format="dimension|reference" name="dateHeaderPadding"/><attr format="string|reference" name="dateHeaderFormat"/><attr format="color|reference" name="dateHeaderTextColor"/><attr format="dimension|reference" name="dateHeaderTextSize"/><attr name="dateHeaderTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr></declare-styleable>
     <declare-styleable name="NavigationTabBar"><attr format="boolean" name="ntb_titled"/><attr format="boolean" name="ntb_badged"/><attr format="boolean" name="ntb_scaled"/><attr format="boolean" name="ntb_tinted"/><attr format="boolean" name="ntb_swiped"/><attr format="boolean" name="ntb_badge_use_typeface"/><attr format="dimension" name="ntb_title_size"/><attr format="enum" name="ntb_title_mode"><enum name="all" value="0"/><enum name="active" value="1"/></attr><attr format="dimension" name="ntb_badge_size"/><attr format="enum" name="ntb_badge_position"><enum name="left" value="0"/><enum name="center" value="1"/><enum name="right" value="2"/></attr><attr format="enum" name="ntb_badge_gravity"><enum name="top" value="0"/><enum name="bottom" value="1"/></attr><attr format="color" name="ntb_badge_bg_color"/><attr format="color" name="ntb_badge_title_color"/><attr format="string" name="ntb_typeface"/><attr format="dimension" name="ntb_corners_radius"/><attr format="float" name="ntb_icon_size_fraction"/><attr format="integer" name="ntb_animation_duration"/><attr format="color" name="ntb_inactive_color"/><attr format="color" name="ntb_active_color"/><attr format="color" name="ntb_bg_color"/><attr format="reference" name="ntb_preview_colors"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/><attr name="android:popupAnimationStyle"/></declare-styleable>
@@ -520,6 +669,16 @@
     <dimen name="design_tab_scrollable_min_width">72dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
+    <dimen name="dialog_avatar_height">56dp</dimen>
+    <dimen name="dialog_avatar_width">56dp</dimen>
+    <dimen name="dialog_date_text_size">14sp</dimen>
+    <dimen name="dialog_divider_margin_left">88dp</dimen>
+    <dimen name="dialog_divider_margin_right">0dp</dimen>
+    <dimen name="dialog_last_message_avatar_height">24dp</dimen>
+    <dimen name="dialog_last_message_avatar_width">24dp</dimen>
+    <dimen name="dialog_message_text_size">16sp</dimen>
+    <dimen name="dialog_title_text_size">18sp</dimen>
+    <dimen name="dialog_unread_bubble_text_size">13sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="fastscroll_default_thickness">8dp</dimen>
@@ -532,9 +691,30 @@
     <item format="float" name="hint_alpha_material_light" type="dimen">0.38</item>
     <item format="float" name="hint_pressed_alpha_material_dark" type="dimen">0.70</item>
     <item format="float" name="hint_pressed_alpha_material_light" type="dimen">0.54</item>
+    <dimen name="input_button_height">36dp</dimen>
+    <dimen name="input_button_margin">16dp</dimen>
+    <dimen name="input_button_width">36dp</dimen>
+    <dimen name="input_padding_bottom">8sp</dimen>
+    <dimen name="input_padding_left">16sp</dimen>
+    <dimen name="input_padding_right">16sp</dimen>
+    <dimen name="input_padding_top">8sp</dimen>
+    <dimen name="input_text_size">17sp</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="message_avatar_height">40dp</dimen>
+    <dimen name="message_avatar_width">40dp</dimen>
+    <dimen name="message_bubble_corners_radius">15dp</dimen>
+    <dimen name="message_date_header_padding">16dp</dimen>
+    <dimen name="message_date_header_text_size">16sp</dimen>
+    <dimen name="message_incoming_bubble_margin_right">40dp</dimen>
+    <dimen name="message_outcoming_bubble_margin_left">88dp</dimen>
+    <dimen name="message_padding_bottom">16dp</dimen>
+    <dimen name="message_padding_left">16dp</dimen>
+    <dimen name="message_padding_right">16dp</dimen>
+    <dimen name="message_padding_top">16dp</dimen>
+    <dimen name="message_text_size">17sp</dimen>
+    <dimen name="message_time_text_size">14sp</dimen>
     <dimen name="mic_button_halo_radius_max">76dp</dimen>
     <dimen name="mic_button_halo_radius_min">35dp</dimen>
     <dimen name="mic_button_size">152dp</dimen>
@@ -559,10 +739,31 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="attachmentButton" type="id"/>
+    <item name="attachmentButtonSpace" type="id"/>
+    <item name="bubble" type="id"/>
+    <item name="dialogAvatar" type="id"/>
+    <item name="dialogContainer" type="id"/>
+    <item name="dialogDate" type="id"/>
+    <item name="dialogDivider" type="id"/>
+    <item name="dialogDividerContainer" type="id"/>
+    <item name="dialogLastMessage" type="id"/>
+    <item name="dialogLastMessageUserAvatar" type="id"/>
+    <item name="dialogName" type="id"/>
+    <item name="dialogRootLayout" type="id"/>
+    <item name="dialogUnreadBubble" type="id"/>
     <item name="home" type="id"/>
+    <item name="image" type="id"/>
+    <item name="imageOverlay" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
+    <item name="messageInput" type="id"/>
+    <item name="messageSendButton" type="id"/>
+    <item name="messageText" type="id"/>
+    <item name="messageTime" type="id"/>
+    <item name="messageUserAvatar" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <item name="sendButtonSpace" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="textinput_counter" type="id"/>
     <item name="textinput_error" type="id"/>
@@ -616,6 +817,7 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="default_aidialog_title">Speak</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
@@ -1692,6 +1894,50 @@
         <item name="tabBackground">?attr/selectableItemBackground</item>
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="ChatHeaderLayout">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="ChatHeaderTitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ChatInputEditText">
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="ChatMessageInfo">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="ChatMessageLayoutIncoming">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:gravity">end|right</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="ChatMessageLayoutOutcoming">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:gravity">end|right</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="ChatSendButton">
+        <item name="android:maxLines">5</item>
+    </style>
+    <style name="ChatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="ChatWhoIsTyping">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

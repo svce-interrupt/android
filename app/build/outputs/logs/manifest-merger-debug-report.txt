@@ -24,18 +24,19 @@ ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/Andro
 application
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:8:5-24:19
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:23:5-26:38
+MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:11:5-20
+MERGED from [com.github.stfalcon:chatkit:0.2.2] /home/drpayyne/.android/build-cache/8c96fcb57f0c5ae042b6329941fb0005cad178e3/output/AndroidManifest.xml:11:5-13:38
 MERGED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:29:5-20
-MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:11:5-20
 	android:label
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -67,19 +68,21 @@ ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/Andro
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:19:5-21:41
+MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.stfalcon:chatkit:0.2.2] /home/drpayyne/.android/build-cache/8c96fcb57f0c5ae042b6329941fb0005cad178e3/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android:flexbox:0.2.5] /home/drpayyne/.android/build-cache/9efb5114121d7c98886829f6977012a8a0956560/output/AndroidManifest.xml:23:5-25:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:21:5-23:58
-MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -90,16 +93,16 @@ MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb1012
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:25:5-27:41
 	android:value
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:27:9-38

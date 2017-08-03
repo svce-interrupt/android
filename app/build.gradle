@@ -36,5 +36,6 @@ dependencies {
     compile 'ai.api:sdk:2.0.5@aar'
     compile 'com.google.code.gson:gson:2.7'
     compile 'commons-io:commons-io:2.4'
+    compile 'com.github.stfalcon:chatkit:0.2.2'
     testCompile 'junit:junit:4.12'
 }
