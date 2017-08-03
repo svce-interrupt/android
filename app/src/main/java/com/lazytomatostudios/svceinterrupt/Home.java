@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home extends Fragment {
+public class Home extends Fragment implements MyInterface {
 
 
     public Home() {
@@ -24,8 +24,12 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Log.d("Debug", "Home fragment");
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    @Override
+    public void fragmentNowVisible() {
+        Log.d("Debug", "Home visible");
     }
 
 }

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Profile extends Fragment {
+public class Profile extends Fragment implements MyInterface{
 
 
     public Profile() {
@@ -24,8 +24,12 @@ public class Profile extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Log.d("Debug", "Profile fragment");
         return inflater.inflate(R.layout.fragment_profile, container, false);
+    }
+
+    @Override
+    public void fragmentNowVisible() {
+        Log.d("Debug", "Profile visible");
     }
 
 }

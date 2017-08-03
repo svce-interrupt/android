@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -15,14 +16,17 @@ import devlight.io.library.ntb.NavigationTabBar;
 public class MainActivity extends AppCompatActivity {
 
     NavigationTabBar navigationTabBar;
+    ViewPager viewPager;
+    PagerAdapter pagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ViewPager viewPager = ( ViewPager ) findViewById(R.id.view_pager);
-        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+        viewPager = ( ViewPager ) findViewById(R.id.view_pager);
+        pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(pagerAdapter);
 
         navigationTabBar = (NavigationTabBar) findViewById(R.id.nav_tb);
         final ArrayList<NavigationTabBar.Model> barModel = new ArrayList<>();
@@ -74,7 +78,11 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(final int position) {
+                MyInterface fragment = (MyInterface) pagerAdapter.instantiateItem(viewPager, position);
                 navigationTabBar.getModels().get(position).hideBadge();
+                fragment.fragmentNowVisible();
+                Log.d("Debug", String.valueOf(position));
+
             }
 
             @Override
@@ -93,18 +101,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
             switch (position) {
                 case 0:
-                    Log.d("Debug", "Home clicked");
                     return new Home();
                 case 1:
-                    Log.d("Debug", "Dashboard clicked");
                     return new Dashboard();
                 case 2:
-                    Log.d("Debug", "Chat clicked");
                     return new Chat();
                 case 3:
-                    Log.d("Debug", "Profile clicked");
                     return new Profile();
                 default:
                     return null;
