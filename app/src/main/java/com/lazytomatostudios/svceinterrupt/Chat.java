@@ -1,27 +1,37 @@
 package com.lazytomatostudios.svceinterrupt;
 
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
+import java.sql.Timestamp;
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 
 import ai.api.AIListener;
+import ai.api.AIServiceException;
+import ai.api.RequestExtras;
 import ai.api.android.AIConfiguration;
 import ai.api.android.AIService;
+import ai.api.model.AIContext;
 import ai.api.model.AIError;
+import ai.api.model.AIEvent;
+import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
-import com.google.gson.JsonElement;
+import co.intentservice.chatui.ChatView;
+import co.intentservice.chatui.models.ChatMessage;
 
-import com.stfalcon.chatkit.messages.MessagesList;
+import com.google.gson.JsonElement;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,16 +39,14 @@ import com.stfalcon.chatkit.messages.MessagesList;
 
 public class Chat extends Fragment implements MyInterface, AIListener {
 
-    Button listenButton;
     TextView resultTextView;
 
-    AIService aiService;
-
-    MessagesList messagesList;
+    static AIService aiService;
+    ChatView chatView;
 
 
     public Chat() {
-        // Required empty public constructor
+        // Required empty public consructor
     }
 
     @Override
@@ -62,13 +70,14 @@ public class Chat extends Fragment implements MyInterface, AIListener {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
-        listenButton = view.findViewById(R.id.button);
-        resultTextView = view.findViewById(R.id.textView);
+        chatView = (ChatView) view.findViewById(R.id.chat_view);
 
-        listenButton.setOnClickListener(new View.OnClickListener() {
+        chatView.setOnSentMessageListener(new ChatView.OnSentMessageListener(){
             @Override
-            public void onClick(View view) {
-                aiService.startListening();
+            public boolean sendMessage(ChatMessage chatMessage){
+                Log.d("TEST", String.valueOf(chatMessage.getTimestamp()));
+                new Fetch().execute(chatMessage.getMessage());
+                return true;
             }
         });
 
@@ -82,21 +91,38 @@ public class Chat extends Fragment implements MyInterface, AIListener {
     }
 
     public void onResult(final AIResponse response) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         Result result = response.getResult();
 
-        // Get parameters
-        String parameterString = "";
-        if (result.getParameters() != null && !result.getParameters().isEmpty()) {
-            for (final Map.Entry<String, JsonElement> entry : result.getParameters().entrySet()) {
-                parameterString += "(" + entry.getKey() + ", " + entry.getValue() + ") ";
+        chatView.addMessage(new ChatMessage(result.getFulfillment().getSpeech(), timestamp.getTime(), ChatMessage.Type.RECEIVED));
+    }
+
+    public class Fetch extends AsyncTask<String, Void, AIResponse> {
+
+        private AIError aiError;
+
+        @Override
+        protected AIResponse doInBackground(final String... params) {
+            final AIRequest request = new AIRequest();
+            String query = params[0];
+            request.setQuery(query);
+
+            try {
+                return Chat.aiService.textRequest(request);
+            } catch (final AIServiceException e) {
+                aiError = new AIError(e);
+                return null;
             }
         }
 
-        // Show results in TextView.
-        resultTextView.setText("Query:" + result.getResolvedQuery() +
-                "\nAction: " + result.getAction() +
-                "\nParameters: " + parameterString +
-                "\nReply: " + result.getFulfillment().getSpeech());
+        @Override
+        protected void onPostExecute(final AIResponse response) {
+            if (response != null) {
+                onResult(response);
+            } else {
+                onError(aiError);
+            }
+        }
     }
 
     @Override
