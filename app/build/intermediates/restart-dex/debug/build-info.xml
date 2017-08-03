@@ -6,26 +6,23 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1501763949012"
+    timestamp="1501768347587"
     token="1900874288522238604"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="154" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="6" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
-    <artifact
-        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
     <artifact
         location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
@@ -73,19 +70,16 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1501763903266"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
         timestamp="1501763949012"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1501768347587"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
