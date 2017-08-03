@@ -47,10 +47,19 @@ public class MainActivity extends AppCompatActivity {
 
         barModel.add(
                 new NavigationTabBar.Model.Builder(
+                        getResources().getDrawable(R.drawable.ic_chat_black_24dp),
+                        R.color.primary_dark).
+                        title("Chat")
+                        .badgeTitle("NTB CHAT")
+                        .build()
+        );
+
+        barModel.add(
+                new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_person_black_24dp),
                         R.color.primary_dark).
                         title("Profile")
-                        .badgeTitle("NTB PRF")
+                        .badgeTitle("NTB PROF")
                         .build()
         );
 
@@ -92,6 +101,9 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("Debug", "Dashboard clicked");
                     return new Dashboard();
                 case 2:
+                    Log.d("Debug", "Chat clicked");
+                    return new Chat();
+                case 3:
                     Log.d("Debug", "Profile clicked");
                     return new Profile();
                 default:
@@ -101,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
 
     }
