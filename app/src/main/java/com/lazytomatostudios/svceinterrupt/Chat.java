@@ -1,6 +1,8 @@
 package com.lazytomatostudios.svceinterrupt;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -43,6 +45,7 @@ public class Chat extends Fragment implements MyInterface, AIListener {
 
     static AIService aiService;
     ChatView chatView;
+    String mapsUri = "http://maps.google.com/maps?daddr=12.983120,79.971160 (Interrupt)";
 
 
     public Chat() {
@@ -90,14 +93,7 @@ public class Chat extends Fragment implements MyInterface, AIListener {
 
     }
 
-    public void onResult(final AIResponse response) {
-        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        Result result = response.getResult();
-
-        chatView.addMessage(new ChatMessage(result.getFulfillment().getSpeech(), timestamp.getTime(), ChatMessage.Type.RECEIVED));
-    }
-
-    public class Fetch extends AsyncTask<String, Void, AIResponse> {
+    private class Fetch extends AsyncTask<String, Void, AIResponse> {
 
         private AIError aiError;
 
@@ -125,9 +121,37 @@ public class Chat extends Fragment implements MyInterface, AIListener {
         }
     }
 
+    public void onResult(final AIResponse response) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        Result result = response.getResult();
+
+        chatView.addMessage(new ChatMessage(result.getFulfillment().getSpeech(), timestamp.getTime(), ChatMessage.Type.RECEIVED));
+        Log.d("Action", result.getAction());
+
+        switch (result.getAction()) {
+            case "maps":
+                showMap(Uri.parse(mapsUri));
+                break;
+            case "bus":
+                timestamp = new Timestamp(System.currentTimeMillis());
+                chatView.addMessage(new ChatMessage(getString(R.string.bus_schedule), timestamp.getTime(), ChatMessage.Type.RECEIVED));
+            default:
+                Log.d("Action", "NULL");
+                break;
+        }
+    }
+
     @Override
     public void onError(final AIError error) {
-        resultTextView.setText(error.toString());
+        Log.d("Error", error.toString());
+    }
+
+    public void showMap(Uri geoLocation) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(geoLocation);
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     @Override

@@ -971,7 +971,7 @@ public final class R {
         public static final int abc_toolbar_collapse_description = 0x7f080012;
         public static final int appbar_scrolling_view_behavior = 0x7f080022;
         public static final int bottom_sheet_behavior = 0x7f080023;
-        public static final int character_counter_pattern = 0x7f080024;
+        public static final int character_counter_pattern = 0x7f080025;
         public static final int password_toggle_content_description = 0x7f080028;
         public static final int path_password_eye = 0x7f080029;
         public static final int path_password_eye_mask_strike_through = 0x7f08002a;

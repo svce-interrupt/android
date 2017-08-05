@@ -3815,10 +3815,10 @@ containing a value of this type.
         public static final int app_name=0x7f080021;
         public static final int appbar_scrolling_view_behavior=0x7f080022;
         public static final int bottom_sheet_behavior=0x7f080023;
-        public static final int character_counter_pattern=0x7f080024;
-        public static final int default_aidialog_title=0x7f080025;
-        public static final int default_input_hint=0x7f080026;
-        public static final int hello_blank_fragment=0x7f080027;
+        public static final int bus_schedule=0x7f080024;
+        public static final int character_counter_pattern=0x7f080025;
+        public static final int default_aidialog_title=0x7f080026;
+        public static final int default_input_hint=0x7f080027;
         public static final int password_toggle_content_description=0x7f080028;
         public static final int path_password_eye=0x7f080029;
         public static final int path_password_eye_mask_strike_through=0x7f08002a;

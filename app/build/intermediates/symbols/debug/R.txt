@@ -1141,10 +1141,10 @@ int string abc_toolbar_collapse_description 0x7f080012
 int string app_name 0x7f080021
 int string appbar_scrolling_view_behavior 0x7f080022
 int string bottom_sheet_behavior 0x7f080023
-int string character_counter_pattern 0x7f080024
-int string default_aidialog_title 0x7f080025
-int string default_input_hint 0x7f080026
-int string hello_blank_fragment 0x7f080027
+int string bus_schedule 0x7f080024
+int string character_counter_pattern 0x7f080025
+int string default_aidialog_title 0x7f080026
+int string default_input_hint 0x7f080027
 int string password_toggle_content_description 0x7f080028
 int string path_password_eye 0x7f080029
 int string path_password_eye_mask_strike_through 0x7f08002a
