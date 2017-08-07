@@ -4,6 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.lazytomatostudios.svceinterrupt.Profile"
-    android:background="#000">
+    android:background="#f8f8f8">
 
 </FrameLayout>

@@ -31,6 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.lazytomatostudios.svceinterrupt.AboutActivity" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.ContactActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

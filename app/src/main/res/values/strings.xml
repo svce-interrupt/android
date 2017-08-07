@@ -6,4 +6,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="bus_schedule"><a href="http://www.google.com">Google</a></string>
+    <string name="about_interrupt">Webster\’s Dictionary defines the word ‘Interrupt’ as ”to break off or cause to cease, as in the middle of something”.\nComputer scientists define ‘Interrupt’ as ”A hardware signal that breaks the flow of program execution and transfers control to a predetermined storage location so that another procedure can be followed or a new operation carried out”, but at SVCE, we define Interrupt simply as THE place to be for anyone with a passion for CS.\n\nInterrupt has had students marking their calendars for years now and this year it\’s back and bigger than ever!\nAre you the Don of Logic? Can you make databases dance to your tunes?\nOr is being a Code Ninja more your style? Join us at SVCE on October 1st and find out!\n\nKeep up with all the Interrupt news!\nWebsite: interrupt16.in\n</string>
+
 </resources>

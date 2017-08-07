@@ -37,5 +37,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile 'commons-io:commons-io:2.4'
     compile 'co.intentservice.android-chat-ui:chat-ui:0.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }

@@ -41,8 +41,6 @@ import com.google.gson.JsonElement;
 
 public class Chat extends Fragment implements MyInterface, AIListener {
 
-    TextView resultTextView;
-
     static AIService aiService;
     ChatView chatView;
     String mapsUri = "http://maps.google.com/maps?daddr=12.983120,79.971160 (Interrupt)";
@@ -73,7 +71,7 @@ public class Chat extends Fragment implements MyInterface, AIListener {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
-        chatView = (ChatView) view.findViewById(R.id.chat_view);
+        chatView = view.findViewById(R.id.chat_view);
 
         chatView.setOnSentMessageListener(new ChatView.OnSentMessageListener(){
             @Override
@@ -83,6 +81,12 @@ public class Chat extends Fragment implements MyInterface, AIListener {
                 return true;
             }
         });
+
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        chatView.addMessage(new ChatMessage("Hello! I am qT3.14.", timestamp.getTime(), ChatMessage.Type.RECEIVED));
+        chatView.addMessage(new ChatMessage("How can I help you?", timestamp.getTime(), ChatMessage.Type.RECEIVED));
+
+        Log.d("TEST", "fragment chat");
 
         return view;
     }

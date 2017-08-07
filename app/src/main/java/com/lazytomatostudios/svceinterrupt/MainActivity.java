@@ -1,5 +1,6 @@
 package com.lazytomatostudios.svceinterrupt;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -89,7 +91,21 @@ public class MainActivity extends AppCompatActivity {
             public void onPageScrollStateChanged(final int state) {
 
             }
+
         });
+
+    }
+
+    public void openAbout(View view) {
+        Log.d("Debug", "About visible");
+
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void openContact(View view) {
+        Log.d("Debug", "Contact visible");
 
     }
 

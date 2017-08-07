@@ -252,6 +252,14 @@
         "source": "/home/drpayyne/.android/build-cache/8c96fcb57f0c5ae042b6329941fb0005cad178e3/output/res/layout/view_message_input.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/activity_contact.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/layout/activity_contact.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/activity_about.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/layout/activity_about.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/mtf_layout.xml",
         "source": "/home/drpayyne/.android/build-cache/bd671b3b6c20ebe92c07fbbd7f4f0d3eda10f78f/output/res/layout/mtf_layout.xml"
     },
