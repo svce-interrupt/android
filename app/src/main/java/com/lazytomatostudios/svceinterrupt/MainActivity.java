@@ -21,25 +21,34 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
+    ArrayList<NavigationTabBar.Model> barModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initNavBar();
+
+    }
+
+    public void initNavBar() {
 
         viewPager = ( ViewPager ) findViewById(R.id.view_pager);
         pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
 
         navigationTabBar = (NavigationTabBar) findViewById(R.id.nav_tb);
-        final ArrayList<NavigationTabBar.Model> barModel = new ArrayList<>();
+
+        barModel = new ArrayList<>();
 
         barModel.add(
-            new NavigationTabBar.Model.Builder(
-                    getResources().getDrawable(R.drawable.ic_home_black_24dp),
-                    R.color.primary_dark)
-                    .title("Home")
-                    .badgeTitle("NTB HOME")
-                    .build()
+                new NavigationTabBar.Model.Builder(
+                        getResources().getDrawable(R.drawable.ic_home_black_24dp),
+                        R.color.primary_dark)
+                        .title("Home")
+                        .badgeTitle("NTB HOME")
+                        .build()
         );
 
         barModel.add(

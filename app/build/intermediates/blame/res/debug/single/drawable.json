@@ -56,6 +56,10 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/profile_gradient.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/ic_event_black_24dp.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_event_black_24dp.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
@@ -210,5 +214,9 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/ic_dashboard_black_24dp.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/rounded_corner.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/rounded_corner.xml"
     }
 ]
