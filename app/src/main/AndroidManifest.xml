@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lazytomatostudios.svceinterrupt">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -21,8 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".homeactivities.AboutActivity" />
+        <activity android:name=".homeactivities.ContactActivity" />
+        <activity android:name=".dashactivities.EventActivity1" />
+        <activity
+            android:name=".dashactivities.TransportActivity"
+            android:label="@string/title_activity_transport"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dashactivities.EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

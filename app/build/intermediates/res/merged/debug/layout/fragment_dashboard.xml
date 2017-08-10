@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.lazytomatostudios.svceinterrupt.Dashboard"
+    tools:context="com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard"
     android:background="#f8f8f8">
 
     <ScrollView
@@ -18,14 +18,14 @@
                 android:id="@+id/card1"
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="32dp"
+                android:onClick="openAbout"
                 app:cardBackgroundColor="@color/accent"
-                app:cardElevation="24dp"
                 app:cardCornerRadius="32dp"
-                android:onClick="openAbout">
+                app:cardElevation="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -34,14 +34,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SVCE Map"
-                        android:textStyle="bold"
-                        android:textSize="60dp"
-                        android:textAlignment="textEnd"
-                        android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="20dp"/>
+                        android:layout_marginEnd="20dp"
+                        android:text="SVCE Map"
+                        android:textAlignment="textEnd"
+                        android:textSize="60dp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -51,34 +51,35 @@
                 android:id="@+id/event_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
                 android:text="Events"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/card1"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="32dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/card1" />
 
             <Button
                 android:layout_width="60dp"
                 android:layout_height="30dp"
-                android:text="View All"
-                android:textSize="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="38dp"
                 android:background="@drawable/rounded_corner"
                 android:backgroundTint="@color/accent"
-                app:layout_constraintTop_toBottomOf="@id/card1"
+                android:text="View All"
+                android:textSize="10dp"
+                android:onClick="openEvent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="38dp"/>
+                app:layout_constraintTop_toBottomOf="@id/card1" />
 
             <HorizontalScrollView
                 android:id="@+id/event_scroll"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/event_text"
-                android:layout_marginTop="12dp">
+                app:layout_constraintTop_toBottomOf="@id/event_text">
 
                 <LinearLayout
                     android:id="@+id/event_scroll_layout"
@@ -86,46 +87,121 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="20dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:backgroundTint="@color/accent"
-                        android:src="@drawable/ic_event_black_24dp" />
+                        android:orientation="vertical">
 
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:backgroundTint="@color/accent"
-                        android:src="@drawable/ic_event_black_24dp" />
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_corner"
+                            android:backgroundTint="@color/accent"
+                            android:src="@drawable/ic_event_black_24dp" />
 
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:backgroundTint="@color/accent"
-                        android:src="@drawable/ic_event_black_24dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Code Ninja"
+                            android:textSize="16dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"/>
 
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:backgroundTint="@color/accent"
-                        android:src="@drawable/ic_event_black_24dp" />
+                    </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_corner"
+                            android:backgroundTint="@color/accent"
+                            android:src="@drawable/ic_event_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Data\nDe-Queue"
+                            android:textSize="16dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_corner"
+                            android:backgroundTint="@color/accent"
+                            android:src="@drawable/ic_event_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quizzler"
+                            android:textSize="16dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_corner"
+                            android:backgroundTint="@color/accent"
+                            android:src="@drawable/ic_event_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cognition\nQuest"
+                            android:textSize="16dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:background="@drawable/rounded_corner"
-                        android:backgroundTint="@color/accent"
-                        android:src="@drawable/ic_event_black_24dp" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_corner"
+                            android:backgroundTint="@color/accent"
+                            android:src="@drawable/ic_event_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don of Logic"
+                            android:textSize="16dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -135,14 +211,14 @@
                 android:id="@+id/card2"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                app:layout_constraintTop_toBottomOf="@+id/event_scroll"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="32dp"
+                android:onClick="openTransport"
                 app:cardBackgroundColor="@color/accent"
-                app:cardElevation="24dp"
                 app:cardCornerRadius="32dp"
-                android:onClick="openAbout">
+                app:cardElevation="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_scroll">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -151,14 +227,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="20dp"
                         android:text="Transport"
-                        android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="50dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="20dp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -168,16 +244,16 @@
                 android:id="@+id/card3"
                 android:layout_width="300dp"
                 android:layout_height="150dp"
-                app:layout_constraintTop_toBottomOf="@+id/card2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="32dp"
                 android:layout_marginTop="32dp"
-                app:cardBackgroundColor="@color/accent"
-                app:cardElevation="24dp"
-                app:cardCornerRadius="32dp"
                 android:onClick="openAbout"
-                android:layout_marginBottom="32dp">
+                app:cardBackgroundColor="@color/accent"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -186,14 +262,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="20dp"
                         android:text="Instructions"
-                        android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="40dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="20dp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 

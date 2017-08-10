@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f8f8f8"
-    tools:context="com.lazytomatostudios.svceinterrupt.Home">
+    tools:context="com.lazytomatostudios.svceinterrupt.navbarfragments.Home">
 
     <ScrollView
         android:layout_width="match_parent"

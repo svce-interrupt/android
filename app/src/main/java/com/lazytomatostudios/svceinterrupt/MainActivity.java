@@ -11,6 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
+import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
+import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Home;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Profile;
+
 import java.util.ArrayList;
 
 import devlight.io.library.ntb.NavigationTabBar;
@@ -116,6 +125,20 @@ public class MainActivity extends AppCompatActivity {
     public void openContact(View view) {
         Log.d("Debug", "Contact visible");
 
+    }
+
+    public void openEvent(View view) {
+        Log.d("Debug", "Events visible");
+
+        Intent intent = new Intent(this, EventActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTransport(View view) {
+        Log.d("Debug", "Transport visible");
+
+        Intent intent = new Intent(this, TransportActivity.class);
+        startActivity(intent);
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {

@@ -31,8 +31,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.lazytomatostudios.svceinterrupt.AboutActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.ContactActivity" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity1" />
+        <activity
+            android:name="com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity"
+            android:label="@string/title_activity_transport"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

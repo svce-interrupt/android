@@ -6,6 +6,26 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="bus_schedule"><a href="http://www.google.com">Google</a></string>
-    <string name="about_interrupt">Webster\’s Dictionary defines the word ‘Interrupt’ as ”to break off or cause to cease, as in the middle of something”.\nComputer scientists define ‘Interrupt’ as ”A hardware signal that breaks the flow of program execution and transfers control to a predetermined storage location so that another procedure can be followed or a new operation carried out”, but at SVCE, we define Interrupt simply as THE place to be for anyone with a passion for CS.\n\nInterrupt has had students marking their calendars for years now and this year it\’s back and bigger than ever!\nAre you the Don of Logic? Can you make databases dance to your tunes?\nOr is being a Code Ninja more your style? Join us at SVCE on October 1st and find out!\n\nKeep up with all the Interrupt news!\nWebsite: interrupt16.in\n</string>
+    <string name="aboutinterrupt">Webster\’s Dictionary defines the word ‘Interrupt’ as ”to break off or cause to cease, as in the middle of something”.\nComputer scientists define ‘Interrupt’ as ”A hardware signal that breaks the flow of program execution and transfers control to a predetermined storage location so that another procedure can be followed or a new operation carried out”, but at SVCE, we define Interrupt simply as THE place to be for anyone with a passion for CS.\n\nInterrupt has had students marking their calendars for years now and this year it\’s back and bigger than ever!\nAre you the Don of Logic? Can you make databases dance to your tunes?\nOr is being a Code Ninja more your style? Join us at SVCE on October 1st and find out!\n\nKeep up with all the Interrupt news!\nWebsite: interrupt16.in\n</string>
+
+
+    <string name="what_is">What is Interrupt, <i>really</i>?</string>
+    <string name="webster_title">interrupt</string>
+    <string name="webster_def_1"><sup>1</sup> to stop or hinder by breaking in</string>
+    <string name="webster_def_2"><sup>2</sup> to break the uniformity or continuity of</string>
+    <string name="cs_def"><sup>1</sup> signal to the processor emitted by hardware or software indicating an event that needs immediate attention</string>
+    <string name="svce_def"><sup>1</sup> <b><i>the</i></b> place to be for anyone with a passion in Computer Science</string>
+    <string name="interrupt_desc"><b><i>Interrupt</i></b> has had students marking their calendars for years now and this year it\’s back and bigger than ever! Are you the <b><i>Don of Logic</i></b>? Can you make <b><i>Databases</i></b> dance to your tunes? Or is being a <b><i>Code Ninja</i></b> more your style?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_transport">TransportActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_dummy">dummy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
