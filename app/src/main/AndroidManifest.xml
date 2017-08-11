@@ -30,10 +30,7 @@
             android:name=".dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".dashactivities.EventActivity"
-            android:label="@string/title_activity_event"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".dashactivities.EventActivity"></activity>
     </application>
 
 </manifest>

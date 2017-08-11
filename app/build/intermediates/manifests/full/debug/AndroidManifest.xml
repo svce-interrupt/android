@@ -38,10 +38,7 @@
             android:name="com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity"
-            android:label="@string/title_activity_event"
-            android:theme="@style/AppTheme" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity" />
     </application>
 
 </manifest>

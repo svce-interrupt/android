@@ -25,7 +25,6 @@ import ai.api.model.Result;
 import co.intentservice.chatui.ChatView;
 import co.intentservice.chatui.models.ChatMessage;
 
-import com.lazytomatostudios.svceinterrupt.MainActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
