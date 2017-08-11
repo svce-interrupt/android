@@ -61,15 +61,14 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(quiz, ResideMenu.DIRECTION_LEFT);
 
-        resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
-        resideMenu.setScaleValue(0.66f);
-
-        resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
-
     }
 
     @Override
     public void onClick(View view) {
+
+        switch (view) {
+            case
+        }
 
     }
 }
