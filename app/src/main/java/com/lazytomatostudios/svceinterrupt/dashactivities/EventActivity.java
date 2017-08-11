@@ -29,27 +29,77 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     String titles[] = { "Code Ninja", "Code Sprint", "Cognition Quest", "Data De-Queue", "Don of Logic", "Game of Archives", "MYB", "Picturesque", "Quizzler" };
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
     ResideMenuItem cdnj, cdsp, cgqt, data, dlgc, garc, myb, pctq, quiz;
+    Fragment initFrag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
 
+        Bundle bundle = getIntent().getExtras();
+        String string;
+
         initMenu();
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.frame_layout, new CodeNinja())
-                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                .commit();
+        if(bundle != null) {
+            string = bundle.getString("event");
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
+            switch (string) {
+                case "code sprint":
+                    initFrag = new CodeSprint();
+                    break;
+                case "code ninja":
+                    initFrag = new CodeNinja();
+                    break;
+                case "cognition quest":
+                    initFrag = new CognitionQuest();
+                    break;
+                case "data de-queue":
+                    initFrag = new DataDeQueue();
+                    break;
+                case "don of logic":
+                    initFrag = new DonOfLogic();
+                    break;
+                case "game of archives":
+                    initFrag = new GameOfArchives();
+                    break;
+                case "myb":
+                    initFrag = new MYB();
+                    break;
+                case "picturesque":
+                    initFrag = new Picturesque();
+                    break;
+                case "quizzler":
+                    initFrag = new Quizzler();
+                    break;
+                default:
+                    initFrag = new CodeNinja();
+                    break;
             }
-        }, 250);
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.frame_layout, initFrag)
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+
+        } else {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.frame_layout, new CodeNinja())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
+                }
+            }, 250);
+
+        }
     }
 
     public void initMenu() {

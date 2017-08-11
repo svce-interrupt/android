@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Aug 11 13:11:44 IST 2017
+#Fri Aug 11 14:27:44 IST 2017
 210.set=ANDROID_RESOURCE
 282.file=/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/resources-debug.ap_/res/layout-sw600dp-v13/design_layout_snackbar.xml
 14.set=ANDROID_RESOURCE

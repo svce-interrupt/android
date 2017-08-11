@@ -141,6 +141,7 @@ public class Chat extends Fragment implements MyInterface, AIListener {
             case "events":
                 intent = new Intent(getActivity(), EventActivity.class);
                 String extra = result.getStringParameter("event");
+                Log.d("TAG", extra);
                 if(extra != null)
                     intent.putExtra("event", extra);
                 startActivity(intent);

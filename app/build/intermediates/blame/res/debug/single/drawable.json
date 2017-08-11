@@ -52,12 +52,12 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/profile_gradient.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/side_nav_bar.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/ic_event_black_24dp.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_event_black_24dp.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",

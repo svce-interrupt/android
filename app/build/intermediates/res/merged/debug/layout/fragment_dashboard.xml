@@ -94,6 +94,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
+                            android:id="@+id/event1"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:background="@drawable/rounded_corner"
@@ -117,6 +118,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
+                            android:id="@+id/event2"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:background="@drawable/rounded_corner"
@@ -140,6 +142,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
+                            android:id="@+id/event3"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:background="@drawable/rounded_corner"
@@ -163,6 +166,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
+                            android:id="@+id/event4"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:background="@drawable/rounded_corner"
@@ -187,6 +191,7 @@
                         android:orientation="vertical">
 
                         <ImageButton
+                            android:id="@+id/event5"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:background="@drawable/rounded_corner"
