@@ -3,13 +3,15 @@ package com.lazytomatostudios.svceinterrupt.dashactivities;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
-public class EventActivity extends Activity implements View.OnClickListener {
+public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
     String titles[] = { "Code Ninja", "Code Sprint", "Cognition Quest", "Data De-Queue", "Don of Logic", "Game of Archives", "MYB", "Picturesque", "Quizzler" };
@@ -60,6 +62,9 @@ public class EventActivity extends Activity implements View.OnClickListener {
         resideMenu.addMenuItem(quiz, ResideMenu.DIRECTION_LEFT);
 
         resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
+        resideMenu.setScaleValue(0.66f);
+
+        resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
 
     }
 

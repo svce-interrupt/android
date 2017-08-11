@@ -4,6 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity">
+    tools:context="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity"
+    android:background="@color/primary_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TEST"
+        android:gravity="center"/>
 
 </android.support.constraint.ConstraintLayout>
