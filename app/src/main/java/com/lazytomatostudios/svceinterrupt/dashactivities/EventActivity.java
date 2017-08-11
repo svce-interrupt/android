@@ -13,6 +13,13 @@ import android.view.View;
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeNinja;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeSprint;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CognitionQuest;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DataDeQueue;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DonOfLogic;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.GameOfArchives;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.MYB;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Picturesque;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Quizzler;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
@@ -102,6 +109,55 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.frame_layout, new CodeSprint())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == cgqt) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new CognitionQuest())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == data) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new DataDeQueue())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == dlgc) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new DonOfLogic())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == garc) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new GameOfArchives())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == myb) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new MYB())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == pctq) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new Picturesque())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == quiz) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new Quizzler())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
