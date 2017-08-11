@@ -28,6 +28,10 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_person_black_24dp.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/mapbox_popup_window_transparent.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable/mapbox_popup_window_transparent.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable/abc_list_selector_holo_light.xml"
     },
@@ -56,12 +60,12 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/profile_gradient.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/ic_event_black_24dp.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_event_black_24dp.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/ic_event_black_24dp.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_event_black_24dp.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
@@ -172,8 +176,16 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/drawable/ic_menu_black_24dp.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/mapbox_mylocation_bg_shape.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable/mapbox_mylocation_bg_shape.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/mapbox_info_bg_selector.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable/mapbox_info_bg_selector.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",

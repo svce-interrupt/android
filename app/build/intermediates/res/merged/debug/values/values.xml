@@ -165,6 +165,9 @@
     <color name="icons">#ffffff</color>
     <color name="main_bg_color">#FF2a91be</color>
     <color name="main_color_gray">#7d7d7d</color>
+    <color name="mapbox_blue">#1E8CAB</color>
+    <color name="mapbox_gray">#7D7F80</color>
+    <color name="mapbox_my_location_ring">@color/mapbox_blue</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -551,6 +554,58 @@
         </attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="WaitingDots"><attr format="color" name="dotsColor"/><attr format="integer" name="period"/><attr format="integer" name="jumpHeight"/><attr format="boolean" name="autoplay"/></declare-styleable>
+    <declare-styleable name="mapbox_BubbleLayout"><attr format="dimension|reference" name="mapbox_bl_arrowWidth"/><attr format="dimension|reference" name="mapbox_bl_cornersRadius"/><attr format="dimension|reference" name="mapbox_bl_arrowHeight"/><attr format="dimension|reference" name="mapbox_bl_arrowPosition"/><attr format="color|reference" name="mapbox_bl_bubbleColor"/><attr format="dimension|reference" name="mapbox_bl_strokeWidth"/><attr format="color|reference" name="mapbox_bl_strokeColor"/><attr format="enum" name="mapbox_bl_arrowDirection">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr></declare-styleable>
+    <declare-styleable name="mapbox_MapView"><attr format="string" name="mapbox_styleUrl"/><attr format="string" name="mapbox_apiBaseUrl"/><attr format="float" name="mapbox_cameraTargetLat"/><attr format="float" name="mapbox_cameraTargetLng"/><attr format="float" name="mapbox_cameraZoom"/><attr format="float" name="mapbox_cameraBearing"/><attr format="float" name="mapbox_cameraTilt"/><attr format="float" name="mapbox_cameraZoomMax"/><attr format="float" name="mapbox_cameraZoomMin"/><attr format="boolean" name="mapbox_uiZoomGestures"/><attr format="boolean" name="mapbox_uiScrollGestures"/><attr format="boolean" name="mapbox_uiRotateGestures"/><attr format="boolean" name="mapbox_uiTiltGestures"/><attr format="boolean" name="mapbox_uiDoubleTapGestures"/><attr format="boolean" name="mapbox_uiZoomControls"/><attr format="boolean" name="mapbox_myLocation"/><attr format="color" name="mapbox_myLocationTintColor"/><attr format="reference" name="mapbox_myLocationDrawable"/><attr format="reference" name="mapbox_myLocationBearingDrawable"/><attr format="reference" name="mapbox_myLocationBackgroundDrawable"/><attr format="color" name="mapbox_myLocationBackgroundTintColor"/><attr format="dimension" name="mapbox_myLocationBackgroundMarginLeft"/><attr format="dimension" name="mapbox_myLocationBackgroundMarginTop"/><attr format="dimension" name="mapbox_myLocationBackgroundMarginRight"/><attr format="dimension" name="mapbox_myLocationBackgroundMarginBottom"/><attr format="color" name="mapbox_myLocationAccuracyTintColor"/><attr format="integer" name="mapbox_myLocationAccuracyAlpha"/><attr format="boolean" name="mapbox_uiCompass"/><attr name="mapbox_uiCompassGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr><attr format="dimension" name="mapbox_uiCompassMarginLeft"/><attr format="dimension" name="mapbox_uiCompassMarginTop"/><attr format="dimension" name="mapbox_uiCompassMarginRight"/><attr format="dimension" name="mapbox_uiCompassMarginBottom"/><attr format="boolean" name="mapbox_uiCompassFadeFacingNorth"/><attr format="reference" name="mapbox_uiCompassDrawable"/><attr format="boolean" name="mapbox_uiLogo"/><attr name="mapbox_uiLogoGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr><attr format="dimension" name="mapbox_uiLogoMarginLeft"/><attr format="dimension" name="mapbox_uiLogoMarginTop"/><attr format="dimension" name="mapbox_uiLogoMarginRight"/><attr format="dimension" name="mapbox_uiLogoMarginBottom"/><attr format="boolean" name="mapbox_uiAttribution"/><attr name="mapbox_uiAttributionGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr><attr format="dimension" name="mapbox_uiAttributionMarginLeft"/><attr format="dimension" name="mapbox_uiAttributionMarginTop"/><attr format="dimension" name="mapbox_uiAttributionMarginRight"/><attr format="dimension" name="mapbox_uiAttributionMarginBottom"/><attr format="color" name="mapbox_uiAttributionTintColor"/><attr format="boolean" name="mapbox_renderTextureMode"/></declare-styleable>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -698,6 +753,21 @@
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="mapbox_attribution_icon_bottom_padding">@dimen/mapbox_two_dp</dimen>
+    <dimen name="mapbox_attribution_icon_left_padding">@dimen/mapbox_two_dp</dimen>
+    <dimen name="mapbox_attribution_icon_right_padding">@dimen/mapbox_two_dp</dimen>
+    <dimen name="mapbox_attribution_icon_top_padding">@dimen/mapbox_two_dp</dimen>
+    <dimen name="mapbox_eight_dp">8dp</dimen>
+    <dimen name="mapbox_four_dp">4dp</dimen>
+    <dimen name="mapbox_infowindow_line_width">1.5dp</dimen>
+    <dimen name="mapbox_infowindow_margin">8dp</dimen>
+    <dimen name="mapbox_infowindow_offset">-2dp</dimen>
+    <dimen name="mapbox_infowindow_tipview_width">8dp</dimen>
+    <dimen name="mapbox_my_locationview_outer_circle">18dp</dimen>
+    <dimen name="mapbox_ninety_two_dp">92dp</dimen>
+    <dimen name="mapbox_sixteen_dp">16dp</dimen>
+    <dimen name="mapbox_ten_dp">10dp</dimen>
+    <dimen name="mapbox_two_dp">2dp</dimen>
     <dimen name="max_chat_bubble_length">300dp</dimen>
     <dimen name="mic_button_halo_radius_max">76dp</dimen>
     <dimen name="mic_button_halo_radius_min">35dp</dimen>
@@ -791,6 +861,28 @@
     <string name="default_input_hint">Type your message</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="interrupt_desc"><b><i>Interrupt</i></b> has had students marking their calendars for years now and this year it\’s back and bigger than ever! Are you the <b><i>Don of Logic</i></b>? Can you make <b><i>Databases</i></b> dance to your tunes? Or is being a <b><i>Code Ninja</i></b> more your style?</string>
+    <string name="mapbox_attributionErrorNoBrowser">No web browser installed on device, can\'t open web page.</string>
+    <string name="mapbox_attributionTelemetryMessage">You are helping to make OpenStreetMap and Mapbox maps better by contributing anonymous usage data.</string>
+    <string name="mapbox_attributionTelemetryNegative">Disagree</string>
+    <string name="mapbox_attributionTelemetryNeutral">More info</string>
+    <string name="mapbox_attributionTelemetryPositive">Agree</string>
+    <string name="mapbox_attributionTelemetryTitle">Make Mapbox Maps Better</string>
+    <string name="mapbox_attributionsDialogTitle">Mapbox Android SDK</string>
+    <string name="mapbox_attributionsIconContentDescription">Attribution icon. Activate to show attribution dialog.</string>
+    <string name="mapbox_compassContentDescription">Map compass. Activate to reset the map rotation to North.</string>
+    <string name="mapbox_mapActionDescription">Showing a Map created with Mapbox. Scroll by dragging two fingers. Zoom by pinching two fingers.</string>
+    <string name="mapbox_myLocationViewContentDescription">Location View. This shows your location on the map.</string>
+    <string name="mapbox_offline_error_region_definition_invalid">Provided OfflineRegionDefinition doesn\'t fit the world bounds: %s</string>
+    <string name="mapbox_style_dark" translatable="false">mapbox://styles/mapbox/dark-v9</string>
+    <string name="mapbox_style_light" translatable="false">mapbox://styles/mapbox/light-v9</string>
+    <string name="mapbox_style_mapbox_streets" translatable="false">mapbox://styles/mapbox/streets-v10</string>
+    <string name="mapbox_style_outdoors" translatable="false">mapbox://styles/mapbox/outdoors-v10</string>
+    <string name="mapbox_style_satellite" translatable="false">mapbox://styles/mapbox/satellite-v9</string>
+    <string name="mapbox_style_satellite_streets" translatable="false">mapbox://styles/mapbox/satellite-streets-v10</string>
+    <string name="mapbox_style_traffic_day" translatable="false">mapbox://styles/mapbox/traffic-day-v2</string>
+    <string name="mapbox_style_traffic_night" translatable="false">mapbox://styles/mapbox/traffic-night-v2</string>
+    <string name="mapbox_telemetryLink" translatable="false">https://www.mapbox.com/telemetry/</string>
+    <string name="mapbox_telemetrySettings">Telemetry Settings</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
@@ -2404,4 +2496,5 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+    <style name="mapbox_AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert"/>
 </resources>

@@ -12,12 +12,20 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/view_content.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/layout/view_content.xml"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/mapbox_view_image_marker.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/layout/mapbox_view_image_marker.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/mapbox_attribution_list_item.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/layout/mapbox_attribution_list_item.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/view_content.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/layout/view_content.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
@@ -86,6 +94,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
         "source": "/home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/mapbox_mapview_internal.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/layout/mapbox_mapview_internal.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
@@ -306,6 +318,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/fragment_schedule.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/res/layout/fragment_schedule.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/mapbox_infowindow_content.xml",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/layout/mapbox_infowindow_content.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",

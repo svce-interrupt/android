@@ -2263,6 +2263,523 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int mainColor=0x7f010136;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_apiBaseUrl=0x7f0101dd;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+<tr><td><code>top</code></td><td>2</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int mapbox_bl_arrowDirection=0x7f0101db;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int mapbox_bl_arrowHeight=0x7f0101d6;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int mapbox_bl_arrowPosition=0x7f0101d7;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int mapbox_bl_arrowWidth=0x7f0101d4;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int mapbox_bl_bubbleColor=0x7f0101d8;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int mapbox_bl_cornersRadius=0x7f0101d5;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int mapbox_bl_strokeColor=0x7f0101da;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int mapbox_bl_strokeWidth=0x7f0101d9;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraBearing=0x7f0101e1;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraTargetLat=0x7f0101de;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraTargetLng=0x7f0101df;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraTilt=0x7f0101e2;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraZoom=0x7f0101e0;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraZoomMax=0x7f0101e3;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_cameraZoomMin=0x7f0101e4;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocation=0x7f0101eb;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationAccuracyAlpha=0x7f0101f6;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationAccuracyTintColor=0x7f0101f5;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int mapbox_myLocationBackgroundDrawable=0x7f0101ef;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationBackgroundMarginBottom=0x7f0101f4;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationBackgroundMarginLeft=0x7f0101f1;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationBackgroundMarginRight=0x7f0101f3;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationBackgroundMarginTop=0x7f0101f2;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationBackgroundTintColor=0x7f0101f0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int mapbox_myLocationBearingDrawable=0x7f0101ee;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int mapbox_myLocationDrawable=0x7f0101ed;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_myLocationTintColor=0x7f0101ec;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_renderTextureMode=0x7f01020c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_styleUrl=0x7f0101dc;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttribution=0x7f010205;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int mapbox_uiAttributionGravity=0x7f010206;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttributionMarginBottom=0x7f01020a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttributionMarginLeft=0x7f010207;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttributionMarginRight=0x7f010209;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttributionMarginTop=0x7f010208;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiAttributionTintColor=0x7f01020b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompass=0x7f0101f7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int mapbox_uiCompassDrawable=0x7f0101fe;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompassFadeFacingNorth=0x7f0101fd;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int mapbox_uiCompassGravity=0x7f0101f8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompassMarginBottom=0x7f0101fc;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompassMarginLeft=0x7f0101f9;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompassMarginRight=0x7f0101fb;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiCompassMarginTop=0x7f0101fa;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiDoubleTapGestures=0x7f0101e9;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiLogo=0x7f0101ff;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int mapbox_uiLogoGravity=0x7f010200;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiLogoMarginBottom=0x7f010204;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiLogoMarginLeft=0x7f010201;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiLogoMarginRight=0x7f010203;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiLogoMarginTop=0x7f010202;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiRotateGestures=0x7f0101e7;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiScrollGestures=0x7f0101e6;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiTiltGestures=0x7f0101e8;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiZoomControls=0x7f0101ea;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapbox_uiZoomGestures=0x7f0101e5;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -3698,31 +4215,31 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0b0004;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f0d006c;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f0d006d;
-        public static final int abc_btn_colored_borderless_text_material=0x7f0d006e;
-        public static final int abc_btn_colored_text_material=0x7f0d006f;
-        public static final int abc_color_highlight_material=0x7f0d0070;
-        public static final int abc_hint_foreground_material_dark=0x7f0d0071;
-        public static final int abc_hint_foreground_material_light=0x7f0d0072;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0d006f;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0d0070;
+        public static final int abc_btn_colored_borderless_text_material=0x7f0d0071;
+        public static final int abc_btn_colored_text_material=0x7f0d0072;
+        public static final int abc_color_highlight_material=0x7f0d0073;
+        public static final int abc_hint_foreground_material_dark=0x7f0d0074;
+        public static final int abc_hint_foreground_material_light=0x7f0d0075;
         public static final int abc_input_method_navigation_guard=0x7f0d0001;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f0d0073;
-        public static final int abc_primary_text_disable_only_material_light=0x7f0d0074;
-        public static final int abc_primary_text_material_dark=0x7f0d0075;
-        public static final int abc_primary_text_material_light=0x7f0d0076;
-        public static final int abc_search_url_text=0x7f0d0077;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0d0076;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0d0077;
+        public static final int abc_primary_text_material_dark=0x7f0d0078;
+        public static final int abc_primary_text_material_light=0x7f0d0079;
+        public static final int abc_search_url_text=0x7f0d007a;
         public static final int abc_search_url_text_normal=0x7f0d0002;
         public static final int abc_search_url_text_pressed=0x7f0d0003;
         public static final int abc_search_url_text_selected=0x7f0d0004;
-        public static final int abc_secondary_text_material_dark=0x7f0d0078;
-        public static final int abc_secondary_text_material_light=0x7f0d0079;
-        public static final int abc_tint_btn_checkable=0x7f0d007a;
-        public static final int abc_tint_default=0x7f0d007b;
-        public static final int abc_tint_edittext=0x7f0d007c;
-        public static final int abc_tint_seek_thumb=0x7f0d007d;
-        public static final int abc_tint_spinner=0x7f0d007e;
-        public static final int abc_tint_switch_thumb=0x7f0d007f;
-        public static final int abc_tint_switch_track=0x7f0d0080;
+        public static final int abc_secondary_text_material_dark=0x7f0d007b;
+        public static final int abc_secondary_text_material_light=0x7f0d007c;
+        public static final int abc_tint_btn_checkable=0x7f0d007d;
+        public static final int abc_tint_default=0x7f0d007e;
+        public static final int abc_tint_edittext=0x7f0d007f;
+        public static final int abc_tint_seek_thumb=0x7f0d0080;
+        public static final int abc_tint_spinner=0x7f0d0081;
+        public static final int abc_tint_switch_thumb=0x7f0d0082;
+        public static final int abc_tint_switch_track=0x7f0d0083;
         public static final int accent=0x7f0d0005;
         public static final int accent_material_dark=0x7f0d0006;
         public static final int accent_material_light=0x7f0d0007;
@@ -3754,7 +4271,7 @@ containing a value of this type.
         public static final int default_tstamp_color_rcv=0x7f0d0021;
         public static final int default_tstamp_color_send=0x7f0d0022;
         public static final int design_bottom_navigation_shadow_color=0x7f0d0023;
-        public static final int design_error=0x7f0d0081;
+        public static final int design_error=0x7f0d0084;
         public static final int design_fab_shadow_end_color=0x7f0d0024;
         public static final int design_fab_shadow_mid_color=0x7f0d0025;
         public static final int design_fab_shadow_start_color=0x7f0d0026;
@@ -3765,7 +4282,7 @@ containing a value of this type.
         public static final int design_snackbar_background_color=0x7f0d002b;
         public static final int design_textinput_error_color_dark=0x7f0d002c;
         public static final int design_textinput_error_color_light=0x7f0d002d;
-        public static final int design_tint_password_toggle=0x7f0d0082;
+        public static final int design_tint_password_toggle=0x7f0d0085;
         public static final int dim_foreground_disabled_material_dark=0x7f0d002e;
         public static final int dim_foreground_disabled_material_light=0x7f0d002f;
         public static final int dim_foreground_material_dark=0x7f0d0030;
@@ -3781,57 +4298,61 @@ containing a value of this type.
         public static final int icons=0x7f0d003a;
         public static final int main_bg_color=0x7f0d003b;
         public static final int main_color_gray=0x7f0d003c;
-        public static final int material_blue_grey_800=0x7f0d003d;
-        public static final int material_blue_grey_900=0x7f0d003e;
-        public static final int material_blue_grey_950=0x7f0d003f;
-        public static final int material_deep_teal_200=0x7f0d0040;
-        public static final int material_deep_teal_500=0x7f0d0041;
-        public static final int material_grey_100=0x7f0d0042;
-        public static final int material_grey_300=0x7f0d0043;
-        public static final int material_grey_50=0x7f0d0044;
-        public static final int material_grey_600=0x7f0d0045;
-        public static final int material_grey_800=0x7f0d0046;
-        public static final int material_grey_850=0x7f0d0047;
-        public static final int material_grey_900=0x7f0d0048;
-        public static final int mic_button_halo=0x7f0d0049;
-        public static final int mic_colors=0x7f0d0083;
+        public static final int mapbox_blue=0x7f0d003d;
+        public static final int mapbox_gray=0x7f0d003e;
+        public static final int mapbox_material_bg_selector=0x7f0d0086;
+        public static final int mapbox_my_location_ring=0x7f0d003f;
+        public static final int material_blue_grey_800=0x7f0d0040;
+        public static final int material_blue_grey_900=0x7f0d0041;
+        public static final int material_blue_grey_950=0x7f0d0042;
+        public static final int material_deep_teal_200=0x7f0d0043;
+        public static final int material_deep_teal_500=0x7f0d0044;
+        public static final int material_grey_100=0x7f0d0045;
+        public static final int material_grey_300=0x7f0d0046;
+        public static final int material_grey_50=0x7f0d0047;
+        public static final int material_grey_600=0x7f0d0048;
+        public static final int material_grey_800=0x7f0d0049;
+        public static final int material_grey_850=0x7f0d004a;
+        public static final int material_grey_900=0x7f0d004b;
+        public static final int mic_button_halo=0x7f0d004c;
+        public static final int mic_colors=0x7f0d0087;
         public static final int notification_action_color_filter=0x7f0d0000;
-        public static final int notification_icon_bg_color=0x7f0d004a;
-        public static final int notification_material_background_media_default_color=0x7f0d004b;
-        public static final int off_white=0x7f0d004c;
-        public static final int primary=0x7f0d004d;
-        public static final int primary_dark=0x7f0d004e;
-        public static final int primary_dark_material_dark=0x7f0d004f;
-        public static final int primary_dark_material_light=0x7f0d0050;
-        public static final int primary_light=0x7f0d0051;
-        public static final int primary_material_dark=0x7f0d0052;
-        public static final int primary_material_light=0x7f0d0053;
-        public static final int primary_text=0x7f0d0054;
-        public static final int primary_text_default_material_dark=0x7f0d0055;
-        public static final int primary_text_default_material_light=0x7f0d0056;
-        public static final int primary_text_disabled_material_dark=0x7f0d0057;
-        public static final int primary_text_disabled_material_light=0x7f0d0058;
-        public static final int ripple_material_dark=0x7f0d0059;
-        public static final int ripple_material_light=0x7f0d005a;
-        public static final int secondary_text=0x7f0d005b;
-        public static final int secondary_text_default_material_dark=0x7f0d005c;
-        public static final int secondary_text_default_material_light=0x7f0d005d;
-        public static final int secondary_text_disabled_material_dark=0x7f0d005e;
-        public static final int secondary_text_disabled_material_light=0x7f0d005f;
-        public static final int sinch_purple=0x7f0d0060;
-        public static final int sinch_purple_darker=0x7f0d0061;
-        public static final int switch_thumb_disabled_material_dark=0x7f0d0062;
-        public static final int switch_thumb_disabled_material_light=0x7f0d0063;
-        public static final int switch_thumb_material_dark=0x7f0d0084;
-        public static final int switch_thumb_material_light=0x7f0d0085;
-        public static final int switch_thumb_normal_material_dark=0x7f0d0064;
-        public static final int switch_thumb_normal_material_light=0x7f0d0065;
-        public static final int twinder_purple_2=0x7f0d0066;
-        public static final int u_blue=0x7f0d0067;
-        public static final int u_blue_darker=0x7f0d0068;
-        public static final int u_blue_light=0x7f0d0069;
-        public static final int very_dark_gray=0x7f0d006a;
-        public static final int white=0x7f0d006b;
+        public static final int notification_icon_bg_color=0x7f0d004d;
+        public static final int notification_material_background_media_default_color=0x7f0d004e;
+        public static final int off_white=0x7f0d004f;
+        public static final int primary=0x7f0d0050;
+        public static final int primary_dark=0x7f0d0051;
+        public static final int primary_dark_material_dark=0x7f0d0052;
+        public static final int primary_dark_material_light=0x7f0d0053;
+        public static final int primary_light=0x7f0d0054;
+        public static final int primary_material_dark=0x7f0d0055;
+        public static final int primary_material_light=0x7f0d0056;
+        public static final int primary_text=0x7f0d0057;
+        public static final int primary_text_default_material_dark=0x7f0d0058;
+        public static final int primary_text_default_material_light=0x7f0d0059;
+        public static final int primary_text_disabled_material_dark=0x7f0d005a;
+        public static final int primary_text_disabled_material_light=0x7f0d005b;
+        public static final int ripple_material_dark=0x7f0d005c;
+        public static final int ripple_material_light=0x7f0d005d;
+        public static final int secondary_text=0x7f0d005e;
+        public static final int secondary_text_default_material_dark=0x7f0d005f;
+        public static final int secondary_text_default_material_light=0x7f0d0060;
+        public static final int secondary_text_disabled_material_dark=0x7f0d0061;
+        public static final int secondary_text_disabled_material_light=0x7f0d0062;
+        public static final int sinch_purple=0x7f0d0063;
+        public static final int sinch_purple_darker=0x7f0d0064;
+        public static final int switch_thumb_disabled_material_dark=0x7f0d0065;
+        public static final int switch_thumb_disabled_material_light=0x7f0d0066;
+        public static final int switch_thumb_material_dark=0x7f0d0088;
+        public static final int switch_thumb_material_light=0x7f0d0089;
+        public static final int switch_thumb_normal_material_dark=0x7f0d0067;
+        public static final int switch_thumb_normal_material_light=0x7f0d0068;
+        public static final int twinder_purple_2=0x7f0d0069;
+        public static final int u_blue=0x7f0d006a;
+        public static final int u_blue_darker=0x7f0d006b;
+        public static final int u_blue_light=0x7f0d006c;
+        public static final int very_dark_gray=0x7f0d006d;
+        public static final int white=0x7f0d006e;
     }
     public static final class dimen {
         public static final int abc_action_bar_content_inset_material=0x7f09000c;
@@ -3981,27 +4502,42 @@ containing a value of this type.
         public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f090094;
         public static final int item_touch_helper_swipe_escape_max_velocity=0x7f090095;
         public static final int item_touch_helper_swipe_escape_velocity=0x7f090096;
-        public static final int max_chat_bubble_length=0x7f090097;
-        public static final int mic_button_halo_radius_max=0x7f090098;
-        public static final int mic_button_halo_radius_min=0x7f090099;
-        public static final int mic_button_size=0x7f09009a;
-        public static final int nav_header_height=0x7f09009b;
-        public static final int nav_header_vertical_spacing=0x7f09009c;
-        public static final int notification_action_icon_size=0x7f09009d;
-        public static final int notification_action_text_size=0x7f09009e;
-        public static final int notification_big_circle_margin=0x7f09009f;
+        public static final int mapbox_attribution_icon_bottom_padding=0x7f090097;
+        public static final int mapbox_attribution_icon_left_padding=0x7f090098;
+        public static final int mapbox_attribution_icon_right_padding=0x7f090099;
+        public static final int mapbox_attribution_icon_top_padding=0x7f09009a;
+        public static final int mapbox_eight_dp=0x7f09009b;
+        public static final int mapbox_four_dp=0x7f09009c;
+        public static final int mapbox_infowindow_line_width=0x7f09009d;
+        public static final int mapbox_infowindow_margin=0x7f09009e;
+        public static final int mapbox_infowindow_offset=0x7f09009f;
+        public static final int mapbox_infowindow_tipview_width=0x7f0900a0;
+        public static final int mapbox_my_locationview_outer_circle=0x7f0900a1;
+        public static final int mapbox_ninety_two_dp=0x7f0900a2;
+        public static final int mapbox_sixteen_dp=0x7f0900a3;
+        public static final int mapbox_ten_dp=0x7f0900a4;
+        public static final int mapbox_two_dp=0x7f0900a5;
+        public static final int max_chat_bubble_length=0x7f0900a6;
+        public static final int mic_button_halo_radius_max=0x7f0900a7;
+        public static final int mic_button_halo_radius_min=0x7f0900a8;
+        public static final int mic_button_size=0x7f0900a9;
+        public static final int nav_header_height=0x7f0900aa;
+        public static final int nav_header_vertical_spacing=0x7f0900ab;
+        public static final int notification_action_icon_size=0x7f0900ac;
+        public static final int notification_action_text_size=0x7f0900ad;
+        public static final int notification_big_circle_margin=0x7f0900ae;
         public static final int notification_content_margin_start=0x7f09001a;
-        public static final int notification_large_icon_height=0x7f0900a0;
-        public static final int notification_large_icon_width=0x7f0900a1;
+        public static final int notification_large_icon_height=0x7f0900af;
+        public static final int notification_large_icon_width=0x7f0900b0;
         public static final int notification_main_column_padding_top=0x7f09001b;
         public static final int notification_media_narrow_margin=0x7f09001c;
-        public static final int notification_right_icon_size=0x7f0900a2;
+        public static final int notification_right_icon_size=0x7f0900b1;
         public static final int notification_right_side_padding_top=0x7f090018;
-        public static final int notification_small_icon_background_padding=0x7f0900a3;
-        public static final int notification_small_icon_size_as_large=0x7f0900a4;
-        public static final int notification_subtext_size=0x7f0900a5;
-        public static final int notification_top_pad=0x7f0900a6;
-        public static final int notification_top_pad_large_text=0x7f0900a7;
+        public static final int notification_small_icon_background_padding=0x7f0900b2;
+        public static final int notification_small_icon_size_as_large=0x7f0900b3;
+        public static final int notification_subtext_size=0x7f0900b4;
+        public static final int notification_top_pad=0x7f0900b5;
+        public static final int notification_top_pad_large_text=0x7f0900b6;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -4088,13 +4624,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
-        public static final int avd_hide_password_1=0x7f020081;
-        public static final int avd_hide_password_2=0x7f020082;
-        public static final int avd_hide_password_3=0x7f020083;
+        public static final int avd_hide_password_1=0x7f02008d;
+        public static final int avd_hide_password_2=0x7f02008e;
+        public static final int avd_hide_password_3=0x7f02008f;
         public static final int avd_show_password=0x7f020054;
-        public static final int avd_show_password_1=0x7f020084;
-        public static final int avd_show_password_2=0x7f020085;
-        public static final int avd_show_password_3=0x7f020086;
+        public static final int avd_show_password_1=0x7f020090;
+        public static final int avd_show_password_2=0x7f020091;
+        public static final int avd_show_password_3=0x7f020092;
         public static final int cube=0x7f020055;
         public static final int design_bottom_navigation_item_background=0x7f020056;
         public static final int design_fab_background=0x7f020057;
@@ -4118,30 +4654,42 @@ containing a value of this type.
         public static final int ic_merriam_webster_logo=0x7f020069;
         public static final int ic_person_black_24dp=0x7f02006a;
         public static final int ic_send_white_24dp=0x7f02006b;
-        public static final int mic_control=0x7f02006c;
-        public static final int microphone_control=0x7f02006d;
-        public static final int navigation_empty_icon=0x7f02006e;
-        public static final int notification_action_background=0x7f02006f;
-        public static final int notification_bg=0x7f020070;
-        public static final int notification_bg_low=0x7f020071;
-        public static final int notification_bg_low_normal=0x7f020072;
-        public static final int notification_bg_low_pressed=0x7f020073;
-        public static final int notification_bg_normal=0x7f020074;
-        public static final int notification_bg_normal_pressed=0x7f020075;
-        public static final int notification_icon_background=0x7f020076;
-        public static final int notification_template_icon_bg=0x7f02007f;
-        public static final int notification_template_icon_low_bg=0x7f020080;
-        public static final int notification_tile_bg=0x7f020077;
-        public static final int notify_panel_notification_icon_bg=0x7f020078;
-        public static final int profile_gradient=0x7f020079;
-        public static final int rounded_corner=0x7f02007a;
-        public static final int shadow=0x7f02007b;
-        public static final int side_nav_bar=0x7f02007c;
-        public static final int speaker=0x7f02007d;
-        public static final int speaker_silent=0x7f02007e;
+        public static final int mapbox_compass_icon=0x7f02006c;
+        public static final int mapbox_info_bg_selector=0x7f02006d;
+        public static final int mapbox_info_icon_default=0x7f02006e;
+        public static final int mapbox_info_icon_selected=0x7f02006f;
+        public static final int mapbox_infowindow_icon_bg=0x7f020070;
+        public static final int mapbox_logo_icon=0x7f020071;
+        public static final int mapbox_marker_icon_default=0x7f020072;
+        public static final int mapbox_markerview_icon_default=0x7f020073;
+        public static final int mapbox_mylocation_bg_shape=0x7f020074;
+        public static final int mapbox_mylocation_icon_bearing=0x7f020075;
+        public static final int mapbox_mylocation_icon_default=0x7f020076;
+        public static final int mapbox_popup_window_transparent=0x7f020077;
+        public static final int mic_control=0x7f020078;
+        public static final int microphone_control=0x7f020079;
+        public static final int navigation_empty_icon=0x7f02007a;
+        public static final int notification_action_background=0x7f02007b;
+        public static final int notification_bg=0x7f02007c;
+        public static final int notification_bg_low=0x7f02007d;
+        public static final int notification_bg_low_normal=0x7f02007e;
+        public static final int notification_bg_low_pressed=0x7f02007f;
+        public static final int notification_bg_normal=0x7f020080;
+        public static final int notification_bg_normal_pressed=0x7f020081;
+        public static final int notification_icon_background=0x7f020082;
+        public static final int notification_template_icon_bg=0x7f02008b;
+        public static final int notification_template_icon_low_bg=0x7f02008c;
+        public static final int notification_tile_bg=0x7f020083;
+        public static final int notify_panel_notification_icon_bg=0x7f020084;
+        public static final int profile_gradient=0x7f020085;
+        public static final int rounded_corner=0x7f020086;
+        public static final int shadow=0x7f020087;
+        public static final int side_nav_bar=0x7f020088;
+        public static final int speaker=0x7f020089;
+        public static final int speaker_silent=0x7f02008a;
     }
     public static final class id {
-        public static final int action0=0x7f0f00cd;
+        public static final int action0=0x7f0f00d7;
         public static final int action_bar=0x7f0f007a;
         public static final int action_bar_activity_content=0x7f0f0000;
         public static final int action_bar_container=0x7f0f0079;
@@ -4149,46 +4697,48 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0f0001;
         public static final int action_bar_subtitle=0x7f0f0058;
         public static final int action_bar_title=0x7f0f0057;
-        public static final int action_container=0x7f0f00ca;
+        public static final int action_container=0x7f0f00d4;
         public static final int action_context_bar=0x7f0f007b;
-        public static final int action_divider=0x7f0f00d1;
-        public static final int action_image=0x7f0f00cb;
+        public static final int action_divider=0x7f0f00db;
+        public static final int action_image=0x7f0f00d5;
         public static final int action_menu_divider=0x7f0f0002;
         public static final int action_menu_presenter=0x7f0f0003;
         public static final int action_mode_bar=0x7f0f0077;
         public static final int action_mode_bar_stub=0x7f0f0076;
         public static final int action_mode_close_button=0x7f0f0059;
-        public static final int action_text=0x7f0f00cc;
-        public static final int actions=0x7f0f00d9;
+        public static final int action_text=0x7f0f00d6;
+        public static final int actions=0x7f0f00e3;
         public static final int active=0x7f0f004c;
         public static final int activity_chooser_view_content=0x7f0f005a;
         public static final int add=0x7f0f0029;
         public static final int alertTitle=0x7f0f006e;
         public static final int all=0x7f0f0017;
         public static final int always=0x7f0f0047;
-        public static final int appbar=0x7f0f00a1;
+        public static final int appbar=0x7f0f00a2;
+        public static final int attributionView=0x7f0f00d3;
         public static final int auto=0x7f0f0030;
         public static final int basic=0x7f0f0018;
         public static final int beginning=0x7f0f0045;
         public static final int bottom=0x7f0f0033;
-        public static final int bubble=0x7f0f00a8;
+        public static final int bubble=0x7f0f00a9;
         public static final int buttonPanel=0x7f0f0061;
-        public static final int cancel_action=0x7f0f00ce;
-        public static final int card1=0x7f0f00bd;
-        public static final int card2=0x7f0f00c6;
-        public static final int card3=0x7f0f00c7;
+        public static final int cancel_action=0x7f0f00d8;
+        public static final int card1=0x7f0f00be;
+        public static final int card2=0x7f0f00c7;
+        public static final int card3=0x7f0f00c8;
         public static final int cards=0x7f0f008e;
         public static final int center=0x7f0f0034;
         public static final int center_horizontal=0x7f0f0035;
         public static final int center_vertical=0x7f0f0036;
         public static final int chains=0x7f0f0019;
-        public static final int chat_list=0x7f0f00ab;
-        public static final int chat_view=0x7f0f00bb;
+        public static final int chat_list=0x7f0f00ac;
+        public static final int chat_view=0x7f0f00bc;
         public static final int checkbox=0x7f0f0071;
-        public static final int chronometer=0x7f0f00d6;
+        public static final int chronometer=0x7f0f00e0;
         public static final int clip_horizontal=0x7f0f003f;
         public static final int clip_vertical=0x7f0f0040;
         public static final int collapseActionView=0x7f0f0048;
+        public static final int compassView=0x7f0f00d1;
         public static final int container=0x7f0f009d;
         public static final int contentPanel=0x7f0f0064;
         public static final int cs_card=0x7f0f0090;
@@ -4202,11 +4752,11 @@ containing a value of this type.
         public static final int def_title=0x7f0f008d;
         public static final int def_title_real=0x7f0f0091;
         public static final int default_activity_button=0x7f0f005d;
-        public static final int design_bottom_sheet=0x7f0f00b2;
-        public static final int design_menu_item_action_area=0x7f0f00b9;
-        public static final int design_menu_item_action_area_stub=0x7f0f00b8;
-        public static final int design_menu_item_text=0x7f0f00b7;
-        public static final int design_navigation_view=0x7f0f00b6;
+        public static final int design_bottom_sheet=0x7f0f00b3;
+        public static final int design_menu_item_action_area=0x7f0f00ba;
+        public static final int design_menu_item_action_area_stub=0x7f0f00b9;
+        public static final int design_menu_item_text=0x7f0f00b8;
+        public static final int design_navigation_view=0x7f0f00b7;
         public static final int dev1=0x7f0f0097;
         public static final int dev2=0x7f0f0098;
         public static final int dev3=0x7f0f0099;
@@ -4215,22 +4765,22 @@ containing a value of this type.
         public static final int dev_names=0x7f0f009a;
         public static final int dev_title=0x7f0f0095;
         public static final int disableHome=0x7f0f001e;
-        public static final int dots=0x7f0f00a7;
+        public static final int dots=0x7f0f00a8;
         public static final int down=0x7f0f0044;
         public static final int edit_query=0x7f0f007c;
         public static final int elevated=0x7f0f0031;
         public static final int end=0x7f0f0037;
-        public static final int end_padder=0x7f0f00e0;
+        public static final int end_padder=0x7f0f00ea;
         public static final int enterAlways=0x7f0f0024;
         public static final int enterAlwaysCollapsed=0x7f0f0025;
-        public static final int event1=0x7f0f00c1;
-        public static final int event2=0x7f0f00c2;
-        public static final int event3=0x7f0f00c3;
-        public static final int event4=0x7f0f00c4;
-        public static final int event5=0x7f0f00c5;
-        public static final int event_scroll=0x7f0f00bf;
-        public static final int event_scroll_layout=0x7f0f00c0;
-        public static final int event_text=0x7f0f00be;
+        public static final int event1=0x7f0f00c2;
+        public static final int event2=0x7f0f00c3;
+        public static final int event3=0x7f0f00c4;
+        public static final int event4=0x7f0f00c5;
+        public static final int event5=0x7f0f00c6;
+        public static final int event_scroll=0x7f0f00c0;
+        public static final int event_scroll_layout=0x7f0f00c1;
+        public static final int event_text=0x7f0f00bf;
         public static final int exitUntilCollapsed=0x7f0f0026;
         public static final int expand_activities_button=0x7f0f005b;
         public static final int expanded_menu=0x7f0f0070;
@@ -4245,53 +4795,59 @@ containing a value of this type.
         public static final int home=0x7f0f0006;
         public static final int homeAsUp=0x7f0f001f;
         public static final int icon=0x7f0f005f;
-        public static final int icon_group=0x7f0f00da;
+        public static final int icon_group=0x7f0f00e4;
         public static final int ifRoom=0x7f0f0049;
         public static final int image=0x7f0f005c;
-        public static final int info=0x7f0f00d7;
-        public static final int input_edit_text=0x7f0f00ae;
-        public static final int input_frame=0x7f0f00ad;
+        public static final int info=0x7f0f00e1;
+        public static final int infowindow_description=0x7f0f00cc;
+        public static final int infowindow_subdescription=0x7f0f00cd;
+        public static final int infowindow_title=0x7f0f00cb;
+        public static final int input_edit_text=0x7f0f00af;
+        public static final int input_frame=0x7f0f00ae;
         public static final int int_about=0x7f0f0093;
         public static final int int_desc=0x7f0f008c;
         public static final int int_time=0x7f0f0094;
         public static final int int_title=0x7f0f008b;
         public static final int item_touch_helper_previous_elevation=0x7f0f0007;
-        public static final int iv_background=0x7f0f00e1;
-        public static final int iv_icon=0x7f0f00e7;
-        public static final int iv_shadow=0x7f0f00e2;
-        public static final int largeLabel=0x7f0f00b0;
-        public static final int layout_left_menu=0x7f0f00e4;
-        public static final int layout_right_menu=0x7f0f00e6;
+        public static final int iv_background=0x7f0f00eb;
+        public static final int iv_icon=0x7f0f00f1;
+        public static final int iv_shadow=0x7f0f00ec;
+        public static final int largeLabel=0x7f0f00b1;
+        public static final int layout_left_menu=0x7f0f00ee;
+        public static final int layout_right_menu=0x7f0f00f0;
         public static final int left=0x7f0f0039;
-        public static final int line1=0x7f0f00dc;
-        public static final int line3=0x7f0f00de;
+        public static final int line1=0x7f0f00e6;
+        public static final int line3=0x7f0f00e8;
         public static final int linear=0x7f0f0053;
         public static final int listMode=0x7f0f001b;
         public static final int list_item=0x7f0f005e;
         public static final int logo=0x7f0f008a;
-        public static final int main_content=0x7f0f00a0;
-        public static final int masked=0x7f0f00ea;
-        public static final int media_actions=0x7f0f00d0;
-        public static final int menu_icon=0x7f0f00bc;
-        public static final int message_text_view=0x7f0f00a9;
-        public static final int micButton=0x7f0f00a4;
-        public static final int micContainer=0x7f0f00a3;
+        public static final int logoView=0x7f0f00d2;
+        public static final int main_content=0x7f0f00a1;
+        public static final int mapView=0x7f0f00a0;
+        public static final int markerViewContainer=0x7f0f00cf;
+        public static final int masked=0x7f0f00f4;
+        public static final int media_actions=0x7f0f00da;
+        public static final int menu_icon=0x7f0f00bd;
+        public static final int message_text_view=0x7f0f00aa;
+        public static final int micButton=0x7f0f00a5;
+        public static final int micContainer=0x7f0f00a4;
         public static final int middle=0x7f0f0046;
         public static final int mini=0x7f0f0043;
         public static final int multiply=0x7f0f002a;
         public static final int nav_tb=0x7f0f009f;
-        public static final int navigation_header_container=0x7f0f00b5;
+        public static final int navigation_header_container=0x7f0f00b6;
         public static final int never=0x7f0f004a;
         public static final int none=0x7f0f001a;
         public static final int normal=0x7f0f001c;
-        public static final int notification_background=0x7f0f00d8;
-        public static final int notification_main_column=0x7f0f00d3;
-        public static final int notification_main_column_container=0x7f0f00d2;
+        public static final int notification_background=0x7f0f00e2;
+        public static final int notification_main_column=0x7f0f00dd;
+        public static final int notification_main_column_container=0x7f0f00dc;
         public static final int packed=0x7f0f0015;
         public static final int parallax=0x7f0f003d;
         public static final int parent=0x7f0f0012;
         public static final int parentPanel=0x7f0f0063;
-        public static final int partialResultsTextView=0x7f0f00a6;
+        public static final int partialResultsTextView=0x7f0f00a7;
         public static final int pin=0x7f0f003e;
         public static final int progress_circular=0x7f0f0008;
         public static final int progress_horizontal=0x7f0f0009;
@@ -4300,8 +4856,8 @@ containing a value of this type.
         public static final int restart=0x7f0f004d;
         public static final int reverse=0x7f0f004e;
         public static final int right=0x7f0f003a;
-        public static final int right_icon=0x7f0f00db;
-        public static final int right_side=0x7f0f00d4;
+        public static final int right_icon=0x7f0f00e5;
+        public static final int right_side=0x7f0f00de;
         public static final int screen=0x7f0f002b;
         public static final int scroll=0x7f0f0027;
         public static final int scrollIndicatorDown=0x7f0f0069;
@@ -4319,15 +4875,15 @@ containing a value of this type.
         public static final int search_src_text=0x7f0f0083;
         public static final int search_voice_btn=0x7f0f0087;
         public static final int select_dialog_listview=0x7f0f0088;
-        public static final int sendButton=0x7f0f00ac;
+        public static final int sendButton=0x7f0f00ad;
         public static final int shimmer=0x7f0f0089;
         public static final int shortcut=0x7f0f0072;
         public static final int showCustom=0x7f0f0020;
         public static final int showHome=0x7f0f0021;
         public static final int showTitle=0x7f0f0022;
-        public static final int smallLabel=0x7f0f00af;
-        public static final int snackbar_action=0x7f0f00b4;
-        public static final int snackbar_text=0x7f0f00b3;
+        public static final int smallLabel=0x7f0f00b0;
+        public static final int snackbar_action=0x7f0f00b5;
+        public static final int snackbar_text=0x7f0f00b4;
         public static final int snap=0x7f0f0028;
         public static final int spacer=0x7f0f0062;
         public static final int split_action_bar=0x7f0f000a;
@@ -4337,42 +4893,44 @@ containing a value of this type.
         public static final int src_in=0x7f0f002d;
         public static final int src_over=0x7f0f002e;
         public static final int start=0x7f0f003b;
-        public static final int status_bar_latest_event_content=0x7f0f00cf;
+        public static final int status_bar_latest_event_content=0x7f0f00d9;
         public static final int submenuarrow=0x7f0f0074;
         public static final int submit_area=0x7f0f0085;
-        public static final int sv_left_menu=0x7f0f00e3;
-        public static final int sv_right_menu=0x7f0f00e5;
+        public static final int surfaceView=0x7f0f00ce;
+        public static final int sv_left_menu=0x7f0f00ed;
+        public static final int sv_right_menu=0x7f0f00ef;
         public static final int svce_card=0x7f0f0092;
         public static final int tabMode=0x7f0f001d;
-        public static final int tabs=0x7f0f00a2;
-        public static final int text=0x7f0f00df;
-        public static final int text2=0x7f0f00dd;
+        public static final int tabs=0x7f0f00a3;
+        public static final int text=0x7f0f00e9;
+        public static final int text2=0x7f0f00e7;
         public static final int textSpacerNoButtons=0x7f0f0068;
         public static final int textSpacerNoTitle=0x7f0f0067;
-        public static final int text_input_password_toggle=0x7f0f00ba;
+        public static final int text_input_password_toggle=0x7f0f00bb;
         public static final int textinput_counter=0x7f0f000b;
         public static final int textinput_error=0x7f0f000c;
-        public static final int time=0x7f0f00d5;
-        public static final int timestamp_text_view=0x7f0f00aa;
+        public static final int time=0x7f0f00df;
+        public static final int timestamp_text_view=0x7f0f00ab;
         public static final int title=0x7f0f0060;
         public static final int titleDividerNoCustom=0x7f0f006f;
-        public static final int titleTextView=0x7f0f00a5;
+        public static final int titleTextView=0x7f0f00a6;
         public static final int title_template=0x7f0f006d;
         public static final int top=0x7f0f003c;
         public static final int topPanel=0x7f0f006c;
-        public static final int touch_outside=0x7f0f00b1;
+        public static final int touch_outside=0x7f0f00b2;
         public static final int transition_current_scene=0x7f0f000d;
         public static final int transition_layout_save=0x7f0f000e;
         public static final int transition_scene_layoutid_cache=0x7f0f000f;
-        public static final int tv_title=0x7f0f00e8;
+        public static final int tv_title=0x7f0f00f2;
         public static final int up=0x7f0f0010;
         public static final int useLogo=0x7f0f0023;
-        public static final int username=0x7f0f00c8;
+        public static final int userLocationView=0x7f0f00d0;
+        public static final int username=0x7f0f00c9;
         public static final int view_offset_helper=0x7f0f0011;
         public static final int view_pager=0x7f0f009e;
-        public static final int visible=0x7f0f00e9;
+        public static final int visible=0x7f0f00f3;
         public static final int webster_card=0x7f0f008f;
-        public static final int webview=0x7f0f00c9;
+        public static final int webview=0x7f0f00ca;
         public static final int withText=0x7f0f004b;
         public static final int wrap=0x7f0f0014;
         public static final int wrap_content=0x7f0f002f;
@@ -4456,27 +5014,31 @@ containing a value of this type.
         public static final int fragment_quizzler=0x7f040040;
         public static final int fragment_route=0x7f040041;
         public static final int fragment_schedule=0x7f040042;
-        public static final int notification_action=0x7f040043;
-        public static final int notification_action_tombstone=0x7f040044;
-        public static final int notification_media_action=0x7f040045;
-        public static final int notification_media_cancel_action=0x7f040046;
-        public static final int notification_template_big_media=0x7f040047;
-        public static final int notification_template_big_media_custom=0x7f040048;
-        public static final int notification_template_big_media_narrow=0x7f040049;
-        public static final int notification_template_big_media_narrow_custom=0x7f04004a;
-        public static final int notification_template_custom_big=0x7f04004b;
-        public static final int notification_template_icon_group=0x7f04004c;
-        public static final int notification_template_lines_media=0x7f04004d;
-        public static final int notification_template_media=0x7f04004e;
-        public static final int notification_template_media_custom=0x7f04004f;
-        public static final int notification_template_part_chronometer=0x7f040050;
-        public static final int notification_template_part_time=0x7f040051;
-        public static final int residemenu=0x7f040052;
-        public static final int residemenu_item=0x7f040053;
-        public static final int select_dialog_item_material=0x7f040054;
-        public static final int select_dialog_multichoice_material=0x7f040055;
-        public static final int select_dialog_singlechoice_material=0x7f040056;
-        public static final int support_simple_spinner_dropdown_item=0x7f040057;
+        public static final int mapbox_attribution_list_item=0x7f040043;
+        public static final int mapbox_infowindow_content=0x7f040044;
+        public static final int mapbox_mapview_internal=0x7f040045;
+        public static final int mapbox_view_image_marker=0x7f040046;
+        public static final int notification_action=0x7f040047;
+        public static final int notification_action_tombstone=0x7f040048;
+        public static final int notification_media_action=0x7f040049;
+        public static final int notification_media_cancel_action=0x7f04004a;
+        public static final int notification_template_big_media=0x7f04004b;
+        public static final int notification_template_big_media_custom=0x7f04004c;
+        public static final int notification_template_big_media_narrow=0x7f04004d;
+        public static final int notification_template_big_media_narrow_custom=0x7f04004e;
+        public static final int notification_template_custom_big=0x7f04004f;
+        public static final int notification_template_icon_group=0x7f040050;
+        public static final int notification_template_lines_media=0x7f040051;
+        public static final int notification_template_media=0x7f040052;
+        public static final int notification_template_media_custom=0x7f040053;
+        public static final int notification_template_part_chronometer=0x7f040054;
+        public static final int notification_template_part_time=0x7f040055;
+        public static final int residemenu=0x7f040056;
+        public static final int residemenu_item=0x7f040057;
+        public static final int select_dialog_item_material=0x7f040058;
+        public static final int select_dialog_multichoice_material=0x7f040059;
+        public static final int select_dialog_singlechoice_material=0x7f04005a;
+        public static final int support_simple_spinner_dropdown_item=0x7f04005b;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -4496,18 +5058,18 @@ containing a value of this type.
         public static final int abc_activitychooserview_choose_application=0x7f080007;
         public static final int abc_capital_off=0x7f080008;
         public static final int abc_capital_on=0x7f080009;
-        public static final int abc_font_family_body_1_material=0x7f080015;
-        public static final int abc_font_family_body_2_material=0x7f080016;
-        public static final int abc_font_family_button_material=0x7f080017;
-        public static final int abc_font_family_caption_material=0x7f080018;
-        public static final int abc_font_family_display_1_material=0x7f080019;
-        public static final int abc_font_family_display_2_material=0x7f08001a;
-        public static final int abc_font_family_display_3_material=0x7f08001b;
-        public static final int abc_font_family_display_4_material=0x7f08001c;
-        public static final int abc_font_family_headline_material=0x7f08001d;
-        public static final int abc_font_family_menu_material=0x7f08001e;
-        public static final int abc_font_family_subhead_material=0x7f08001f;
-        public static final int abc_font_family_title_material=0x7f080020;
+        public static final int abc_font_family_body_1_material=0x7f080020;
+        public static final int abc_font_family_body_2_material=0x7f080021;
+        public static final int abc_font_family_button_material=0x7f080022;
+        public static final int abc_font_family_caption_material=0x7f080023;
+        public static final int abc_font_family_display_1_material=0x7f080024;
+        public static final int abc_font_family_display_2_material=0x7f080025;
+        public static final int abc_font_family_display_3_material=0x7f080026;
+        public static final int abc_font_family_display_4_material=0x7f080027;
+        public static final int abc_font_family_headline_material=0x7f080028;
+        public static final int abc_font_family_menu_material=0x7f080029;
+        public static final int abc_font_family_subhead_material=0x7f08002a;
+        public static final int abc_font_family_title_material=0x7f08002b;
         public static final int abc_search_hint=0x7f08000a;
         public static final int abc_searchview_description_clear=0x7f08000b;
         public static final int abc_searchview_description_query=0x7f08000c;
@@ -4517,39 +5079,61 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f080010;
         public static final int abc_shareactionprovider_share_with_application=0x7f080011;
         public static final int abc_toolbar_collapse_description=0x7f080012;
-        public static final int aboutinterrupt=0x7f080021;
-        public static final int action_settings=0x7f080022;
-        public static final int app_name=0x7f080023;
-        public static final int appbar_scrolling_view_behavior=0x7f080024;
-        public static final int bottom_sheet_behavior=0x7f080025;
-        public static final int bus_schedule=0x7f080026;
-        public static final int character_counter_pattern=0x7f080027;
-        public static final int cs_def=0x7f080028;
-        public static final int default_aidialog_title=0x7f080029;
-        public static final int default_input_hint=0x7f08002a;
-        public static final int hello_blank_fragment=0x7f08002b;
-        public static final int interrupt_desc=0x7f08002c;
-        public static final int navigation_drawer_close=0x7f08002d;
-        public static final int navigation_drawer_open=0x7f08002e;
-        public static final int password_toggle_content_description=0x7f08002f;
-        public static final int path_password_eye=0x7f080030;
-        public static final int path_password_eye_mask_strike_through=0x7f080031;
-        public static final int path_password_eye_mask_visible=0x7f080032;
-        public static final int path_password_strike_through=0x7f080033;
+        public static final int aboutinterrupt=0x7f08002c;
+        public static final int action_settings=0x7f08002d;
+        public static final int app_name=0x7f08002e;
+        public static final int appbar_scrolling_view_behavior=0x7f08002f;
+        public static final int bottom_sheet_behavior=0x7f080030;
+        public static final int bus_schedule=0x7f080031;
+        public static final int character_counter_pattern=0x7f080032;
+        public static final int cs_def=0x7f080033;
+        public static final int default_aidialog_title=0x7f080034;
+        public static final int default_input_hint=0x7f080035;
+        public static final int hello_blank_fragment=0x7f080036;
+        public static final int interrupt_desc=0x7f080037;
+        public static final int mapbox_attributionErrorNoBrowser=0x7f080038;
+        public static final int mapbox_attributionTelemetryMessage=0x7f080015;
+        public static final int mapbox_attributionTelemetryNegative=0x7f080016;
+        public static final int mapbox_attributionTelemetryNeutral=0x7f080017;
+        public static final int mapbox_attributionTelemetryPositive=0x7f080018;
+        public static final int mapbox_attributionTelemetryTitle=0x7f080019;
+        public static final int mapbox_attributionsDialogTitle=0x7f08001a;
+        public static final int mapbox_attributionsIconContentDescription=0x7f08001b;
+        public static final int mapbox_compassContentDescription=0x7f08001c;
+        public static final int mapbox_mapActionDescription=0x7f08001d;
+        public static final int mapbox_myLocationViewContentDescription=0x7f08001e;
+        public static final int mapbox_offline_error_region_definition_invalid=0x7f08001f;
+        public static final int mapbox_style_dark=0x7f080039;
+        public static final int mapbox_style_light=0x7f08003a;
+        public static final int mapbox_style_mapbox_streets=0x7f08003b;
+        public static final int mapbox_style_outdoors=0x7f08003c;
+        public static final int mapbox_style_satellite=0x7f08003d;
+        public static final int mapbox_style_satellite_streets=0x7f08003e;
+        public static final int mapbox_style_traffic_day=0x7f08003f;
+        public static final int mapbox_style_traffic_night=0x7f080040;
+        public static final int mapbox_telemetryLink=0x7f080041;
+        public static final int mapbox_telemetrySettings=0x7f080042;
+        public static final int navigation_drawer_close=0x7f080043;
+        public static final int navigation_drawer_open=0x7f080044;
+        public static final int password_toggle_content_description=0x7f080045;
+        public static final int path_password_eye=0x7f080046;
+        public static final int path_password_eye_mask_strike_through=0x7f080047;
+        public static final int path_password_eye_mask_visible=0x7f080048;
+        public static final int path_password_strike_through=0x7f080049;
         public static final int search_menu_title=0x7f080013;
-        public static final int section_format=0x7f080034;
+        public static final int section_format=0x7f08004a;
         public static final int status_bar_notification_info_overflow=0x7f080014;
-        public static final int svce_def=0x7f080035;
-        public static final int title_activity_dummy=0x7f080036;
-        public static final int title_activity_event=0x7f080037;
-        public static final int title_activity_transport=0x7f080038;
-        public static final int title_dashboard=0x7f080039;
-        public static final int title_home=0x7f08003a;
-        public static final int title_notifications=0x7f08003b;
-        public static final int webster_def_1=0x7f08003c;
-        public static final int webster_def_2=0x7f08003d;
-        public static final int webster_title=0x7f08003e;
-        public static final int what_is=0x7f08003f;
+        public static final int svce_def=0x7f08004b;
+        public static final int title_activity_dummy=0x7f08004c;
+        public static final int title_activity_event=0x7f08004d;
+        public static final int title_activity_transport=0x7f08004e;
+        public static final int title_dashboard=0x7f08004f;
+        public static final int title_home=0x7f080050;
+        public static final int title_notifications=0x7f080051;
+        public static final int webster_def_1=0x7f080052;
+        public static final int webster_def_2=0x7f080053;
+        public static final int webster_title=0x7f080054;
+        public static final int what_is=0x7f080055;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a00a2;
@@ -4941,6 +5525,7 @@ containing a value of this type.
         public static final int Widget_Design_Snackbar=0x7f0a0183;
         public static final int Widget_Design_TabLayout=0x7f0a0001;
         public static final int Widget_Design_TextInputLayout=0x7f0a0184;
+        public static final int mapbox_AlertDialogStyle=0x7f0a0185;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -15657,5 +16242,1013 @@ containing a value of this type.
           @attr name com.lazytomatostudios.svceinterrupt:period
         */
         public static final int WaitingDots_period = 1;
+        /** Attributes that can be used with a mapbox_BubbleLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_arrowDirection com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowDirection}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_arrowHeight com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_arrowPosition com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowPosition}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_arrowWidth com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_bubbleColor com.lazytomatostudios.svceinterrupt:mapbox_bl_bubbleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_cornersRadius com.lazytomatostudios.svceinterrupt:mapbox_bl_cornersRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_strokeColor com.lazytomatostudios.svceinterrupt:mapbox_bl_strokeColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_BubbleLayout_mapbox_bl_strokeWidth com.lazytomatostudios.svceinterrupt:mapbox_bl_strokeWidth}</code></td><td></td></tr>
+           </table>
+           @see #mapbox_BubbleLayout_mapbox_bl_arrowDirection
+           @see #mapbox_BubbleLayout_mapbox_bl_arrowHeight
+           @see #mapbox_BubbleLayout_mapbox_bl_arrowPosition
+           @see #mapbox_BubbleLayout_mapbox_bl_arrowWidth
+           @see #mapbox_BubbleLayout_mapbox_bl_bubbleColor
+           @see #mapbox_BubbleLayout_mapbox_bl_cornersRadius
+           @see #mapbox_BubbleLayout_mapbox_bl_strokeColor
+           @see #mapbox_BubbleLayout_mapbox_bl_strokeWidth
+         */
+        public static final int[] mapbox_BubbleLayout = {
+            0x7f0101d4, 0x7f0101d5, 0x7f0101d6, 0x7f0101d7,
+            0x7f0101d8, 0x7f0101d9, 0x7f0101da, 0x7f0101db
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_arrowDirection}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+<tr><td><code>top</code></td><td>2</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowDirection
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_arrowDirection = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_arrowHeight}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowHeight
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_arrowHeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_arrowPosition}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowPosition
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_arrowPosition = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_arrowWidth}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_arrowWidth
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_arrowWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_bubbleColor}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_bubbleColor
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_bubbleColor = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_cornersRadius}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_cornersRadius
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_cornersRadius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_strokeColor}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_strokeColor
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_strokeColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_bl_strokeWidth}
+          attribute's value can be found in the {@link #mapbox_BubbleLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_bl_strokeWidth
+        */
+        public static final int mapbox_BubbleLayout_mapbox_bl_strokeWidth = 5;
+        /** Attributes that can be used with a mapbox_MapView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_apiBaseUrl com.lazytomatostudios.svceinterrupt:mapbox_apiBaseUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraBearing com.lazytomatostudios.svceinterrupt:mapbox_cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraTargetLat com.lazytomatostudios.svceinterrupt:mapbox_cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraTargetLng com.lazytomatostudios.svceinterrupt:mapbox_cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraTilt com.lazytomatostudios.svceinterrupt:mapbox_cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraZoom com.lazytomatostudios.svceinterrupt:mapbox_cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraZoomMax com.lazytomatostudios.svceinterrupt:mapbox_cameraZoomMax}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_cameraZoomMin com.lazytomatostudios.svceinterrupt:mapbox_cameraZoomMin}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocation com.lazytomatostudios.svceinterrupt:mapbox_myLocation}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationAccuracyAlpha com.lazytomatostudios.svceinterrupt:mapbox_myLocationAccuracyAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationAccuracyTintColor com.lazytomatostudios.svceinterrupt:mapbox_myLocationAccuracyTintColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundDrawable com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundMarginBottom com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundMarginLeft com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundMarginRight com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundMarginTop com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBackgroundTintColor com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundTintColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationBearingDrawable com.lazytomatostudios.svceinterrupt:mapbox_myLocationBearingDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationDrawable com.lazytomatostudios.svceinterrupt:mapbox_myLocationDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_myLocationTintColor com.lazytomatostudios.svceinterrupt:mapbox_myLocationTintColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_renderTextureMode com.lazytomatostudios.svceinterrupt:mapbox_renderTextureMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_styleUrl com.lazytomatostudios.svceinterrupt:mapbox_styleUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttribution com.lazytomatostudios.svceinterrupt:mapbox_uiAttribution}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionGravity com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionMarginBottom com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionMarginLeft com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionMarginRight com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionMarginTop com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiAttributionTintColor com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionTintColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompass com.lazytomatostudios.svceinterrupt:mapbox_uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassDrawable com.lazytomatostudios.svceinterrupt:mapbox_uiCompassDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassFadeFacingNorth com.lazytomatostudios.svceinterrupt:mapbox_uiCompassFadeFacingNorth}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassGravity com.lazytomatostudios.svceinterrupt:mapbox_uiCompassGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassMarginBottom com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassMarginLeft com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassMarginRight com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiCompassMarginTop com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiDoubleTapGestures com.lazytomatostudios.svceinterrupt:mapbox_uiDoubleTapGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogo com.lazytomatostudios.svceinterrupt:mapbox_uiLogo}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogoGravity com.lazytomatostudios.svceinterrupt:mapbox_uiLogoGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogoMarginBottom com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogoMarginLeft com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogoMarginRight com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiLogoMarginTop com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiRotateGestures com.lazytomatostudios.svceinterrupt:mapbox_uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiScrollGestures com.lazytomatostudios.svceinterrupt:mapbox_uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiTiltGestures com.lazytomatostudios.svceinterrupt:mapbox_uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiZoomControls com.lazytomatostudios.svceinterrupt:mapbox_uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #mapbox_MapView_mapbox_uiZoomGestures com.lazytomatostudios.svceinterrupt:mapbox_uiZoomGestures}</code></td><td></td></tr>
+           </table>
+           @see #mapbox_MapView_mapbox_apiBaseUrl
+           @see #mapbox_MapView_mapbox_cameraBearing
+           @see #mapbox_MapView_mapbox_cameraTargetLat
+           @see #mapbox_MapView_mapbox_cameraTargetLng
+           @see #mapbox_MapView_mapbox_cameraTilt
+           @see #mapbox_MapView_mapbox_cameraZoom
+           @see #mapbox_MapView_mapbox_cameraZoomMax
+           @see #mapbox_MapView_mapbox_cameraZoomMin
+           @see #mapbox_MapView_mapbox_myLocation
+           @see #mapbox_MapView_mapbox_myLocationAccuracyAlpha
+           @see #mapbox_MapView_mapbox_myLocationAccuracyTintColor
+           @see #mapbox_MapView_mapbox_myLocationBackgroundDrawable
+           @see #mapbox_MapView_mapbox_myLocationBackgroundMarginBottom
+           @see #mapbox_MapView_mapbox_myLocationBackgroundMarginLeft
+           @see #mapbox_MapView_mapbox_myLocationBackgroundMarginRight
+           @see #mapbox_MapView_mapbox_myLocationBackgroundMarginTop
+           @see #mapbox_MapView_mapbox_myLocationBackgroundTintColor
+           @see #mapbox_MapView_mapbox_myLocationBearingDrawable
+           @see #mapbox_MapView_mapbox_myLocationDrawable
+           @see #mapbox_MapView_mapbox_myLocationTintColor
+           @see #mapbox_MapView_mapbox_renderTextureMode
+           @see #mapbox_MapView_mapbox_styleUrl
+           @see #mapbox_MapView_mapbox_uiAttribution
+           @see #mapbox_MapView_mapbox_uiAttributionGravity
+           @see #mapbox_MapView_mapbox_uiAttributionMarginBottom
+           @see #mapbox_MapView_mapbox_uiAttributionMarginLeft
+           @see #mapbox_MapView_mapbox_uiAttributionMarginRight
+           @see #mapbox_MapView_mapbox_uiAttributionMarginTop
+           @see #mapbox_MapView_mapbox_uiAttributionTintColor
+           @see #mapbox_MapView_mapbox_uiCompass
+           @see #mapbox_MapView_mapbox_uiCompassDrawable
+           @see #mapbox_MapView_mapbox_uiCompassFadeFacingNorth
+           @see #mapbox_MapView_mapbox_uiCompassGravity
+           @see #mapbox_MapView_mapbox_uiCompassMarginBottom
+           @see #mapbox_MapView_mapbox_uiCompassMarginLeft
+           @see #mapbox_MapView_mapbox_uiCompassMarginRight
+           @see #mapbox_MapView_mapbox_uiCompassMarginTop
+           @see #mapbox_MapView_mapbox_uiDoubleTapGestures
+           @see #mapbox_MapView_mapbox_uiLogo
+           @see #mapbox_MapView_mapbox_uiLogoGravity
+           @see #mapbox_MapView_mapbox_uiLogoMarginBottom
+           @see #mapbox_MapView_mapbox_uiLogoMarginLeft
+           @see #mapbox_MapView_mapbox_uiLogoMarginRight
+           @see #mapbox_MapView_mapbox_uiLogoMarginTop
+           @see #mapbox_MapView_mapbox_uiRotateGestures
+           @see #mapbox_MapView_mapbox_uiScrollGestures
+           @see #mapbox_MapView_mapbox_uiTiltGestures
+           @see #mapbox_MapView_mapbox_uiZoomControls
+           @see #mapbox_MapView_mapbox_uiZoomGestures
+         */
+        public static final int[] mapbox_MapView = {
+            0x7f0101dc, 0x7f0101dd, 0x7f0101de, 0x7f0101df,
+            0x7f0101e0, 0x7f0101e1, 0x7f0101e2, 0x7f0101e3,
+            0x7f0101e4, 0x7f0101e5, 0x7f0101e6, 0x7f0101e7,
+            0x7f0101e8, 0x7f0101e9, 0x7f0101ea, 0x7f0101eb,
+            0x7f0101ec, 0x7f0101ed, 0x7f0101ee, 0x7f0101ef,
+            0x7f0101f0, 0x7f0101f1, 0x7f0101f2, 0x7f0101f3,
+            0x7f0101f4, 0x7f0101f5, 0x7f0101f6, 0x7f0101f7,
+            0x7f0101f8, 0x7f0101f9, 0x7f0101fa, 0x7f0101fb,
+            0x7f0101fc, 0x7f0101fd, 0x7f0101fe, 0x7f0101ff,
+            0x7f010200, 0x7f010201, 0x7f010202, 0x7f010203,
+            0x7f010204, 0x7f010205, 0x7f010206, 0x7f010207,
+            0x7f010208, 0x7f010209, 0x7f01020a, 0x7f01020b,
+            0x7f01020c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_apiBaseUrl}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_apiBaseUrl
+        */
+        public static final int mapbox_MapView_mapbox_apiBaseUrl = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraBearing}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraBearing
+        */
+        public static final int mapbox_MapView_mapbox_cameraBearing = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraTargetLat}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraTargetLat
+        */
+        public static final int mapbox_MapView_mapbox_cameraTargetLat = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraTargetLng}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraTargetLng
+        */
+        public static final int mapbox_MapView_mapbox_cameraTargetLng = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraTilt}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraTilt
+        */
+        public static final int mapbox_MapView_mapbox_cameraTilt = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraZoom}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraZoom
+        */
+        public static final int mapbox_MapView_mapbox_cameraZoom = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraZoomMax}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraZoomMax
+        */
+        public static final int mapbox_MapView_mapbox_cameraZoomMax = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_cameraZoomMin}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_cameraZoomMin
+        */
+        public static final int mapbox_MapView_mapbox_cameraZoomMin = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocation}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocation
+        */
+        public static final int mapbox_MapView_mapbox_myLocation = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationAccuracyAlpha}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationAccuracyAlpha
+        */
+        public static final int mapbox_MapView_mapbox_myLocationAccuracyAlpha = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationAccuracyTintColor}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationAccuracyTintColor
+        */
+        public static final int mapbox_MapView_mapbox_myLocationAccuracyTintColor = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundDrawable}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundDrawable
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundDrawable = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundMarginBottom}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginBottom
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundMarginBottom = 24;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundMarginLeft}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginLeft
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundMarginLeft = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundMarginRight}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginRight
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundMarginRight = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundMarginTop}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundMarginTop
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundMarginTop = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBackgroundTintColor}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBackgroundTintColor
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBackgroundTintColor = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationBearingDrawable}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationBearingDrawable
+        */
+        public static final int mapbox_MapView_mapbox_myLocationBearingDrawable = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationDrawable}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationDrawable
+        */
+        public static final int mapbox_MapView_mapbox_myLocationDrawable = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_myLocationTintColor}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_myLocationTintColor
+        */
+        public static final int mapbox_MapView_mapbox_myLocationTintColor = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_renderTextureMode}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_renderTextureMode
+        */
+        public static final int mapbox_MapView_mapbox_renderTextureMode = 48;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_styleUrl}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_styleUrl
+        */
+        public static final int mapbox_MapView_mapbox_styleUrl = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttribution}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttribution
+        */
+        public static final int mapbox_MapView_mapbox_uiAttribution = 41;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionGravity}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionGravity
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionGravity = 42;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionMarginBottom}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginBottom
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionMarginBottom = 46;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionMarginLeft}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginLeft
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionMarginLeft = 43;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionMarginRight}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginRight
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionMarginRight = 45;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionMarginTop}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionMarginTop
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionMarginTop = 44;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiAttributionTintColor}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiAttributionTintColor
+        */
+        public static final int mapbox_MapView_mapbox_uiAttributionTintColor = 47;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompass}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompass
+        */
+        public static final int mapbox_MapView_mapbox_uiCompass = 27;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassDrawable}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassDrawable
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassDrawable = 34;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassFadeFacingNorth}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassFadeFacingNorth
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassFadeFacingNorth = 33;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassGravity}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassGravity
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassGravity = 28;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassMarginBottom}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginBottom
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassMarginBottom = 32;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassMarginLeft}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginLeft
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassMarginLeft = 29;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassMarginRight}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginRight
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassMarginRight = 31;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiCompassMarginTop}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiCompassMarginTop
+        */
+        public static final int mapbox_MapView_mapbox_uiCompassMarginTop = 30;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiDoubleTapGestures}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiDoubleTapGestures
+        */
+        public static final int mapbox_MapView_mapbox_uiDoubleTapGestures = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogo}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogo
+        */
+        public static final int mapbox_MapView_mapbox_uiLogo = 35;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogoGravity}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogoGravity
+        */
+        public static final int mapbox_MapView_mapbox_uiLogoGravity = 36;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogoMarginBottom}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginBottom
+        */
+        public static final int mapbox_MapView_mapbox_uiLogoMarginBottom = 40;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogoMarginLeft}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginLeft
+        */
+        public static final int mapbox_MapView_mapbox_uiLogoMarginLeft = 37;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogoMarginRight}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginRight
+        */
+        public static final int mapbox_MapView_mapbox_uiLogoMarginRight = 39;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiLogoMarginTop}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiLogoMarginTop
+        */
+        public static final int mapbox_MapView_mapbox_uiLogoMarginTop = 38;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiRotateGestures}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiRotateGestures
+        */
+        public static final int mapbox_MapView_mapbox_uiRotateGestures = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiScrollGestures}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiScrollGestures
+        */
+        public static final int mapbox_MapView_mapbox_uiScrollGestures = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiTiltGestures}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiTiltGestures
+        */
+        public static final int mapbox_MapView_mapbox_uiTiltGestures = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiZoomControls}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiZoomControls
+        */
+        public static final int mapbox_MapView_mapbox_uiZoomControls = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.lazytomatostudios.svceinterrupt.R.attr#mapbox_uiZoomGestures}
+          attribute's value can be found in the {@link #mapbox_MapView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.lazytomatostudios.svceinterrupt:mapbox_uiZoomGestures
+        */
+        public static final int mapbox_MapView_mapbox_uiZoomGestures = 9;
     };
 }

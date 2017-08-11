@@ -40,6 +40,10 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_info_icon_default.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_info_icon_default.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -50,6 +54,14 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_normal.9.png",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_compass_icon.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_compass_icon.png"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_logo_icon.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
@@ -98,6 +110,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
         "source": "/home/drpayyne/.android/build-cache/fafe1c5a9f855fb3178f58383425b86963b46c11/output/res/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_markerview_icon_default.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
@@ -156,6 +172,10 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_info_icon_selected.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_info_icon_selected.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -188,6 +208,10 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_marker_icon_default.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_marker_icon_default.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
@@ -212,6 +236,10 @@
         "source": "/home/drpayyne/.android/build-cache/a7780579fab468080f2937d692d389a597327232/output/res/drawable-hdpi-v4/ic_close_drawable.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_mylocation_icon_default.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_mylocation_icon_default.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/design_ic_visibility_off.png",
         "source": "/home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/res/drawable-hdpi-v4/design_ic_visibility_off.png"
     },
@@ -230,6 +258,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/mapbox_mylocation_icon_bearing.png",
+        "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-hdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png",

@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
+import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
@@ -131,6 +132,13 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Debug", "Events visible");
 
         Intent intent = new Intent(this, EventActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMap(View view) {
+        Log.d("Debug", "Maps visible");
+
+        Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
 

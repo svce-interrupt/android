@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/jars/classes.jar"
+        jar="/home/drpayyne/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a6e7bbb6b6ce75591983c2da64ff317e0a094c1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4b423f1cd9edcd332a5a51475ef1e4884ef17063/classes.dex" />
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_c6c2a2043a81c2b87447d7c25dd93eb57e0b4054/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,6 +21,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f92591a91d0a44fcefedf3c22a4494c4d7fb616e">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b64de150353c434ab561f9104f7e4cca55b72f8e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/da344d61aff392f0c82734a21d7079008c563fe7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f36c64366a2fe765a93e59c4f03e18181bf0e724">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c69fb69ca7c1c723edd11d7f975845c6ec784dd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="57c1ebbe07eb9c184e637381be109286d1bbc5cd">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_54f293280248a535314f9dbe4c75e45d82d0798b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c9d0d2b21baebf49c526d857991e2d48f30fcb00">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aeeecfeb33ff11fb6178a563af9029d62e8c835d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/drpayyne/.android/build-cache/fafe1c5a9f855fb3178f58383425b86963b46c11/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,12 +66,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/drpayyne/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-geojson/2.2.0/e252fdaf604de93b052e03d54138eb8b9f810fad/mapbox-java-geojson-2.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="e9878b54fb39860e12673f04a33a3809a5538093">
-        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b64de150353c434ab561f9104f7e4cca55b72f8e/classes.dex" />
+        sha1="e252fdaf604de93b052e03d54138eb8b9f810fad">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/mapbox-java-geojson-2.2.0_8a61e5594490308794122f80ba4358c918022188/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a6e7bbb6b6ce75591983c2da64ff317e0a094c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c74c28a44292b6480afe69ddb2c0974f45393a3a">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aecb7d154081d5b971b7182dc57e9f1ead2d8364/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4b423f1cd9edcd332a5a51475ef1e4884ef17063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-core/2.2.0/a9b7e660c870dede61a4e59b1d551bd2e3226fc6/mapbox-java-core-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a9b7e660c870dede61a4e59b1d551bd2e3226fc6">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/mapbox-java-core-2.2.0_b26d7797a606945078c2a41f09f4467b1f4feef4/classes.dex" />
     </item>
 
 </items>

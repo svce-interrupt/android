@@ -19,6 +19,17 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dela med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dela med %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Komprimera"</string>
+    <string name="mapbox_attributionTelemetryMessage">Du hjälper till att göra OpenStreetMap och Mapbox karttjänster bättre genom att bidra med anonymiserad användningsdata.</string>
+    <string name="mapbox_attributionTelemetryNegative">Avböj</string>
+    <string name="mapbox_attributionTelemetryNeutral">Visa mer information</string>
+    <string name="mapbox_attributionTelemetryPositive">Godkänn</string>
+    <string name="mapbox_attributionTelemetryTitle">Gör Mapbox kartor bättre</string>
+    <string name="mapbox_attributionsDialogTitle">Mapbox Android SDK</string>
+    <string name="mapbox_attributionsIconContentDescription">Tillskrivningsikon. Aktivera för att visa tillskrivningsdialog.</string>
+    <string name="mapbox_compassContentDescription">Kompass. Aktivera för att nollställa kartans rotation mot norr.</string>
+    <string name="mapbox_mapActionDescription">Visar en karta skapad med Mapbox. Scrolla genom att dra med två fingrar. Zooma genom att nypa med två fingrar.</string>
+    <string name="mapbox_myLocationViewContentDescription">Positionsvy. Denna visar din position på kartan.</string>
+    <string name="mapbox_offline_error_region_definition_invalid">Försedd OfflineRegionDefinition passar inte världens gränser: %s</string>
     <string msgid="146198913615257606" name="search_menu_title">"Sök"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

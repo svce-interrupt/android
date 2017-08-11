@@ -19,7 +19,7 @@
                 android:layout_width="300dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="32dp"
-                android:onClick="openAbout"
+                android:onClick="openMap"
                 app:cardBackgroundColor="@color/accent"
                 app:cardCornerRadius="32dp"
                 app:cardElevation="24dp"

@@ -10,10 +10,32 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <meta-data
         android:name="android.support.VERSION"
         android:value="26.0.0-alpha1" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.location" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -33,13 +55,14 @@
         </activity>
         <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity1" />
         <activity
             android:name="com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity" />
+        <!-- Include the telemetry service to simplify set up (https://www.mapbox.com/telemetry) -->
+        <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />
     </application>
 
 </manifest>
