@@ -2,12 +2,17 @@ package com.lazytomatostudios.svceinterrupt.dashactivities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeNinja;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeSprint;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
@@ -16,6 +21,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     ResideMenu resideMenu;
     String titles[] = { "Code Ninja", "Code Sprint", "Cognition Quest", "Data De-Queue", "Don of Logic", "Game of Archives", "MYB", "Picturesque", "Quizzler" };
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
+    ResideMenuItem cdnj, cdsp, cgqt, data, dlgc, garc, myb, pctq, quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,20 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_event);
 
         initMenu();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_layout, new CodeNinja())
+                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commit();
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
+            }
+        }, 250);
     }
 
     public void initMenu() {
@@ -31,15 +51,15 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.setBackground(R.drawable.profile_gradient);
         resideMenu.attachToActivity(this);
 
-        ResideMenuItem cdnj = new ResideMenuItem(this, icon[0], titles[0]);
-        ResideMenuItem cdsp = new ResideMenuItem(this, icon[0], titles[1]);
-        ResideMenuItem cgqt = new ResideMenuItem(this, icon[0], titles[2]);
-        ResideMenuItem data = new ResideMenuItem(this, icon[0], titles[3]);
-        ResideMenuItem dlgc = new ResideMenuItem(this, icon[0], titles[4]);
-        ResideMenuItem garc = new ResideMenuItem(this, icon[0], titles[5]);
-        ResideMenuItem myb = new ResideMenuItem(this, icon[0], titles[6]);
-        ResideMenuItem pctq = new ResideMenuItem(this, icon[0], titles[7]);
-        ResideMenuItem quiz = new ResideMenuItem(this, icon[0], titles[8]);
+        cdnj = new ResideMenuItem(this, icon[0], titles[0]);
+        cdsp = new ResideMenuItem(this, icon[0], titles[1]);
+        cgqt = new ResideMenuItem(this, icon[0], titles[2]);
+        data = new ResideMenuItem(this, icon[0], titles[3]);
+        dlgc = new ResideMenuItem(this, icon[0], titles[4]);
+        garc = new ResideMenuItem(this, icon[0], titles[5]);
+        myb = new ResideMenuItem(this, icon[0], titles[6]);
+        pctq = new ResideMenuItem(this, icon[0], titles[7]);
+        quiz = new ResideMenuItem(this, icon[0], titles[8]);
 
         cdnj.setOnClickListener(this);
         cdsp.setOnClickListener(this);
@@ -61,13 +81,30 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(quiz, ResideMenu.DIRECTION_LEFT);
 
+        resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
+    }
+
+    public void openMenu(View view) {
+        resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
     }
 
     @Override
     public void onClick(View view) {
 
-        switch (view) {
-            case
+        if (view == cdnj) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new CodeNinja())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == cdsp) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new CodeSprint())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
         }
 
     }

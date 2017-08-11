@@ -2,33 +2,30 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1502434229130"
+    timestamp="1502436504703"
     token="1900874288522238604"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="182" />
+        duration="166" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="17" />
     <task
         name="instant-run-transform"
-        duration="11" />
+        duration="12" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
@@ -73,22 +70,51 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502434181978"
+        timestamp="1502434810297"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1502436472453"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
         <artifact
             location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1502434229130"
-        verifier="COLD_SWAP_REQUESTED" >
+        build-mode="HOT_WARM"
+        timestamp="1502436504703"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
