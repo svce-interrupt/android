@@ -25,7 +25,6 @@
         </activity>
         <activity android:name=".homeactivities.AboutActivity" />
         <activity android:name=".homeactivities.ContactActivity" />
-        <activity android:name=".dashactivities.EventActivity1" />
         <activity
             android:name=".dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
