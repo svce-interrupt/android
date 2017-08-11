@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a6e7bbb6b6ce75591983c2da64ff317e0a094c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"

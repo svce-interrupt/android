@@ -40,5 +40,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
     compile 'com.specyci:residemenu:1.6'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
     testCompile 'junit:junit:4.12'
 }

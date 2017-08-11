@@ -39,6 +39,7 @@
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity" />
+        <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity" />
     </application>
 
 </manifest>

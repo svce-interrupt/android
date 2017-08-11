@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:4:5-50
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/Andro
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:7:22-68
 application
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:9:5-34:19
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:9:5-35:19
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:23:5-26:38
 MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:11:5-20
 MERGED from [co.intentservice.android-chat-ui:chat-ui:0.1.1] /home/drpayyne/.android/build-cache/a7780579fab468080f2937d692d389a597327232/output/AndroidManifest.xml:11:5-15:19
@@ -42,6 +42,7 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/d
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/drpayyne/.android/build-cache/c2c01cc055c6273fdb75eef05c2df23eb7b46f0e/output/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:12:9-41
 	android:supportsRtl
@@ -93,9 +94,13 @@ ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/Andro
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:30:13-61
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:33:9-75
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:33:9-66
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:33:19-63
+activity#com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:34:9-73
+	android:name
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:34:19-61
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:19:5-21:41
@@ -118,6 +123,7 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.a
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/drpayyne/.android/build-cache/c2c01cc055c6273fdb75eef05c2df23eb7b46f0e/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.shimmer:shimmer:0.1.0] /home/drpayyne/.android/build-cache/08d9326de03d1e31f07eaa46737e850adcf7d794/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.specyci:residemenu:1.6] /home/drpayyne/.android/build-cache/fafe1c5a9f855fb3178f58383425b86963b46c11/output/AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
