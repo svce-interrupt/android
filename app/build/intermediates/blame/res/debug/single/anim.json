@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/anim/expandable_hide.xml",
-        "source": "/home/drpayyne/.android/build-cache/bcc3bed8e02355335bdf864e2f3c9d2cdf3c6b29/output/res/anim/expandable_hide.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/anim/abc_popup_enter.xml"
     },
@@ -34,10 +30,6 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/anim/abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/anim/expandable_show.xml",
-        "source": "/home/drpayyne/.android/build-cache/bcc3bed8e02355335bdf864e2f3c9d2cdf3c6b29/output/res/anim/expandable_show.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",

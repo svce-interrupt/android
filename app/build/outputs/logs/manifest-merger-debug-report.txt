@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:4:5-50
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml
@@ -18,6 +18,7 @@ ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/Andro
 uses-permission#android.permission.INTERNET
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:6:5-67
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.android/build-cache/7a89e7a8ac38b8a6e8ab85806729f311a6c78f91/output/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.RECORD_AUDIO
@@ -32,30 +33,35 @@ MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:9:5-79
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:17:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.android/build-cache/7a89e7a8ac38b8a6e8ab85806729f311a6c78f91/output/AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:9:22-76
 application
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:11:5-36:19
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:11:5-50:19
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:8:5-20
+MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:23:5-20
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:23:5-26:38
 MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:11:5-20
 MERGED from [co.intentservice.android-chat-ui:chat-ui:0.1.1] /home/drpayyne/.android/build-cache/a7780579fab468080f2937d692d389a597327232/output/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:cardview-v7:23.4.0] /home/drpayyne/.android/build-cache/6e26c2aa78e7dbd5f8f88c0c803a9fa87b594ff0/output/AndroidManifest.xml:22:5-20
-MERGED from [pl.tajchert:waitingdots:0.2.0] /home/drpayyne/.android/build-cache/d4c6cf5aa157545bb497327f763f75323c076c6a/output/AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/drpayyne/.android/build-cache/c2c01cc055c6273fdb75eef05c2df23eb7b46f0e/output/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/AndroidManifest.xml:9:5-20
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:26:5-20
-MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:8:5-20
-MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:23:5-20
+MERGED from [pl.tajchert:waitingdots:0.2.0] /home/drpayyne/.android/build-cache/d4c6cf5aa157545bb497327f763f75323c076c6a/output/AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/drpayyne/.android/build-cache/c2c01cc055c6273fdb75eef05c2df23eb7b46f0e/output/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.android/build-cache/7a89e7a8ac38b8a6e8ab85806729f311a6c78f91/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/drpayyne/.android/build-cache/58385be6eff55d6104e57bd88794d14b36d4c285/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/drpayyne/.android/build-cache/c7258e1538ff3354a913c4e8c595f94c6455a10d/output/AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:14:9-41
@@ -107,36 +113,48 @@ activity#com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:34:9-66
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:34:19-63
-activity#com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:35:9-73
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:43:9-45:55
+	android:value
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:45:13-52
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:35:19-61
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:44:13-58
+activity#com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:47:9-49:58
+	android:label
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:49:13-55
+	android:name
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml:48:13-55
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:6:5-43
+MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.0] /home/drpayyne/.android/build-cache/da344d61aff392f0c82734a21d7079008c563fe7/output/AndroidManifest.xml:8:5-10:41
 MERGED from [devlight.io:navigationtabbar:1.2.5] /home/drpayyne/.android/build-cache/549911c975beb353229374add66eece2fcbbf136/output/AndroidManifest.xml:19:5-21:41
 MERGED from [ai.api:sdk:2.0.5] /home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/AndroidManifest.xml:7:5-9:41
 MERGED from [co.intentservice.android-chat-ui:chat-ui:0.1.1] /home/drpayyne/.android/build-cache/a7780579fab468080f2937d692d389a597327232/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:cardview-v7:23.4.0] /home/drpayyne/.android/build-cache/6e26c2aa78e7dbd5f8f88c0c803a9fa87b594ff0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:20:5-44
 MERGED from [pl.tajchert:waitingdots:0.2.0] /home/drpayyne/.android/build-cache/d4c6cf5aa157545bb497327f763f75323c076c6a/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/drpayyne/.android/build-cache/c2c01cc055c6273fdb75eef05c2df23eb7b46f0e/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.shimmer:shimmer:0.1.0] /home/drpayyne/.android/build-cache/08d9326de03d1e31f07eaa46737e850adcf7d794/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.specyci:residemenu:1.6] /home/drpayyne/.android/build-cache/fafe1c5a9f855fb3178f58383425b86963b46c11/output/AndroidManifest.xml:7:5-9:41
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/drpayyne/.android/build-cache/e6fe875d0c96d246009da8e7a9da0bbdc4bf935e/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:6:5-43
-MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.0] /home/drpayyne/.android/build-cache/da344d61aff392f0c82734a21d7079008c563fe7/output/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.android/build-cache/7a89e7a8ac38b8a6e8ab85806729f311a6c78f91/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/drpayyne/.android/build-cache/58385be6eff55d6104e57bd88794d14b36d4c285/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/drpayyne/.android/build-cache/c7258e1538ff3354a913c4e8c595f94c6455a10d/output/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:23:9-59
@@ -148,6 +166,7 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.a
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/src/main/AndroidManifest.xml
 uses-feature#0x00020000
 ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:9:5-11:35
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.android/build-cache/7a89e7a8ac38b8a6e8ab85806729f311a6c78f91/output/AndroidManifest.xml:21:5-77
 	android:glEsVersion
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:10:9-41
 	android:required
@@ -168,23 +187,6 @@ service#com.mapbox.services.android.telemetry.service.TelemetryService
 ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:23:9-98
 	android:name
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:23:18-95
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:9:5-81
 	android:name
@@ -209,3 +211,34 @@ ADDED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9
 		ADDED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:19:9-33
 	android:name
 		ADDED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:18:9-50
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52652b2d4092556e82fe45bebee07b675399d39a/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/drpayyne/.android/build-cache/52a99890e4bd31f4953b6df5460e8c642e51ac28/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/c64ede12401855984dad95f7b13ea835ad53a558/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/drpayyne/.android/build-cache/0ceb18d6c0328622ea8476e1516e5ac27c634eff/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/drpayyne/.android/build-cache/9822a864e84243fc9dc523c7fcb26e9de6ff82b9/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b75b126c58ff84aa834641878fa4177dd29f1307/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/.android/build-cache/b3b7d6bff0a38a735422a8a7a9c63190ee0610bd/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:26:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/drpayyne/.android/build-cache/c7258e1538ff3354a913c4e8c595f94c6455a10d/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/drpayyne/.android/build-cache/c7258e1538ff3354a913c4e8c595f94c6455a10d/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/drpayyne/.android/build-cache/c7258e1538ff3354a913c4e8c595f94c6455a10d/output/AndroidManifest.xml:20:20-65
