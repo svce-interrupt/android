@@ -17,6 +17,7 @@ import com.lazytomatostudios.svceinterrupt.R;
 public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    String string;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
