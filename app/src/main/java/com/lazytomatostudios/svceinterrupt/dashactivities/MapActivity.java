@@ -49,9 +49,6 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         LatLng svce_ne = new LatLng(12.991045, 79.977014);
         LatLng svce_sw = new LatLng(12.982682, 79.968302);
 
-        LatLng svce_ne1 = new LatLng(12.987179, 79.972157);
-        LatLng svce_sw1 = new LatLng(12.986979, 79.971957);
-
         LatLngBounds latLngBounds = new LatLngBounds(svce_sw, svce_ne);
 
         mMap.addMarker(new MarkerOptions().position(svce_center).title("SVCE"));
