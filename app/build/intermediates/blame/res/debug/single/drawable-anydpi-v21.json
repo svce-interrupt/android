@@ -8,8 +8,24 @@
         "source": "/home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
+        "merged": "/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/jashaul/.android/build-cache/9525ca3edefa701db3b79ff2108ef031fd8d6f8e/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/mapbox_info_icon_default.xml",
         "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/drawable-anydpi-v21/mapbox_info_icon_default.xml"
+    },
+    {
+        "merged": "/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/mapbox_info_icon_selected.xml",
+        "source": "/home/jashaul/.android/build-cache/16eab9f9e12ef5eca5990b3cbee08cd53f38a21c/output/res/drawable-anydpi-v21/mapbox_info_icon_selected.xml"
+    },
+    {
+        "merged": "/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/jashaul/.android/build-cache/9525ca3edefa701db3b79ff2108ef031fd8d6f8e/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/mapbox_info_icon_default.xml",
+        "source": "/home/jashaul/.android/build-cache/16eab9f9e12ef5eca5990b3cbee08cd53f38a21c/output/res/drawable-anydpi-v21/mapbox_info_icon_default.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
