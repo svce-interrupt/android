@@ -1,4 +1,4 @@
-#Sat Aug 12 14:42:27 IST 2017
+#Sat Aug 12 15:12:13 IST 2017
 file.9=/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_ddd42dae643ace59efb645bc28f886cda2e3eeca/classes.dex
 base.10=/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/libai-1.4.8_090bbbbd26c7dfe407731878f5812baedc04dfc6
 file.8=/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8eda2e16332a71f155c5833748ae1096de810165/classes.dex
