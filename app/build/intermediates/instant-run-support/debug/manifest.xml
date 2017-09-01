@@ -74,6 +74,7 @@
         <activity
             android:name="com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity"
             android:label="@string/title_activity_map" />
+
         <!-- Include the telemetry service to simplify set up (https://www.mapbox.com/telemetry) -->
         <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />
 
