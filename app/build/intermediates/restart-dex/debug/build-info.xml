@@ -1,288 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="25"
-    build-mode="HOT_WARM"
-    density="420dpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    build-mode="COLD"
+    density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1502733416568"
-    token="6382033050173385820"
-    verifier="COMPATIBLE" >
+    timestamp="1504275140595"
+    token="1900874288522238604"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="134" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="258" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="14" />
+        duration="43" />
     <task
         name="verifier"
-        duration="2" />
+        duration="9" />
 
     <artifact
-        location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1502725906503"
+        timestamp="1504274449712"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/outputs/apk/app-debug.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502730462170"
-        verifier="FIELD_REMOVED" >
+        timestamp="1504275140595"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730618943"
-        verifier="COMPATIBLE" >
         <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730618943/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730658310"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730658310/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730720614"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730720614/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730754947"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730754947/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730804080"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730804080/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730831144"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730831144/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502730889341"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502730889341/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731249217"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731249217/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731385416"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731385416/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731418211"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731418211/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731497811"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731497811/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731511466"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731511466/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731533842"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731533842/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731563256"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731563256/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731697046"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731697046/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502731735563"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502731735563/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732286755"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732286755/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732373310"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732373310/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732648141"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732648141/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732674309"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732674309/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732737952"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732737952/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502732853014"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502732853014/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502733080979"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502733080979/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502733193034"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502733193034/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502733302993"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/builds/debug/1502733302993/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1502733416568"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

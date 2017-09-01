@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d73029dc368e70d6839e8f89ab6e27159fced797">
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b64de150353c434ab561f9104f7e4cca55b72f8e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_79d8976338fbc760bfb8a3b8d95cb619d161cc88/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c50313b58eb00f58244451ff2c9a18e6cba797f1">
-        <dex dex="/home/jashaul/AndroidStudioProjects/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1094c858c39b4cc00b9fc7220b484d34e8502b14/classes.dex" />
+        <dex dex="/home/drpayyne/AndroidStudioProjects/SVCEInterrupt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4b423f1cd9edcd332a5a51475ef1e4884ef17063/classes.dex" />
     </item>
 
 </items>

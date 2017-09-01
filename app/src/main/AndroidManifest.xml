@@ -31,6 +31,7 @@
             android:name=".dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
+
         <activity android:name=".dashactivities.EventActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -47,6 +48,7 @@
         <activity
             android:name=".dashactivities.MapActivity"
             android:label="@string/title_activity_map" />
+
     </application>
 
 </manifest>
