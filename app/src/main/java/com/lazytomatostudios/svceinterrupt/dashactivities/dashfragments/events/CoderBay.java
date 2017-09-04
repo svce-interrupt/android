@@ -12,10 +12,10 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CodeSprint extends Fragment {
+public class CoderBay extends Fragment {
 
 
-    public CodeSprint() {
+    public CoderBay() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class CodeSprint extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_code_sprint, container, false);
+        return inflater.inflate(R.layout.fragment_coder_bay, container, false);
     }
 
 }

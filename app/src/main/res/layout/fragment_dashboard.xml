@@ -104,7 +104,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Code Ninja"
+                            android:text="Battle Code"
                             android:textSize="16dp"
                             android:textAlignment="center"
                             android:layout_marginTop="10dp"/>
@@ -128,7 +128,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Data\nDe-Queue"
+                            android:text="Flip A\nTable!"
                             android:textSize="16dp"
                             android:textAlignment="center"
                             android:layout_marginTop="10dp"/>
@@ -152,7 +152,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Quizzler"
+                            android:text="Mind Your\nBusiness v3.0"
                             android:textSize="16dp"
                             android:textAlignment="center"
                             android:layout_marginTop="10dp"/>
@@ -176,7 +176,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Cognition\nQuest"
+                            android:text="Breaking the\nLogician\'s Code"
                             android:textSize="16dp"
                             android:textAlignment="center"
                             android:layout_marginTop="10dp"/>
@@ -201,7 +201,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Don of Logic"
+                            android:text="Presentation\nPark"
                             android:textSize="16dp"
                             android:textAlignment="center"
                             android:layout_marginTop="10dp"/>
@@ -251,7 +251,7 @@
                 android:layout_height="150dp"
                 android:layout_marginBottom="32dp"
                 android:layout_marginTop="32dp"
-                android:onClick="openAbout"
+                android:onClick="openInstruction"
                 app:cardBackgroundColor="@color/accent"
                 app:cardCornerRadius="32dp"
                 app:cardElevation="24dp"

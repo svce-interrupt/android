@@ -30,7 +30,6 @@ public class Home extends Fragment implements MyInterface {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-
         return v;
     }
 

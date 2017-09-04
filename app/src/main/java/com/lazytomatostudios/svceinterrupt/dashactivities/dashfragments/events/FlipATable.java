@@ -12,10 +12,10 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CodeNinja extends Fragment {
+public class FlipATable extends Fragment {
 
 
-    public CodeNinja() {
+    public FlipATable() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class CodeNinja extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_code_ninja, container, false);
+        return inflater.inflate(R.layout.fragment_flip_a_table, container, false);
     }
 
 }

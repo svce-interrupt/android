@@ -12,10 +12,10 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MYB extends Fragment {
+public class QuizWiz extends Fragment {
 
 
-    public MYB() {
+    public QuizWiz() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class MYB extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_myb, container, false);
+        return inflater.inflate(R.layout.fragment_quiz_wiz, container, false);
     }
 
 }
