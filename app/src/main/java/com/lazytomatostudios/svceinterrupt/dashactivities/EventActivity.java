@@ -1,34 +1,33 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeNinja;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeSprint;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CognitionQuest;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DataDeQueue;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BattleCode;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.MindYourBusiness;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BreakingTheLogicianCode;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CoderBay;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Connect4;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.PresentationPark;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.QuizWiz;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DonOfLogic;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.FlipATable;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.GameOfArchives;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.MYB;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Picturesque;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Quizzler;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Code Ninja", "Code Sprint", "Cognition Quest", "Data De-Queue", "Don of Logic", "Game of Archives", "MYB", "Picturesque", "Quizzler" };
+    String titles[] = { "Battle Code", "Flip a Table!", "Mind Your Business v3.0", "Breaking the Logician\'s Code", "Presentation Park", "Quiz Wiz", "Don of Logic", "Game of Archives", "Coder\'s Bay", "Picturesque", "Connect4"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
-    ResideMenuItem cdnj, cdsp, cgqt, data, dlgc, garc, myb, pctq, quiz;
+    ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, garc, cb, pctq, c4;
     Fragment initFrag;
 
     @Override
@@ -45,17 +44,23 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
             string = bundle.getString("event");
 
             switch (string) {
-                case "code sprint":
-                    initFrag = new CodeSprint();
+                case "battle code":
+                    initFrag = new BattleCode();
                     break;
-                case "code ninja":
-                    initFrag = new CodeNinja();
+                case "flip a table":
+                    initFrag = new FlipATable();
                     break;
-                case "cognition quest":
-                    initFrag = new CognitionQuest();
+                case "breaking the logician code":
+                    initFrag = new BreakingTheLogicianCode();
                     break;
-                case "data de-queue":
-                    initFrag = new DataDeQueue();
+                case "Mind Your Business v3.0":
+                    initFrag = new MindYourBusiness();
+                    break;
+                case "presentation park":
+                    initFrag = new PresentationPark();
+                    break;
+                case "quiz wiz":
+                    initFrag = new QuizWiz();
                     break;
                 case "don of logic":
                     initFrag = new DonOfLogic();
@@ -63,17 +68,17 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 case "game of archives":
                     initFrag = new GameOfArchives();
                     break;
-                case "myb":
-                    initFrag = new MYB();
+                case "coder bay":
+                    initFrag = new CoderBay();
                     break;
                 case "picturesque":
                     initFrag = new Picturesque();
                     break;
-                case "quizzler":
-                    initFrag = new Quizzler();
+                case "connect4":
+                    initFrag = new Connect4();
                     break;
                 default:
-                    initFrag = new CodeNinja();
+                    initFrag = new BattleCode();
                     break;
             }
 
@@ -87,7 +92,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.frame_layout, new CodeNinja())
+                    .add(R.id.frame_layout, new BattleCode())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
 
@@ -108,35 +113,41 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.setBackground(R.drawable.profile_gradient);
         resideMenu.attachToActivity(this);
 
-        cdnj = new ResideMenuItem(this, icon[0], titles[0]);
-        cdsp = new ResideMenuItem(this, icon[0], titles[1]);
-        cgqt = new ResideMenuItem(this, icon[0], titles[2]);
-        data = new ResideMenuItem(this, icon[0], titles[3]);
-        dlgc = new ResideMenuItem(this, icon[0], titles[4]);
-        garc = new ResideMenuItem(this, icon[0], titles[5]);
-        myb = new ResideMenuItem(this, icon[0], titles[6]);
-        pctq = new ResideMenuItem(this, icon[0], titles[7]);
-        quiz = new ResideMenuItem(this, icon[0], titles[8]);
+        btc = new ResideMenuItem(this, icon[0], titles[0]);
+        fat = new ResideMenuItem(this, icon[0], titles[1]);
+        mybv = new ResideMenuItem(this, icon[0], titles[2]);
+        blc = new ResideMenuItem(this, icon[0], titles[3]);
+        pp = new ResideMenuItem(this, icon[0], titles[4]);
+        qw = new ResideMenuItem(this, icon[0], titles[5]);
+        dlgc = new ResideMenuItem(this, icon[0], titles[6]);
+        garc = new ResideMenuItem(this, icon[0], titles[7]);
+        cb = new ResideMenuItem(this, icon[0], titles[8]);
+        pctq = new ResideMenuItem(this, icon[0], titles[9]);
+        c4 = new ResideMenuItem(this, icon[0], titles[10]);
 
-        cdnj.setOnClickListener(this);
-        cdsp.setOnClickListener(this);
-        cgqt.setOnClickListener(this);
-        data.setOnClickListener(this);
+        btc.setOnClickListener(this);
+        fat.setOnClickListener(this);
+        mybv.setOnClickListener(this);
+        blc.setOnClickListener(this);
+        pp.setOnClickListener(this);
+        qw.setOnClickListener(this);
         dlgc.setOnClickListener(this);
         garc.setOnClickListener(this);
-        myb.setOnClickListener(this);
+        cb.setOnClickListener(this);
         pctq.setOnClickListener(this);
-        quiz.setOnClickListener(this);
+        c4.setOnClickListener(this);
 
-        resideMenu.addMenuItem(cdnj, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(cdsp, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(cgqt, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(data, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(btc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(fat, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(mybv, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(blc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(pp, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(qw, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(dlgc, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(garc, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(myb, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(cb, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(quiz, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(c4, ResideMenu.DIRECTION_LEFT);
 
         resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
     }
@@ -148,31 +159,45 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
 
-        if (view == cdnj) {
+        if (view == btc) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new CodeNinja())
+                    .replace(R.id.frame_layout, new BattleCode())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == cdsp) {
+        } else if (view == fat) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new CodeSprint())
+                    .replace(R.id.frame_layout, new FlipATable())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == cgqt) {
+        } else if (view == mybv) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new CognitionQuest())
+                    .replace(R.id.frame_layout, new MindYourBusiness())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == data) {
+        } else if (view == blc) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new DataDeQueue())
+                    .replace(R.id.frame_layout, new BreakingTheLogicianCode())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == pp) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new PresentationPark())
+                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit();
+            resideMenu.closeMenu();
+        } else if (view == qw) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, new QuizWiz())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
@@ -190,10 +215,10 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == myb) {
+        } else if (view == cb) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new MYB())
+                    .replace(R.id.frame_layout, new CoderBay())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
@@ -204,10 +229,10 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == quiz) {
+        } else if (view == c4) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new Quizzler())
+                    .replace(R.id.frame_layout, new Connect4())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();

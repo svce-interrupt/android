@@ -12,10 +12,10 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CognitionQuest extends Fragment {
+public class PresentationPark extends Fragment {
 
 
-    public CognitionQuest() {
+    public PresentationPark() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class CognitionQuest extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cognition_quest, container, false);
+        return inflater.inflate(R.layout.fragment_presentation_park, container, false);
     }
 
 }

@@ -58,27 +58,27 @@ public class Dashboard extends Fragment implements MyInterface {
             switch (v.getId()) {
                 case R.id.event1:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "code ninja");
+                    intent.putExtra("event", "battle code");
                     startActivity(intent);
                     break;
                 case R.id.event2:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "data de-queue");
+                    intent.putExtra("event", "flip a table");
                     startActivity(intent);
                     break;
                 case R.id.event3:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "quizzler");
+                    intent.putExtra("event", "Mind Your Business v3.0");
                     startActivity(intent);
                     break;
                 case R.id.event4:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "cognition quest");
+                    intent.putExtra("event", "breaking the logician code");
                     startActivity(intent);
                     break;
                 case R.id.event5:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "don of logic");
+                    intent.putExtra("event", "presentation park");
                     startActivity(intent);
                     break;
                 default:

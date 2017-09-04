@@ -12,9 +12,11 @@ import android.util.Log;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
+import com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
+import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
@@ -124,6 +126,9 @@ public class MainActivity extends AppCompatActivity {
     public void openContact(View view) {
         Log.d("Debug", "Contact visible");
 
+        Intent intent = new Intent(this, ContactActivity.class);
+        startActivity(intent);
+
     }
 
     public void openEvent(View view) {
@@ -145,6 +150,14 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, TransportActivity.class);
         startActivity(intent);
+    }
+
+    public void openInstruction(View view) {
+        Log.d("Debug", "Instruction visible");
+
+        Intent intent = new Intent(this, InstructionActivity.class);
+        startActivity(intent);
+
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {
