@@ -225,6 +225,7 @@
     <color name="u_blue_light">#4A90E2</color>
     <color name="very_dark_gray">#636363</color>
     <color name="white">#FFFFFF</color>
+    <declare-styleable name="AVLoadingIndicatorView"><attr format="dimension" name="minWidth"/><attr format="dimension" name="maxWidth"/><attr format="dimension" name="minHeight"/><attr format="dimension" name="maxHeight"/><attr format="string" name="indicatorName"/><attr format="color" name="indicatorColor"/></declare-styleable>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -946,7 +947,7 @@
         AIzaSyCaRDQQ3aUgNGw8N27Lgo9q3AmQw9C-Pkw
     </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="instruct">1. All the participants must have their college ID card with them at all times. \n 2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration. \n 3. Private vehicles must be parked at the parking space provided.\n 4. While inside the campus, please adhere to the rules and regulations provided by the management.\n 5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n 6. Participants must register before attending the symposium.\n 7. Lunch will not be provided by the organisers.</string>
+    <string name="instruct">1. All the participants must have their college ID card with them at all times.\n\n2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration.\n\n3. Private vehicles must be parked at the parking space provided.\n\n4. While inside the campus, please adhere to the rules and regulations provided by the management.\n\n5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n\n6. Participants must register before attending the symposium.\n\n7. Lunch will not be provided by the organisers.</string>
     <string name="interrupt_desc"><b><i>Interrupt</i></b> has had students marking their calendars for years now and this year it\’s back and bigger than ever! Are you the <b><i>Don of Logic</i></b>? Can you make <b><i>Databases</i></b> dance to your tunes? Or is being a <b><i>Code Ninja</i></b> more your style?</string>
     <string name="mapbox_attributionErrorNoBrowser">No web browser installed on device, can\'t open web page.</string>
     <string name="mapbox_attributionTelemetryMessage">You are helping to make OpenStreetMap and Mapbox maps better by contributing anonymous usage data.</string>
@@ -996,6 +997,27 @@
     <string name="webster_def_2"><sup>2</sup> to break the uniformity or continuity of</string>
     <string name="webster_title">interrupt</string>
     <string name="what_is">What is Interrupt, <i>really</i>?</string>
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

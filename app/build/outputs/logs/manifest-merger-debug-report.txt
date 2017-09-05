@@ -159,6 +159,7 @@ MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/drpayyne/
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/drpayyne/.android/build-cache/faf9cfcd78775f591ca96f3b3c809b9d032bc5a4/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/drpayyne/.android/build-cache/ef0f849bc06125d306435c29c7b1ff14f7ff0bdb/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/drpayyne/.android/build-cache/905719b1475dcbc736ef99390b3631960c541f33/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.wang.avi:library:2.1.3] /home/drpayyne/.android/build-cache/562fde5cb3bbff4401ab143d922a06a60fc86c55/output/AndroidManifest.xml:7:5-9:41
 MERGED from [android:ResideMenu:unspecified] /home/drpayyne/AndroidStudioProjects/final/android/lib/AndroidResideMenu/ResideMenu/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /home/drpayyne/.android/build-cache/bc5a6542357aadabfe166aebc1a9c4b223827826/output/AndroidManifest.xml:23:9-59
