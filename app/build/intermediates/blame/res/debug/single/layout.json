@@ -4,12 +4,12 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/activity_transport.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/activity_transport.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/aidialog.xml",
         "source": "/home/drpayyne/.android/build-cache/12a42ebfb10129c81b7420846e9756ce7ee0266d/output/res/layout/aidialog.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/activity_transport.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/activity_transport.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/mapbox_attribution_list_item.xml",
@@ -28,12 +28,12 @@
         "source": "/home/drpayyne/.android/build-cache/3ea4220f892a2702a6161a7ec2a77cac5bd01e2c/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_chat.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_chat.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_battle_code.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_battle_code.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_chat.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_chat.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_connect4.xml",

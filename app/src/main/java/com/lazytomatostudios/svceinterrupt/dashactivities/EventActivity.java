@@ -25,7 +25,7 @@ import com.special.ResideMenu.ResideMenuItem;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Battle Code", "Flip a Table!", "Mind Your Business v3.0", "Breaking the Logician\'s Code", "Presentation Park", "Quiz Wiz", "Don of Logic", "Game of Archives", "Coder\'s Bay", "Picturesque", "Connect4"};
+    String titles[] = { "Battle Code", "Breaking the Logician\'s Code", "Coder\'s Bay", "Connect4", "Don of Logic", "Flip a Table!", "Game of Archives", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
     ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, garc, cb, pctq, c4;
     Fragment initFrag;
@@ -47,11 +47,23 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 case "battle code":
                     initFrag = new BattleCode();
                     break;
+                case "breaking the logician code":
+                    initFrag = new BreakingTheLogicianCode();
+                    break;
+                case "coder bay":
+                    initFrag = new CoderBay();
+                    break;
+                case "connect4":
+                    initFrag = new Connect4();
+                    break;
+                case "don of logic":
+                    initFrag = new DonOfLogic();
+                    break;
                 case "flip a table":
                     initFrag = new FlipATable();
                     break;
-                case "breaking the logician code":
-                    initFrag = new BreakingTheLogicianCode();
+                case "game of archives":
+                    initFrag = new GameOfArchives();
                     break;
                 case "Mind Your Business v3.0":
                     initFrag = new MindYourBusiness();
@@ -59,23 +71,11 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 case "presentation park":
                     initFrag = new PresentationPark();
                     break;
-                case "quiz wiz":
-                    initFrag = new QuizWiz();
-                    break;
-                case "don of logic":
-                    initFrag = new DonOfLogic();
-                    break;
-                case "game of archives":
-                    initFrag = new GameOfArchives();
-                    break;
-                case "coder bay":
-                    initFrag = new CoderBay();
-                    break;
                 case "picturesque":
                     initFrag = new Picturesque();
                     break;
-                case "connect4":
-                    initFrag = new Connect4();
+                case "quizwiz":
+                    initFrag = new QuizWiz();
                     break;
                 default:
                     initFrag = new BattleCode();
@@ -114,16 +114,16 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.attachToActivity(this);
 
         btc = new ResideMenuItem(this, icon[0], titles[0]);
-        fat = new ResideMenuItem(this, icon[0], titles[1]);
-        mybv = new ResideMenuItem(this, icon[0], titles[2]);
-        blc = new ResideMenuItem(this, icon[0], titles[3]);
-        pp = new ResideMenuItem(this, icon[0], titles[4]);
-        qw = new ResideMenuItem(this, icon[0], titles[5]);
-        dlgc = new ResideMenuItem(this, icon[0], titles[6]);
-        garc = new ResideMenuItem(this, icon[0], titles[7]);
-        cb = new ResideMenuItem(this, icon[0], titles[8]);
-        pctq = new ResideMenuItem(this, icon[0], titles[9]);
-        c4 = new ResideMenuItem(this, icon[0], titles[10]);
+        fat = new ResideMenuItem(this, icon[0], titles[5]);
+        mybv = new ResideMenuItem(this, icon[0], titles[7]);
+        blc = new ResideMenuItem(this, icon[0], titles[1]);
+        pp = new ResideMenuItem(this, icon[0], titles[9]);
+        qw = new ResideMenuItem(this, icon[0], titles[10]);
+        dlgc = new ResideMenuItem(this, icon[0], titles[4]);
+        garc = new ResideMenuItem(this, icon[0], titles[6]);
+        cb = new ResideMenuItem(this, icon[0], titles[2]);
+        pctq = new ResideMenuItem(this, icon[0], titles[8]);
+        c4 = new ResideMenuItem(this, icon[0], titles[3]);
 
         btc.setOnClickListener(this);
         fat.setOnClickListener(this);
@@ -138,16 +138,16 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         c4.setOnClickListener(this);
 
         resideMenu.addMenuItem(btc, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(fat, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(mybv, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(blc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(cb, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(c4, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(dlgc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(fat, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(garc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(mybv, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pp, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(qw, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(dlgc, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(garc, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(cb, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(c4, ResideMenu.DIRECTION_LEFT);
 
         resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
     }
