@@ -12,9 +12,6 @@ public class ContactActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-
-        ShimmerFrameLayout shimmerFrameLayout = (ShimmerFrameLayout) findViewById(R.id.shimmer);
-        shimmerFrameLayout.startShimmerAnimation();
     }
 
 }
