@@ -38,4 +38,8 @@
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Увійти в облік. запис Google"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Пошук"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="zxing_app_name">Сканер штрих-кодів</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Нажаль, виникла помилка камери. Можливо, вам знадобиться перезавантажити пристрій.</string>
+    <string name="zxing_msg_default_status">Щоб відсканувати штрих-код, помістіть його в прямокутник видошукача.</string>
 </resources>

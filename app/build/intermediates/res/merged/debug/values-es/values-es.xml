@@ -8,8 +8,8 @@
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Listo"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"NO"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"SÍ"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DESACTIVADO"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ACTIVADO"</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Buscar…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Borrar consulta"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta"</string>
@@ -49,4 +49,8 @@
     <string name="mapbox_offline_error_region_definition_invalid">El parámetro OfflineRegionDefinition que se ingresó no coincide con los límites mundiales: %s</string>
     <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Lo sentimos, la cámara de Android ha encontrado un problema. Es posible que necesite reiniciar el dispositivo.</string>
+    <string name="zxing_msg_default_status">Coloque un código de barras en el interior del rectángulo del visor para escanear.</string>
 </resources>

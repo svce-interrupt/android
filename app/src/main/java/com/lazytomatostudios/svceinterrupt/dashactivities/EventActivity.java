@@ -1,5 +1,6 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BattleCode;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPolyOnline;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.MindYourBusiness;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BreakingTheLogicianCode;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CoderBay;
@@ -17,7 +19,7 @@ import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.P
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.QuizWiz;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DonOfLogic;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.FlipATable;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.GameOfArchives;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPoly;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Picturesque;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
@@ -25,9 +27,9 @@ import com.special.ResideMenu.ResideMenuItem;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Battle Code", "Breaking the Logician\'s Code", "Coder\'s Bay", "Connect4", "Don of Logic", "Flip a Table!", "Game of Archives", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
+    String titles[] = { "Battle Code", "Breaking the Logician\'s Code", "Coder\'s Bay", "Connect 4", "Don of Logic", "Flip a Table!", "Code-O-Poly", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
-    ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, garc, cb, pctq, c4;
+    ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, cop, cb, pctq, c4;
     Fragment initFrag;
 
     @Override
@@ -63,7 +65,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                     initFrag = new FlipATable();
                     break;
                 case "game of archives":
-                    initFrag = new GameOfArchives();
+                    initFrag = new CodeOPoly();
                     break;
                 case "Mind Your Business v3.0":
                     initFrag = new MindYourBusiness();
@@ -120,7 +122,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         pp = new ResideMenuItem(this, icon[0], titles[9]);
         qw = new ResideMenuItem(this, icon[0], titles[10]);
         dlgc = new ResideMenuItem(this, icon[0], titles[4]);
-        garc = new ResideMenuItem(this, icon[0], titles[6]);
+        cop = new ResideMenuItem(this, icon[0], titles[6]);
         cb = new ResideMenuItem(this, icon[0], titles[2]);
         pctq = new ResideMenuItem(this, icon[0], titles[8]);
         c4 = new ResideMenuItem(this, icon[0], titles[3]);
@@ -132,7 +134,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         pp.setOnClickListener(this);
         qw.setOnClickListener(this);
         dlgc.setOnClickListener(this);
-        garc.setOnClickListener(this);
+        cop.setOnClickListener(this);
         cb.setOnClickListener(this);
         pctq.setOnClickListener(this);
         c4.setOnClickListener(this);
@@ -143,7 +145,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         resideMenu.addMenuItem(c4, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(dlgc, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(fat, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(garc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(cop, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(mybv, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pp, ResideMenu.DIRECTION_LEFT);
@@ -154,6 +156,11 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
     public void openMenu(View view) {
         resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
+    }
+
+    public void startGame(View view) {
+        Intent intent = new Intent(this, CodeOPolyOnline.class);
+        startActivity(intent);
     }
 
     @Override
@@ -208,10 +215,10 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();
-        } else if (view == garc) {
+        } else if (view == cop) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new GameOfArchives())
+                    .replace(R.id.frame_layout, new CodeOPoly())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();

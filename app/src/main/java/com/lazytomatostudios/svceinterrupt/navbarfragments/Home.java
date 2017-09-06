@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.R;
@@ -17,6 +19,7 @@ import com.lazytomatostudios.svceinterrupt.R;
  */
 public class Home extends Fragment implements MyInterface {
 
+    TextView userName;
 
     public Home() {
         // Required empty public constructor
@@ -27,8 +30,22 @@ public class Home extends Fragment implements MyInterface {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        String user = getArguments().getString("uname");
+
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
+        userName = v.findViewById(R.id.username);
+
+        try {
+            if (user.equals("anonymous")) {
+                userName.setText("");
+            } else {
+                userName.setText(user);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return v;
     }

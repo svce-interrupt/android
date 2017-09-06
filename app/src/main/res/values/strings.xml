@@ -57,4 +57,6 @@
     <string name="battlecode_rules">Rules:\n1. Team must consists of maximum 3 members.\n2. Organisers decision is final.</string>
     <string name="myobv2">Welcome to the mothership of all events. This challenge is not for the weak, but for those who\'ve embraced their light and dark side. That\'s right, watch as all your \"other\" skills being tested through rounds varying from playing dumb in charades to coming up with a creative ad for Adzap. Register now if you think you\'ve got what it takes to Mind Your Business.\n\nRounds will be announced on-spot.</string>
     <string name="myobv2_rules">Rules:\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
+    <string name="code_o_poly">Were you born to code?\n\nThen grab two of your friends and head on down to Code-o-poly!\nPlayers who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.\n\nRegistrations open now!</string>
+    <string name="code_o_poly_rules">Rules\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
 </resources>

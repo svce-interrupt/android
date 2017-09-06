@@ -38,4 +38,8 @@
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Prijava z Google Računom"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Iskanje"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">V redu</string>
+    <string name="zxing_msg_camera_framework_bug">Oprostite, Android kamera je naletela na težave. Mogoče boste morali ponovno zagnati napravo.</string>
+    <string name="zxing_msg_default_status">Za branje postavite črtno kodo znotraj iskala.</string>
 </resources>

@@ -15,6 +15,7 @@ import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
+import com.lazytomatostudios.svceinterrupt.events.RegisterActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
@@ -158,6 +159,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, InstructionActivity.class);
         startActivity(intent);
 
+    }
+
+    public void openRegister(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {

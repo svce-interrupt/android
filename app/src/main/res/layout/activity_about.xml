@@ -48,7 +48,7 @@
                     android:layout_marginTop="10dp"
                     android:textAlignment="center"
                     android:layout_below="@id/int_title"
-                    android:text="October 1. Save The Date."
+                    android:text="September 25. Save The Date."
                     android:textSize="20dp"/>
 
             </RelativeLayout>

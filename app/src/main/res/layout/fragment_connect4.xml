@@ -111,8 +111,6 @@
                     app:layout_constraintTop_toBottomOf="@id/rule"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="32dp"
                     android:layout_marginTop="20dp">
 
                     <LinearLayout
@@ -137,6 +135,21 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/start_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start Game"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primary"
+                    app:layout_constraintTop_toBottomOf="@id/rules_card"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="32dp"
+                    android:onClick="startGame"/>
 
             </android.support.constraint.ConstraintLayout>
 
