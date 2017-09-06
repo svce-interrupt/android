@@ -22,6 +22,7 @@ import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Home;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Profile;
 
 import java.util.ArrayList;
@@ -34,12 +35,24 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
+    static String name = "anonymous";
+    static String mailId = "null";
+    static String phoneNum = "null";
+
     ArrayList<NavigationTabBar.Model> barModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Bundle userData = getIntent().getExtras();
+        if (userData != null) {
+            name = userData.getString("username");
+            mailId = userData.getString("usermail");
+            phoneNum = userData.getString("usernum");
+        }
+
         initNavBar();
     }
 
@@ -168,6 +181,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {
 
+        Bundle bundle;
+
         private MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
         }
@@ -177,13 +192,32 @@ public class MainActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    return new Home();
+                    Home home = new Home();
+                    bundle.putString("uname", name);
+                    home.setArguments(bundle);
+                    return home;
                 case 1:
-                    return new Dashboard();
+                    Dashboard dashboard = new Dashboard();
+                    bundle.putString("uname", name);
+                    bundle.putString("umail", mailId);
+                    bundle.putString("unum", phoneNum);
+                    dashboard.setArguments(bundle);
+                    return dashboard;
                 case 2:
                     return new Chat();
                 case 3:
-                    return new Profile();
+                    try {
+                        if (name.equals("anonymous")) {
+                            return new Profile();
+                        } else {
+                            PostLogin postLogin = new PostLogin();
+                            bundle.putString("umail", mailId);
+                            postLogin.setArguments(bundle);
+                            return postLogin;
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 default:
                     return null;
             }
