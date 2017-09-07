@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BattleCode;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPolyOnline;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPoly;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.MindYourBusiness;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.BreakingTheLogicianCode;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CoderBay;
@@ -19,7 +19,6 @@ import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.P
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.QuizWiz;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DonOfLogic;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.FlipATable;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPoly;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Picturesque;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
@@ -141,11 +140,11 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
         resideMenu.addMenuItem(btc, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(blc, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(cop, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(cb, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(c4, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(dlgc, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(fat, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(cop, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(mybv, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pctq, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(pp, ResideMenu.DIRECTION_LEFT);
@@ -159,7 +158,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void startGame(View view) {
-        Intent intent = new Intent(this, CodeOPolyOnline.class);
+        Intent intent = new Intent(this, ConnectFourActivity.class);
         startActivity(intent);
     }
 

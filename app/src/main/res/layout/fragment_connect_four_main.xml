@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourMain">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 1 of 3"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageButton
+            android:id="@+id/start_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toBottomOf="@+id/day"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="32dp"
+            android:onClick="startGame"/>
+
+        <TextView
+            android:id="@+id/day_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days Attempted"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/start_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/checkboxes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/day_count"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Day 1"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Day 2"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/check3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Day 3"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can only attempt once per day. Start when ready."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/checkboxes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="32dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

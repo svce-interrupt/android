@@ -48,12 +48,12 @@
             android:name=".dashactivities.MapActivity"
             android:label="@string/title_activity_map" />
         <activity android:name=".dashactivities.InstructionActivity" />
-        <activity android:name=".dashactivities.dashfragments.events.CodeOPolyOnline" />
         <activity android:name=".profileactivities.SignUpActivity" />
         <activity android:name=".navbarfragments.PostLogin" />
         <activity android:name=".profileactivities.UpdateActivity" />
         <activity android:name=".events.RegisterActivity" />
-        <activity android:name=".events.QRActivity"></activity>
+        <activity android:name=".events.QRActivity" />
+        <activity android:name=".dashactivities.ConnectFourActivity"></activity>
     </application>
 
 </manifest>

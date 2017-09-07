@@ -12,19 +12,17 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CodeOPoly extends Fragment {
+public class ConnectFourGame extends Fragment {
 
-
-    public CodeOPoly() {
+    public ConnectFourGame() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_code_opoly, container, false);
+        return inflater.inflate(R.layout.fragment_connect_four_game, container, false);
     }
 
 }

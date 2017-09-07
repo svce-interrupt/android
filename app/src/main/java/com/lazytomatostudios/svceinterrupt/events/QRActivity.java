@@ -1,6 +1,7 @@
 package com.lazytomatostudios.svceinterrupt.events;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,11 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.lazytomatostudios.svceinterrupt.MainActivity;
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
@@ -49,7 +55,7 @@ public class QRActivity extends AppCompatActivity {
 
         updateEvents(eventsList, userMail);
 
-        /*MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+        MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try {
             BitMatrix bitMatrix = multiFormatWriter.encode(userName + ", " + userMail + ", " + userNum + ", " + eventsList, BarcodeFormat.QR_CODE, 200, 200);
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
@@ -60,7 +66,7 @@ public class QRActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        Toast.makeText(QrActivity.this, "Please take a screenshot of this.", Toast.LENGTH_SHORT).show();*/
+        Toast.makeText(QRActivity.this, "Please take a screenshot of this.", Toast.LENGTH_SHORT).show();
     }
 
     @Override

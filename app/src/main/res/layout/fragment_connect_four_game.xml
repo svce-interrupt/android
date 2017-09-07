@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourGame">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 1"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/day"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="70dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"/>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:background="@drawable/profile_gradient"
+            app:layout_constraintTop_toBottomOf="@+id/question"
+            app:layout_constraintBottom_toTopOf="@+id/image3"
+            app:layout_constraintRight_toLeftOf="@+id/image2"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:background="@drawable/profile_gradient"
+            app:layout_constraintTop_toBottomOf="@+id/question"
+            app:layout_constraintBottom_toTopOf="@+id/image3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/image1"/>
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:background="@drawable/profile_gradient"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            app:layout_constraintBottom_toTopOf="@+id/answer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/image4"/>
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:background="@drawable/profile_gradient"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            app:layout_constraintBottom_toTopOf="@+id/answer"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/image3"/>
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Type your answer here"
+            android:maxLines="1"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

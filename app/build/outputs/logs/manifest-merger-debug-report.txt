@@ -132,30 +132,30 @@ activity#com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity
 ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:50:9-72
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:50:19-69
-activity#com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.CodeOPolyOnline
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:9-89
-	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:19-86
 activity#com.lazytomatostudios.svceinterrupt.profileactivities.SignUpActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:9-70
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:9-70
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:19-67
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:19-67
 activity#com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:9-63
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:9-63
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:19-60
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:19-60
 activity#com.lazytomatostudios.svceinterrupt.profileactivities.UpdateActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:9-70
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:9-70
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:19-67
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:19-67
 activity#com.lazytomatostudios.svceinterrupt.events.RegisterActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:9-61
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:9-61
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:19-58
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:19-58
 activity#com.lazytomatostudios.svceinterrupt.events.QRActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:9-64
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:9-55
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:19-52
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:19-52
+activity#com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:9-81
+	android:name
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:19-69
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41

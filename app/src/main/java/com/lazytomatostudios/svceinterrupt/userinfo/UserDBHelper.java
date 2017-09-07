@@ -99,5 +99,7 @@ public class UserDBHelper extends SQLiteOpenHelper {
         }
         return mUserDetail;
     }
+
+
     
 }

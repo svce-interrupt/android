@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {
 
-        Bundle bundle;
+        Bundle bundle = new Bundle();
 
         private MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
