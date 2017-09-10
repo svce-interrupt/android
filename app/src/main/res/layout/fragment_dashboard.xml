@@ -17,11 +17,11 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card1"
                 android:layout_width="300dp"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="32dp"
                 android:onClick="openMap"
                 app:cardBackgroundColor="@color/accent"
-                app:cardCornerRadius="32dp"
+                app:cardCornerRadius="20dp"
                 app:cardElevation="24dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -34,13 +34,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
                         android:layout_marginBottom="20dp"
                         android:layout_marginEnd="20dp"
                         android:text="SVCE Map"
+                        android:textColor="@color/white"
                         android:textAlignment="textEnd"
-                        android:textSize="60dp"
+                        android:textSize="40dp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -68,6 +68,7 @@
                 android:backgroundTint="@color/accent"
                 android:text="View All"
                 android:textSize="10dp"
+                android:textColor="@color/white"
                 android:onClick="openEvent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card1" />
@@ -222,6 +223,7 @@
                 android:text="register"
                 android:textSize="15dp"
                 android:onClick="openRegister"
+                android:textColor="@color/white"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/event_scroll" />
@@ -229,7 +231,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card2"
                 android:layout_width="300dp"
-                android:layout_height="175dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="32dp"
                 android:onClick="openTransport"
                 app:cardBackgroundColor="@color/accent"
@@ -246,13 +248,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginBottom="20dp"
+                        android:layout_centerInParent="true"
                         android:layout_marginEnd="20dp"
                         android:text="Transport"
+                        android:textColor="@color/white"
                         android:textAlignment="textEnd"
-                        android:textSize="50dp"
+                        android:textSize="40dp"
                         android:textStyle="bold" />
 
                 </RelativeLayout>
@@ -281,11 +282,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
                         android:layout_marginBottom="20dp"
                         android:layout_marginEnd="20dp"
                         android:text="Instructions"
+                        android:textColor="@color/white"
                         android:textAlignment="textEnd"
                         android:textSize="40dp"
                         android:textStyle="bold" />

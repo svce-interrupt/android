@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:2:1-59:12
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:4:5-50
 		INJECTED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml
@@ -37,7 +37,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.a
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:9:22-76
 application
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:11:5-57:19
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:13:5-50:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:8:5-20
 MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:23:5-20
@@ -66,96 +66,95 @@ MERGED from [com.android.support:support-fragment:26.0.2] /home/drpayyne/.androi
 MERGED from [com.android.support:support-core-ui:26.0.2] /home/drpayyne/.android/build-cache/eb79d0f1eed362016dcc3ea64ec502687b312d02/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.0.2] /home/drpayyne/.android/build-cache/c6adbd0728a2c19f872b6bb31f1b8b3815db00f2/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.2] /home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/AndroidManifest.xml:25:5-29:19
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:11:5-53
 	android:label
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:supportsRtl
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:19:9-35
 	android:roundIcon
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:18:9-54
 	android:allowBackup
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:15:9-35
 	android:icon
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:16:9-43
 	android:theme
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:20:9-40
 	tools:replace
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:18:9-37
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:21:9-37
+	android:name
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:14:9-45
 activity#com.lazytomatostudios.svceinterrupt.MainActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:19:9-27:20
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:22:9-30:20
 	android:label
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:24:13-45
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:20:13-41
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:23:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:28:9-66
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:31:9-66
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:28:19-63
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:31:19-63
 activity#com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:29:9-68
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:32:9-68
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:29:19-65
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:32:19-65
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:30:9-33:47
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:33:9-36:47
 	android:label
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:32:13-61
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:35:13-61
 	android:theme
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:33:13-44
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:31:13-61
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:34:13-61
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:34:9-66
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:37:9-66
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:34:19-63
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:37:19-63
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:43:9-45:55
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:38:9-40:55
 	android:value
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:45:13-52
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:40:13-52
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:44:13-58
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:39:13-58
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:47:9-49:58
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:41:9-43:58
 	android:label
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:49:13-55
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:43:13-55
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:48:13-55
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:42:13-55
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:50:9-72
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:44:9-72
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:50:19-69
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:44:19-69
 activity#com.lazytomatostudios.svceinterrupt.profileactivities.SignUpActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:9-70
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:45:9-70
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:51:19-67
-activity#com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:9-63
-	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:52:19-60
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:45:19-67
 activity#com.lazytomatostudios.svceinterrupt.profileactivities.UpdateActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:9-70
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:46:9-70
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:53:19-67
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:46:19-67
 activity#com.lazytomatostudios.svceinterrupt.events.RegisterActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:9-61
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:47:9-61
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:54:19-58
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:47:19-58
 activity#com.lazytomatostudios.svceinterrupt.events.QRActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:9-55
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:48:9-55
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:55:19-52
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:48:19-52
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:9-81
+ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:49:9-81
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:56:19-69
+		ADDED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml:49:19-69
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/final/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41
@@ -194,6 +193,7 @@ MERGED from [com.android.support:support-fragment:26.0.2] /home/drpayyne/.androi
 MERGED from [com.android.support:support-core-ui:26.0.2] /home/drpayyne/.android/build-cache/eb79d0f1eed362016dcc3ea64ec502687b312d02/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.2] /home/drpayyne/.android/build-cache/c6adbd0728a2c19f872b6bb31f1b8b3815db00f2/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.2] /home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/AndroidManifest.xml:21:5-23:58
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.2] /home/drpayyne/.android/build-cache/a1d2af635867c10f03ac2959f8f50ddc755c79ed/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

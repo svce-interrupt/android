@@ -109,7 +109,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="accent">#4caf50</color>
+    <color name="accent">#123F56</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="aidialog_background">#ffffffff</color>
@@ -1062,6 +1062,18 @@
     <string name="contact_mail">Mail</string>
     <string name="contact_mailid">interrupt2k17@gmail.com</string>
     <string name="cs_def"><sup>1</sup> signal to the processor emitted by hardware or software indicating an event that needs immediate attention</string>
+    <string name="day1">Day 1 of 5</string>
+    <string name="day1s">1</string>
+    <string name="day2">Day 2 of 5</string>
+    <string name="day2s">2</string>
+    <string name="day3">Day 3 of 5</string>
+    <string name="day3s">3</string>
+    <string name="day4">Day 4 of 5</string>
+    <string name="day4s">4</string>
+    <string name="day5">Day 5 of 5</string>
+    <string name="day5s">5</string>
+    <string name="daynull">Day 0 of 5</string>
+    <string name="daynulls">0</string>
     <string name="default_aidialog_title">Speak</string>
     <string name="default_input_hint">Type your message</string>
     <string name="define_processbutton">processbutton</string>
@@ -1198,9 +1210,14 @@
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
         <item name="android:textColorPrimary">@color/primary_text</item>
-
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

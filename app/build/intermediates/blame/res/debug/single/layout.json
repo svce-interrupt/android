@@ -24,12 +24,12 @@
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_battle_code.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_battle_code.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_chat.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_chat.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/fragment_battle_code.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/fragment_battle_code.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
@@ -56,16 +56,16 @@
         "source": "/home/drpayyne/.android/build-cache/ac3bf8feea9f4578528b378e7ed7a9150a5ec743/output/res/layout/zxing_capture.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/drpayyne/.android/build-cache/a1d2af635867c10f03ac2959f8f50ddc755c79ed/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/activity_connect_four.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/layout/activity_connect_four.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/home/drpayyne/.android/build-cache/a1d2af635867c10f03ac2959f8f50ddc755c79ed/output/res/layout/design_bottom_sheet_dialog.xml"
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/chat_item_rcv.xml",
@@ -124,12 +124,12 @@
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",

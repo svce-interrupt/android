@@ -37,6 +37,20 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_map">Map</string>
 
+    <string name="daynull">Day 0 of 5</string>
+    <string name="day1">Day 1 of 5</string>
+    <string name="day2">Day 2 of 5</string>
+    <string name="day3">Day 3 of 5</string>
+    <string name="day4">Day 4 of 5</string>
+    <string name="day5">Day 5 of 5</string>
+
+    <string name="daynulls">0</string>
+    <string name="day1s">1</string>
+    <string name="day2s">2</string>
+    <string name="day3s">3</string>
+    <string name="day4s">4</string>
+    <string name="day5s">5</string>
+
     <string name="instruct">1. All the participants must have their college ID card with them at all times.\n\n2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration.\n\n3. Private vehicles must be parked at the parking space provided.\n\n4. While inside the campus, please adhere to the rules and regulations provided by the management.\n\n5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n\n6. Participants must register before attending the symposium.\n\n7. Lunch will not be provided by the organisers.</string>
 
     <string name="Picturesque">In a world where creatives often only have a couple of minutes to view your site, the photographs on the site can play a major role. Many people will quickly abandon a website to jump to the next, so you have to make sure your entire site is not only engaging, but successfully portrays your personality. So here\'s an extraordinary opportunity for y\'all to grab in this year\'s interrupt. An innovative, inventive and prolific photograph of our symposium on  Facebook; can help y\'all to showcase your talent to the outer world. Hurry up, what are you waiting for?</string>
