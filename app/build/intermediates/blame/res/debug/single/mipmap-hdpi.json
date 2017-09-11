@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_instagram1.png",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/mipmap-hdpi/ic_instagram1.png"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_instagram1.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-hdpi/ic_instagram1.png"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_facebook.png",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/mipmap-hdpi/ic_facebook.png"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_mail.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-hdpi/ic_mail.png"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_mail.png",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/mipmap-hdpi/ic_mail.png"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_facebook.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-hdpi/ic_facebook.png"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
-        "source": "/home/drpayyne/AndroidStudioProjects/final/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]
