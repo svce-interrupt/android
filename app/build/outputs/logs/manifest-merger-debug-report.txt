@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:4:5-50
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml
@@ -37,7 +37,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.a
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:9:22-76
 application
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:13:5-50:19
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:13:5-49:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:8:5-20
 MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:23:5-20
@@ -60,13 +60,13 @@ MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /home/drpayyne/.andro
 MERGED from [com.android.support:appcompat-v7:26.0.2] /home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:animated-vector-drawable:26.0.2] /home/drpayyne/.android/build-cache/80b614636c1bd2ffb67a8870c04363c655267d1e/output/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.0.2] /home/drpayyne/.android/build-cache/7ce51f3059d9e67061c4432d187f873a4c6e54c2/output/AndroidManifest.xml:22:5-26:19
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:11:5-53
 MERGED from [com.android.support:support-v4:26.0.2] /home/drpayyne/.android/build-cache/a0afbbb9b6d6fe42d147e9552be1687477bb651c/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.0.2] /home/drpayyne/.android/build-cache/a17149af17e406a848cea6107907c432feb7e446/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.0.2] /home/drpayyne/.android/build-cache/f2869c60e5a4358488c71ba3d9f98151658ff1f5/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-ui:26.0.2] /home/drpayyne/.android/build-cache/eb79d0f1eed362016dcc3ea64ec502687b312d02/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.0.2] /home/drpayyne/.android/build-cache/c6adbd0728a2c19f872b6bb31f1b8b3815db00f2/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.2] /home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/AndroidManifest.xml:25:5-29:19
-MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:11:5-53
 	android:label
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:supportsRtl
@@ -147,14 +147,10 @@ activity#com.lazytomatostudios.svceinterrupt.events.RegisterActivity
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:47:9-61
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:47:19-58
-activity#com.lazytomatostudios.svceinterrupt.events.QRActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:48:9-55
-	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:48:19-52
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:49:9-81
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:48:9-81
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:49:19-69
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:48:19-69
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41
@@ -187,13 +183,13 @@ MERGED from [com.android.support:appcompat-v7:26.0.2] /home/drpayyne/.android/bu
 MERGED from [com.android.support:animated-vector-drawable:26.0.2] /home/drpayyne/.android/build-cache/80b614636c1bd2ffb67a8870c04363c655267d1e/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.2] /home/drpayyne/.android/build-cache/7ce51f3059d9e67061c4432d187f873a4c6e54c2/output/AndroidManifest.xml:20:5-44
 MERGED from [com.github.dmytrodanylyk.android-process-button:library:1.0.4] /home/drpayyne/.android/build-cache/db01ad5c6f350c495d00f4a4452881cda2b84164/output/AndroidManifest.xml:8:5-10:41
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:26.0.2] /home/drpayyne/.android/build-cache/a0afbbb9b6d6fe42d147e9552be1687477bb651c/output/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.2] /home/drpayyne/.android/build-cache/a17149af17e406a848cea6107907c432feb7e446/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.2] /home/drpayyne/.android/build-cache/f2869c60e5a4358488c71ba3d9f98151658ff1f5/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:26.0.2] /home/drpayyne/.android/build-cache/eb79d0f1eed362016dcc3ea64ec502687b312d02/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.2] /home/drpayyne/.android/build-cache/c6adbd0728a2c19f872b6bb31f1b8b3815db00f2/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.2] /home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/AndroidManifest.xml:21:5-23:58
-MERGED from [nl.dionsegijn:konfetti:1.1.0] /home/drpayyne/.android/build-cache/cf8209977c9d69e9f0f4d3046ba86c2025863b38/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.2] /home/drpayyne/.android/build-cache/a1d2af635867c10f03ac2959f8f50ddc755c79ed/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

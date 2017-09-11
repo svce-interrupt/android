@@ -52,6 +52,10 @@
         "source": "/home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/res/layout/mapbox_attribution_list_item.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/fragment_login.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/home/drpayyne/.android/build-cache/a17149af17e406a848cea6107907c432feb7e446/output/res/layout/notification_template_media.xml"
     },
@@ -72,12 +76,12 @@
         "source": "/home/drpayyne/.android/build-cache/a1d2af635867c10f03ac2959f8f50ddc755c79ed/output/res/layout/design_text_input_password_icon.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/fragment_route.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/layout/fragment_route.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/chat_view.xml",
         "source": "/home/drpayyne/.android/build-cache/a7780579fab468080f2937d692d389a597327232/output/res/layout/chat_view.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/fragment_route.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/layout/fragment_route.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",

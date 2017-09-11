@@ -87,7 +87,6 @@
         <activity android:name="com.lazytomatostudios.svceinterrupt.profileactivities.SignUpActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.profileactivities.UpdateActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.events.RegisterActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.events.QRActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity" />
         <!-- Include the telemetry service to simplify set up (https://www.mapbox.com/telemetry) -->
         <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />

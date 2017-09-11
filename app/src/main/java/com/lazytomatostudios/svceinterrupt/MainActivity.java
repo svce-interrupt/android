@@ -10,11 +10,19 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
+import com.lazytomatostudios.svceinterrupt.bridge.AppController;
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourMain;
 import com.lazytomatostudios.svceinterrupt.events.RegisterActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
@@ -22,10 +30,14 @@ import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Home;
-import com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin;
-import com.lazytomatostudios.svceinterrupt.navbarfragments.Profile;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Login;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
@@ -38,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
     static String name = "anonymous";
     static String mailId = "null";
     static String phoneNum = "null";
+
+    String pass, user;
+
+    String TAG = "Hello";
 
     ArrayList<NavigationTabBar.Model> barModel;
 
@@ -206,18 +222,7 @@ public class MainActivity extends AppCompatActivity {
                 case 2:
                     return new Chat();
                 case 3:
-                    try {
-                        if (name.equals("anonymous")) {
-                            return new Profile();
-                        } else {
-                            PostLogin postLogin = new PostLogin();
-                            bundle.putString("umail", mailId);
-                            postLogin.setArguments(bundle);
-                            return postLogin;
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    return new Login();
                 default:
                     return null;
             }

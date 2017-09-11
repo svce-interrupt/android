@@ -45,7 +45,6 @@
         <activity android:name=".profileactivities.SignUpActivity" />
         <activity android:name=".profileactivities.UpdateActivity" />
         <activity android:name=".events.RegisterActivity" />
-        <activity android:name=".events.QRActivity" />
         <activity android:name=".dashactivities.ConnectFourActivity"></activity>
     </application>
 

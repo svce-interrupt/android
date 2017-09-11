@@ -20,7 +20,6 @@ import com.lazytomatostudios.svceinterrupt.MainActivity;
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
 import com.lazytomatostudios.svceinterrupt.bridge.AppController;
-import com.lazytomatostudios.svceinterrupt.userinfo.UserDBHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +43,6 @@ public class UpdateActivity extends AppCompatActivity {
     private EditText rePasText;
     private EditText collegeNameText;
     private Button updateAccount;
-    private UserDBHelper mUserDbHelper;
     private ProgressDialog progressDialog;
 
     @Override
@@ -70,7 +68,6 @@ public class UpdateActivity extends AppCompatActivity {
         rePasText = (EditText) findViewById(R.id.input_reEnterPassword);
         collegeNameText = (EditText) findViewById(R.id.input_collegeName);
         updateAccount = (Button) findViewById(R.id.btn_update);
-        mUserDbHelper = new UserDBHelper(getApplicationContext());
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
 
@@ -152,10 +149,6 @@ public class UpdateActivity extends AppCompatActivity {
                         String password = user.getString("password");
                         String mobile = user.getString("phoneNumber");
                         String collegeName = user.getString("collegeName");
-
-
-                        mUserDbHelper.updateDetails(name, email, mobile, password, collegeName);
-                        attachIntent(0);
                     } else {
 
                         String errorMsg = jObj.getString("error_msg");

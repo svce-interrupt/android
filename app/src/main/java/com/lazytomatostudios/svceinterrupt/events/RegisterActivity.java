@@ -132,13 +132,6 @@ public class RegisterActivity extends AppCompatActivity {
                 filterList();
                 if (sb1.length() >= 5) {
                     sb1.deleteCharAt(sb1.length() - 2);
-                    Intent i = new Intent(RegisterActivity.this, QRActivity.class);
-                    i.putExtra("eventslist", sb1.toString());
-                    i.putExtra("name", name);
-                    i.putExtra("usermail", mailId);
-                    i.putExtra("usernum", phoneNum);
-                    sb1.setLength(0);
-                    startActivity(i);
                 } else if ((sb1.length()) == 0) {
                     Toast.makeText(RegisterActivity.this, "Please select the events.", Toast.LENGTH_SHORT).show();
                 }

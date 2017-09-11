@@ -78,6 +78,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
@@ -170,5 +171,6 @@
     <orderEntry type="library" exported="" name="chat-ui-0.1.1" level="project" />
     <orderEntry type="library" exported="" name="libai-1.4.8" level="project" />
     <orderEntry type="module" module-name="ResideMenu" exported="" />
+    <orderEntry type="library" exported="" name="nineoldandroids-library-2.4.0" level="project" />
   </component>
 </module>
