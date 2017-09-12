@@ -19,10 +19,12 @@ import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
 import com.lazytomatostudios.svceinterrupt.bridge.AppController;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourGame;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourMain;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,12 +42,19 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     ConnectFourGame connectFourGame;
 
+    public String mail;
+
     String TAG = "PHP Request ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connect_four);
+
+        Bundle bundle = getIntent().getExtras();
+
+        mail = bundle.getString("mail");
+        Log.d(TAG, mail);
 
         getSupportFragmentManager()
                 .beginTransaction()
@@ -60,12 +69,40 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     public void startGame(View view) {
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.frame_layout_game, new ConnectFourGame())
-                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                .commit();
+        if (mail.equals("null")) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Alert")
+                    .setMessage("Please sign in to play the online game event.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
 
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                    .show();
+        } else {
+            try {
+                if(isConnected()) {
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.frame_layout_game, new ConnectFourGame())
+                            .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                            .commit();
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public boolean isConnected() throws InterruptedException, IOException {
+        String command = "ping -c 1 google.com";
+        return (Runtime.getRuntime().exec(command).waitFor() == 0);
     }
 
     @Override
@@ -152,7 +189,7 @@ public class ConnectFourActivity extends AppCompatActivity {
                     case "day":
                         break;
                     case "check_user":
-                        param.put("email", email);
+                        param.put("email", mail);
                         break;
                     case "submit":
                         param.put("answer", answer);
@@ -160,10 +197,10 @@ public class ConnectFourActivity extends AppCompatActivity {
                         break;
                     case "attempt":
                         param.put("attempt", String.valueOf(attempted));
-                        param.put("email", email);
+                        param.put("email", mail);
                         break;
                     case "score":
-                        param.put("email", email);
+                        param.put("email", mail);
                         param.put("score", String.valueOf(score));
                     default:
                         break;
@@ -183,27 +220,8 @@ public class ConnectFourActivity extends AppCompatActivity {
 
         try {
             mday = jsonObject.getString("CURRENT_DATE()");
-            Log.d(TAG, "Day : " + mday);
-            switch (mday) {
-                case "2017-09-08":
-                    day = "1";
-                    break;
-                case "2017-09-09":
-                    day = "2";
-                    break;
-                case "2017-09-10":
-                    day = "3";
-                    break;
-                case "2017-09-11":
-                    day = "4";
-                    break;
-                case "2017-09-12":
-                    day = "5";
-                    break;
-                default:
-                    day = "0";
-                    break;
-            }
+            day = mday;
+            Log.d(TAG, "Day : " + day);
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -1,8 +1,10 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +41,22 @@ public class ConnectFourMain extends Fragment {
 
         //Check for login state.
 
-        ((ConnectFourActivity) this.getActivity()).getData("check_user");
+        if (!((ConnectFourActivity) this.getActivity()).mail.equals("null")) {
+            ((ConnectFourActivity) this.getActivity()).getData("check_user");
+        } else {
+            new AlertDialog.Builder(getContext())
+                    .setTitle("Alert")
+                    .setMessage("Please sign in to play the online game event.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                    .show();
+        }
 
         return view;
     }

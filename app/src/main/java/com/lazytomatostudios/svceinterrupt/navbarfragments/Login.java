@@ -48,8 +48,6 @@ public class Login extends Fragment implements MyInterface {
 
     SubmitProcessButton signupButton;
 
-    private static Login instance;
-
     ScrollView scrollView;
 
     String name, email = "null", phone, college, events;
@@ -87,6 +85,16 @@ public class Login extends Fragment implements MyInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_login, container, false);
+
+        email = mailInterface.sendMail();
+
+        if(!email.equals("null")) {
+
+            String pass = mailInterface.getPass();
+
+            submitLogin(email, pass);
+
+        }
 
         emailText = (EditText) rootView.findViewById(R.id.input_email);
         passText = (EditText) rootView.findViewById(R.id.input_password);
@@ -155,11 +163,6 @@ public class Login extends Fragment implements MyInterface {
 
     }
 
-    public static synchronized Login getInstance()
-    {
-        return instance;
-    }
-
     public void submitLogin(final String user, final String pass) {
 
         StringRequest strReq = new StringRequest(Request.Method.POST, AppConfig.URL_LOGIN, new Response.Listener<String>() {
@@ -201,6 +204,7 @@ public class Login extends Fragment implements MyInterface {
                 Map<String, String> param = new HashMap<String, String>();
                 param.put("email", user);
                 param.put("password", pass);
+                mailInterface.storePass(pass);
                 Log.d(TAG, user + pass);
                 return param;
             }
@@ -250,9 +254,12 @@ public class Login extends Fragment implements MyInterface {
         eventView.setText("");
         emailText.setText("");
         passText.setText("");
+        email = "null";
         loginPage.setVisibility(View.VISIBLE);
         profilePage.setVisibility(View.GONE);
         scrollView.setVisibility(View.GONE);
+
+        mailInterface.getMail(email);
 
     }
 
@@ -286,9 +293,6 @@ public class Login extends Fragment implements MyInterface {
                         boolean error = jObj.getBoolean("error");
                         if (!error) {
                             submitLogin(signupMail.getText().toString(), signupPass.getText().toString());
-                            /*loginPage.setVisibility(View.GONE);
-                            profilePage.setVisibility(View.VISIBLE);
-                            signupPage.setVisibility(View.GONE);*/
                             Log.d(TAG, "No error");
                         } else {
                             String errorMsg = jObj.getString("error_msg");
@@ -335,10 +339,6 @@ public class Login extends Fragment implements MyInterface {
         loginPage.setVisibility(View.VISIBLE);
         profilePage.setVisibility(View.GONE);
         scrollView.setVisibility(View.GONE);
-    }
-
-    public String getMail() {
-        return email;
     }
 
 }

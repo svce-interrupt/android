@@ -8,4 +8,10 @@ public interface MailInterface {
 
     public void getMail(String mail);
 
+    public String sendMail();
+
+    public void storePass(String pass);
+
+    public String getPass();
+
 }

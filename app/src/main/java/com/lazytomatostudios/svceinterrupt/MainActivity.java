@@ -1,6 +1,10 @@
 package com.lazytomatostudios.svceinterrupt;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -12,20 +16,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
-import com.lazytomatostudios.svceinterrupt.bridge.AppController;
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourMain;
 import com.lazytomatostudios.svceinterrupt.events.RegisterActivity;
-import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
-import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
 import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
@@ -33,24 +28,19 @@ import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Home;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Login;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
 public class MainActivity extends AppCompatActivity implements MailInterface{
 
-    NavigationTabBar navigationTabBar;
-    ViewPager viewPager;
+    public NavigationTabBar navigationTabBar;
+    public ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
-    String mail = "null";
-
-    String pass, user;
+    String mail = "null", event = "null", pass = "null";
+    static String FACEBOOK_URL = "https://www.facebook.com/svceinterrupt";
+    static String FACEBOOK_PAGE_ID = "svceinterrupt";
 
     String TAG = "Hello";
 
@@ -137,26 +127,15 @@ public class MainActivity extends AppCompatActivity implements MailInterface{
 
     }
 
-    public void openAbout(View view) {
-        Log.d("Debug", "About visible");
-
-        Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void openContact(View view) {
-        Log.d("Debug", "Contact visible");
-
-        Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
-
-    }
-
     public void openEvent(View view) {
         Log.d("Debug", "Events visible");
 
         Intent intent = new Intent(this, EventActivity.class);
+        intent.putExtra("mail", mail);
+        intent.putExtra("event", event);
+
+        Log.d("TAG", event+mail);
+
         startActivity(intent);
     }
 
@@ -198,9 +177,49 @@ public class MainActivity extends AppCompatActivity implements MailInterface{
         }
     }
 
-    private static class MyPagerAdapter extends FragmentPagerAdapter {
+    public void openFacebook(View view) {
+        Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
+        String facebookUrl = getFacebookPageURL(this);
+        facebookIntent.setData(Uri.parse(facebookUrl));
+        startActivity(facebookIntent);
+    }
 
-        Bundle bundle = new Bundle();
+    public void openInstagram(View view) {
+        Intent instagramIntent = new Intent(Intent.ACTION_VIEW);
+        instagramIntent.setPackage("com.instagram.android");
+        String instagramUrl = "http://instagram.com/_u/interrupt_svce";
+        instagramIntent.setData(Uri.parse(instagramUrl));
+        try {
+            startActivity(instagramIntent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/interrupt_svce")));
+        }
+    }
+
+    public void openMail(View view) {
+        String email[] = { "interrupt2k17@gmail.com" };
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, email);
+        startActivity(emailIntent);
+    }
+
+    public String getFacebookPageURL(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            int versionCode = packageManager.getPackageInfo("com.facebook.katana", 0).versionCode;
+            if (versionCode >= 3002850) { //newer versions of fb app
+                return "fb://facewebmodal/f?href=" + FACEBOOK_URL;
+            } else { //older versions of fb app
+                return "fb://page/" + FACEBOOK_PAGE_ID;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            return FACEBOOK_URL; //normal web url
+        }
+    }
+
+    private static class MyPagerAdapter extends FragmentPagerAdapter {
 
         private MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
@@ -235,6 +254,21 @@ public class MainActivity extends AppCompatActivity implements MailInterface{
     @Override
     public void getMail(String string) {
         mail = string;
+    }
+
+    @Override
+    public String sendMail() {
+        return mail;
+    }
+
+    @Override
+    public void storePass(String string) {
+        pass = string;
+    }
+
+    @Override
+    public String getPass() {
+        return pass;
     }
 
 }

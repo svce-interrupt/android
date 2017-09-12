@@ -109,7 +109,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="accent">#123F56</color>
+    <color name="accent">#4caf50</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="aidialog_background">#ffffffff</color>
@@ -985,13 +985,13 @@
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="BLC">\"Imagination takes you everywhere\" - Albert Einstein. Are you a person who agrees to disagree with him on this and prove that it is logic that takes you everywhere and beyond? Take part in this coding event comprising of 2 rounds - a logical puzzle solving round followed by a Room Escape style round where you\'ll have to find clues to escape and win. It doesn\'t get better than this! Register here!</string>
-    <string name="BLC_rules">Rules:\n1. Team must consists of maximum 2 members.\n2. Organisers decision is final.</string>
+    <string name="BLC_rules">Rules:\n1. Participants will have to solve logical puzzles.\n2. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="Connect4">Is the Jumble totally your thing? Do you love guessing games? Four clues, one word and a ticking clock. How quickly can your brain put two and two together? Come show us at Connect4!</string>
-    <string name="Connect4_rules">Rules:\n1. The participant with the highest points will be declared the winner and in case of a tie the person finishing the event first will be declared the winner.\n2. Certificate of participation will not be awarded for this event</string>
+    <string name="Connect4_rules">Rules:\n1. Participants will have images to connect and guess the word.\n2. Top 3 participants, based on the points will be selected.</string>
     <string name="Picturesque">In a world where creatives often only have a couple of minutes to view your site, the photographs on the site can play a major role. Many people will quickly abandon a website to jump to the next, so you have to make sure your entire site is not only engaging, but successfully portrays your personality. So here\'s an extraordinary opportunity for y\'all to grab in this year\'s interrupt. An innovative, inventive and prolific photograph of our symposium on  Facebook; can help y\'all to showcase your talent to the outer world. Hurry up, what are you waiting for?</string>
-    <string name="Picturesque_rules">Theme:\nComputer Science\nRobots\nGadgets\n\nRules:\n1. Any photo should be sent to the page after which you can share it after being uploaded.\n2. Winner will be selected based on the number of likes and the maximum relevance to the theme provided.</string>
+    <string name="Picturesque_rules">Theme:\nComputer Science\nRobots\nGadgets\n\nRules:\n1. Only 1 submission per participant.\n2. Mail your photo to the interrupt mail-ID.\n3. Photos will get shared on the Interrupt Svce Facebook Page.\n4. The Top 3 photographs with the most number of likes on the post will be selected.</string>
     <string name="Quiz_wiz">Are you a fount of computer knowledge? Do you feel that you\'re a \'A walking computer encyclopedia\'? If so, then let your inner quiz enthusiast come out and take part in this quiz event. This event comprises of 2 rounds- the prelims and the finals. In each round, you\'ll be asked a number of questions of different types testing your knowledge. If you win, you earn from it. Even otherwise, you learn from it. It\'s always gonna be a win for you. Register here!</string>
-    <string name="Quiz_wiz_rules">Rules:\n1. Team must consist of maximum 3 members.\n2. Quiz master\'s decision is final.</string>
+    <string name="Quiz_wiz_rules">Rules:\n1. It\'s a General Technology-based Quiz.\n2. Team of 2.\n3. Participants will have to answer 20 questions for prelims.\n4. 1 point will be awarded per correct answer.\n5. The decisions of the quiz masters are considered to be final decisions and shall permit no changes to it.</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1029,15 +1029,15 @@
     <string name="app_name">SVCE Interrupt</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="battlecode">Take up arms (and your keyboards) to fight an all-out war against teams to rise as the Champion of the land of JAVArosa.\n\nAs army generals, command your prompts as you clash in two rounds, filled with coding and sharp C/ C++ snippets, and strategize your structures to form a Victory array!\n\nRegister now, and join the war for the Interrup-Throne!</string>
-    <string name="battlecode_rules">Rules:\n1. Team must consists of maximum 3 members.\n2. Organisers decision is final.</string>
+    <string name="battlecode_rules">Rules:\nThe Partipants will have to solve 30 mcqs for 35 mins (aptitude and c jargons).\n\n-> 1 point for correct answer.\n-> 0 points for unanswered questions and wrong answers.</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="bus_schedule"><a href="http://www.google.com">Google</a></string>
     <string name="call">Need More Help?</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="code_o_poly">Were you born to code?\n\nThen grab two of your friends and head on down to Code-o-poly!\nPlayers who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.\n\nRegistrations open now!</string>
-    <string name="code_o_poly_rules">Rules\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
+    <string name="code_o_poly_rules">Rules\n1. Players who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.\n2. The Participants will have to solve 30 MCQs(Programming) for 30 mins.\n3. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="coders_bay">Ahoy! Anchor up at the C-Port, where everyone goes \"Arr!\" as you take out your computers and venture into the Web, ready to code your way to victory. Swim through the Torrents and fight the Pythons of the sea as you search for that right algorithm to reach for Davy Jones\' Locker!\nRegister now, weigh your anchors, and Give No Quarter.</string>
-    <string name="coders_bay_rules">Rules:\n1. The competition will be held on hacker rank platform. The participants must have a hackerrank account prior to participating in the event.\n2. Plagiarism of code will be viewed strictly.</string>
+    <string name="coders_bay_rules">Rules:\n1. This event is an online coding event conducted on HackerRank.\n2. The participant is required to have a HackerRank account to participate in this event.\n3. The Top 3 participants will be judged by the number of points they acquire.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -1078,7 +1078,7 @@
     <string name="default_input_hint">Type your message</string>
     <string name="define_processbutton">processbutton</string>
     <string name="flip">A SQL query walks into a bar and sees two tables. He walked up to them and says \'Can I join you?\'\n\nIf you got that, you may have what it takes to tackle insane databases with queries that will search the word \"supercalifragilisticexpialidocious\" like a walk in the park.\n\nThis event comprises of 2 rounds, with General MCQs and a querying round where you get to bring your A - Game and add it to a primary key. Register here to flip the tables in your favor!</string>
-    <string name="flip_rules">Rules:\n1. Team must consists of minimum 2 members and maximum 3 members.\n2. Organisers decision is final.</string>
+    <string name="flip_rules">Rules:\n\nBasic knowledge of MySQL queries is expected.\n1.Team of 2\n2. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCaRDQQ3aUgNGw8N27Lgo9q3AmQw9C-Pkw
     </string>
@@ -1118,7 +1118,7 @@
     <string name="mapbox_telemetryLink" translatable="false">https://www.mapbox.com/telemetry/</string>
     <string name="mapbox_telemetrySettings">Telemetry Settings</string>
     <string name="myobv2">Welcome to the mothership of all events. This challenge is not for the weak, but for those who\'ve embraced their light and dark side. That\'s right, watch as all your \"other\" skills being tested through rounds varying from playing dumb in charades to coming up with a creative ad for Adzap. Register now if you think you\'ve got what it takes to Mind Your Business.\n\nRounds will be announced on-spot.</string>
-    <string name="myobv2_rules">Rules:\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
+    <string name="myobv2_rules">Rules:\n1. A written test will be conducted to test the logical and analytical skills.It would also gauge your personality.\n1. Most innovative team wins.2. Participants with higher scores will be selected for the next round\n3. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
@@ -1127,10 +1127,11 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="presentation_park">Are you a visionary keen on computer science? Then this event is the perfect platform for you to exhibit your knowledge. You are required to choose and present a paper on any one of the given topics. Fascinate the judges by sharing your in depth knowledge and unique insights on the chosen topic are prove to them that you are worthy of being \'the chosen one\'! Register here!</string>
-    <string name="presentation_park_rules">Rules:\n1. Team must be of 2 members.\n2. Plagiarism may result in disqualification.\n3. Judge\'s decision is final.</string>
+    <string name="presentation_park_rules">Rules:\n1. Abstracts (size : 100 - 150 words) should be sent before 19/09/2017 at  paperinterrupt17@gmail.com:\n1. Team of 2P\n2. PT :Maximum of 15 slides.\n\nTopics:\n-> Artificial Intelligence\n-> Networks\n-> Image Processing\n-> Data Analytics\n-> Machine Learning\n-> Internet Of Things\n-> Cloud\n\nMaximum time for presentation: 15 mins. ( 10 for presentation + 5 for questioning)</string>
     <string name="search_menu_title">Search</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suprise_rules">Rules:\nThe decisions of the judges and the organizers are considered to be final decisions and shall permit no changes to it.</string>
     <string name="svce_def"><sup>1</sup> <b><i>the</i></b> place to be for anyone with a passion in Computer Science</string>
     <string name="title_activity_dummy">dummy</string>
     <string name="title_activity_event">EventActivity</string>
@@ -1202,7 +1203,7 @@
 	    <item name="android:scaleType">centerInside</item>
 	</style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -1444,7 +1445,7 @@
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
 
-        <!-- Panel attributes -->
+        
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
@@ -1495,7 +1496,7 @@
         <item name="colorButtonNormal">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">false</item>
     </style>
     <style name="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -1532,7 +1533,7 @@
         <item name="colorButtonNormal">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">true</item>
     </style>
     <style name="Base.V14.Widget.Design.AppBarLayout" parent="android:Widget">
@@ -1547,7 +1548,7 @@
 
         <item name="colorBackgroundFloating">@color/background_floating_material_dark</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">false</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
@@ -1558,7 +1559,7 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
-        <!-- Action Bar Styles -->
+        
         <item name="actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
@@ -1575,10 +1576,10 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
-        <!-- Dropdown Spinner Attributes -->
+        
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
 
-        <!-- Action Mode -->
+        
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -1591,14 +1592,14 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
-        <!-- Panel attributes -->
+        
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
-        <!-- List attributes -->
+        
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSecondary">@style/TextAppearance.AppCompat.Body1</item>
@@ -1608,16 +1609,16 @@
         <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
 
-        <!-- Spinner styles -->
+        
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
+        
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
-        <!-- Popup Menu styles -->
+        
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
@@ -1626,17 +1627,17 @@
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="listMenuViewStyle">@style/Widget.AppCompat.ListMenuView</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
-        <!-- ShareActionProvider attributes -->
+        
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
-        <!-- Toolbar styles -->
+        
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -1645,7 +1646,7 @@
         <item name="editTextColor">?android:attr/textColorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
-        <!-- Color palette -->
+        
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
         <item name="colorPrimary">@color/primary_material_dark</item>
         <item name="colorAccent">@color/accent_material_dark</item>
@@ -1668,7 +1669,7 @@
         <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
         <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
-        <!-- Button styles -->
+        
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
@@ -1681,7 +1682,7 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
-        <!-- Dialog attributes -->
+        
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
 
@@ -1691,14 +1692,13 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_dark</item>
         <item name="listDividerAlertDialog">@null</item>
 
-        <!-- Define these here; ContextThemeWrappers around themes that define them should
-             always clear these values. -->
+        
         <item name="windowFixedWidthMajor">@null</item>
         <item name="windowFixedWidthMinor">@null</item>
         <item name="windowFixedHeightMajor">@null</item>
         <item name="windowFixedHeightMinor">@null</item>
 
-        <!-- Tooltip attributes -->
+        
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_light</item>
         <item name="tooltipForegroundColor">@color/foreground_material_light</item>
 
@@ -1735,7 +1735,7 @@
 
         <item name="colorBackgroundFloating">@color/background_floating_material_light</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">true</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
@@ -1746,7 +1746,7 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
-        <!-- Action Bar Styles -->
+        
         <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText</item>
@@ -1763,7 +1763,7 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
-        <!-- Action Mode -->
+        
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -1776,17 +1776,17 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
-        <!-- Dropdown Spinner Attributes -->
+        
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
 
-        <!-- Panel attributes -->
+        
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_light</item>
 
-        <!-- List attributes -->
+        
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSecondary">@style/TextAppearance.AppCompat.Body1</item>
@@ -1796,16 +1796,16 @@
         <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
 
-        <!-- Spinner styles -->
+        
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
+        
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
-        <!-- Popup Menu styles -->
+        
         <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
@@ -1814,17 +1814,17 @@
         <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
         <item name="listMenuViewStyle">@style/Widget.AppCompat.ListMenuView</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
-        <!-- ShareActionProvider attributes -->
+        
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
-        <!-- Toolbar styles -->
+        
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -1833,7 +1833,7 @@
         <item name="editTextColor">?android:attr/textColorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
-        <!-- Color palette -->
+        
         <item name="colorPrimaryDark">@color/primary_dark_material_light</item>
         <item name="colorPrimary">@color/primary_material_light</item>
         <item name="colorAccent">@color/accent_material_light</item>
@@ -1856,7 +1856,7 @@
         <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
         <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
-        <!-- Button styles -->
+        
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
@@ -1869,7 +1869,7 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
-        <!-- Dialog attributes -->
+        
         <item name="dialogTheme">@style/ThemeOverlay.AppCompat.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
 
@@ -1879,14 +1879,13 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_light</item>
         <item name="listDividerAlertDialog">@null</item>
 
-        <!-- Define these here; ContextThemeWrappers around themes that define them should
-             always clear these values. -->
+        
         <item name="windowFixedWidthMajor">@null</item>
         <item name="windowFixedWidthMinor">@null</item>
         <item name="windowFixedHeightMajor">@null</item>
         <item name="windowFixedHeightMinor">@null</item>
 
-        <!-- Tooltip attributes -->
+        
         <item name="tooltipFrameBackground">@drawable/tooltip_frame_dark</item>
         <item name="tooltipForegroundColor">@color/foreground_material_dark</item>
 
@@ -2295,13 +2294,13 @@
         <item name="inputUseEditorAction">false</item>
         <item name="backgroundColor">@color/white</item>
 
-        <!--item name="inputTextAppearance"></item-->
-        <!--<item name="inputElevation">1dp</item>-->
+        
+        
         <item name="inputTextSize">@dimen/default_input_text_size</item>
         <item name="inputTextColor">@color/black</item>
         <item name="inputHintColor">@color/main_color_gray</item>
 
-        <!--<item name="sendBtnElevation">4dp</item>-->
+        
         <item name="sendBtnIcon">@drawable/ic_send_white_24dp</item>
         <item name="sendBtnIconTint">@color/white</item>
         <item name="sendBtnBackgroundTint">?attr/colorAccent</item>
@@ -2310,12 +2309,12 @@
         <item name="bubbleBackgroundRcv">@color/default_bubble_color_rcv</item>
         <item name="bubbleBackgroundSend">@color/default_bubble_color_send</item>
 
-        <!--item name="messageTextAppearance"></item-->
+        
         <item name="messageTextColorSend">@color/default_message_color_send</item>
         <item name="messageTextColorRcv">@color/default_message_color_rcv</item>
         <item name="messageTextSize">@dimen/default_message_text_size</item>
 
-        <!--item name="tStampTextAppearance"></item-->
+        
         <item name="tStampTextColorSend">@color/default_tstamp_color_send</item>
         <item name="tStampTextColorRcv">@color/default_tstamp_color_rcv</item>
         <item name="tStampTextSize">@dimen/default_timestamp_text_size</item>
@@ -2330,7 +2329,7 @@
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
-        <!-- Window colors -->
+        
         <item name="android:colorForeground">@color/foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
@@ -2339,7 +2338,7 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_dark</item>
 
-        <!-- Text colors -->
+        
         <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
@@ -2352,7 +2351,7 @@
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
         <item name="android:textColorLink">?attr/colorAccent</item>
 
-        <!-- Text styles -->
+        
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -2372,7 +2371,7 @@
     <style name="Platform.AppCompat.Light" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
 
-        <!-- Window colors -->
+        
         <item name="android:colorForeground">@color/foreground_material_light</item>
         <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
@@ -2381,7 +2380,7 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_light</item>
 
-        <!-- Text colors -->
+        
         <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
@@ -2395,7 +2394,7 @@
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
         <item name="android:textColorLink">?attr/colorAccent</item>
 
-        <!-- Text styles -->
+        
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -2414,12 +2413,12 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
     <style name="Platform.ThemeOverlay.AppCompat.Dark">
-        <!-- Action Bar styles -->
+        
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
 
-        <!-- SearchView styles -->
+        
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
@@ -2428,7 +2427,7 @@
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>

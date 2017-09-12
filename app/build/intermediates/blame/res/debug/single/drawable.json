@@ -36,6 +36,10 @@
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_ratingbar_material.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_quizwiz_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_quizwiz_logo.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_sync_black_24dp.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_sync_black_24dp.xml"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/rect_pressed.xml",
         "source": "/home/drpayyne/.android/build-cache/db01ad5c6f350c495d00f4a4452881cda2b84164/output/res/drawable/rect_pressed.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_codebay_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_codebay_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_person_black_24dp.xml",
@@ -144,6 +152,10 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_intel_logo.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_connect4_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_connect4_logo.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/rect_error.xml",
         "source": "/home/drpayyne/.android/build-cache/db01ad5c6f350c495d00f4a4452881cda2b84164/output/res/drawable/rect_error.xml"
     },
@@ -154,6 +166,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_surprise_event.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_surprise_event.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
@@ -180,8 +196,16 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/rounded_corner.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_picturesque_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_picturesque_logo.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_flipatable_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_flipatable_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
@@ -232,8 +256,16 @@
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_presentation_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_presentation_logo.xml"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_blc_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_blc_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
@@ -242,6 +274,10 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
         "source": "/home/drpayyne/.android/build-cache/af8523ed148295cbae5d85f4d93679e6d83f51a4/output/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_first_strike_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_first_strike_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/mapbox_info_bg_selector.xml",
@@ -314,6 +350,14 @@
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/profile_gradient.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/profile_gradient.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_battlecode_icon.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_battlecode_icon.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_myb_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_myb_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",

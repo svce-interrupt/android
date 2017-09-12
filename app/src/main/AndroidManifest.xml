@@ -28,8 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".homeactivities.AboutActivity" />
-        <activity android:name=".homeactivities.ContactActivity" />
         <activity
             android:name=".dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"

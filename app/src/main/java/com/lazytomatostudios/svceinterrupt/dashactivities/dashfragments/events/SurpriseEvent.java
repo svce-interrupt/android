@@ -12,10 +12,10 @@ import com.lazytomatostudios.svceinterrupt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DonOfLogic extends Fragment {
+public class SurpriseEvent extends Fragment {
 
 
-    public DonOfLogic() {
+    public SurpriseEvent() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class DonOfLogic extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_don_of_logic, container, false);
+        return inflater.inflate(R.layout.fragment_surprise_event, container, false);
     }
 
 }

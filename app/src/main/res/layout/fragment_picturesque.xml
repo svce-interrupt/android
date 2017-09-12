@@ -17,7 +17,9 @@
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="175dp"
-            android:background="@color/accent" />
+            android:background="@color/accent"
+            android:src="@drawable/ic_picturesque_logo"
+            android:padding="30dp"/>
 
         <ImageButton
             android:id="@+id/menu_icon"
@@ -82,7 +84,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/Picturesque"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>
@@ -131,7 +133,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/Picturesque_rules"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.R;
 
@@ -18,8 +19,6 @@ import com.lazytomatostudios.svceinterrupt.R;
  * A simple {@link Fragment} subclass.
  */
 public class Home extends Fragment implements MyInterface {
-
-    TextView userName;
 
     public Home() {
         // Required empty public constructor
@@ -33,6 +32,8 @@ public class Home extends Fragment implements MyInterface {
 
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
+        ShimmerFrameLayout shimmerFrameLayout = (ShimmerFrameLayout) v.findViewById(R.id.shimmer);
+        shimmerFrameLayout.startShimmerAnimation();
         return v;
     }
 

@@ -1,6 +1,7 @@
 package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.R;
 
@@ -22,9 +24,24 @@ public class Dashboard extends Fragment implements MyInterface {
 
     ImageButton button1, button2, button3, button4, button5;
 
+    MailInterface mailInterface;
 
     public Dashboard() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mailInterface = (MailInterface) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement onFragmentChangeListener");
+        }
     }
 
 
@@ -55,30 +72,37 @@ public class Dashboard extends Fragment implements MyInterface {
         public void onClick(final View v) {
             Intent intent;
 
+            String mail = mailInterface.sendMail();
+
             switch (v.getId()) {
                 case R.id.event1:
                     intent = new Intent(getActivity(), EventActivity.class);
                     intent.putExtra("event", "battle code");
+                    intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
                 case R.id.event2:
                     intent = new Intent(getActivity(), EventActivity.class);
                     intent.putExtra("event", "flip a table");
+                    intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
                 case R.id.event3:
                     intent = new Intent(getActivity(), EventActivity.class);
                     intent.putExtra("event", "Mind Your Business v3.0");
+                    intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
                 case R.id.event4:
                     intent = new Intent(getActivity(), EventActivity.class);
                     intent.putExtra("event", "breaking the logician code");
+                    intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
                 case R.id.event5:
                     intent = new Intent(getActivity(), EventActivity.class);
                     intent.putExtra("event", "presentation park");
+                    intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
                 default:

@@ -10,6 +10,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.Dash;
 import com.google.android.gms.maps.model.Dot;
@@ -57,7 +58,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
         // Add a marker and move the camera
         LatLng svce_center = new LatLng(12.987079, 79.972057);
@@ -68,159 +69,157 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         mMap.setMinZoomPreference(15.0f);
         mMap.setLatLngBoundsForCameraTarget(latLngBounds);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(svce_center, 16));
+        BitmapDescriptor main_marker = BitmapDescriptorFactory.fromResource(R.mipmap.ic_main);
+        BitmapDescriptor star_marker = BitmapDescriptorFactory.fromResource(R.mipmap.ic_star);
 
         final Marker clg=mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(12.986644, 79.971972))
+                .position(new LatLng(12.98641475, 79.9716416))
                 .title("SVCE")
-                .snippet("also called shitvce"));
+                .icon(star_marker));
         final Marker B5can=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988040,79.974906))
                 .title("Block 5 Canteen")
-                .snippet("shitty food"));
+                .icon(main_marker));
         final Marker cse=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987496, 79.972795))
                 .title("CSE Department")
-                .snippet("blahblah"));
+                .icon(main_marker));
         final Marker B5=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988513, 79.974230))
                 .title("Block 5")
-                .snippet("GGWP"));
+                .icon(main_marker));
         final Marker ec=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988636, 79.974021))
                 .title("ECE Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker BB2=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988745, 79.974587))
                 .title("Bus Bay 2")
-                .snippet("shitty bus"));
+                .icon(main_marker));
         final Marker BB1=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986608, 79.970998))
                 .title("Bus Bay 1")
-                .snippet("shitty bus"));
+                .icon(main_marker));
         final Marker civ=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988745, 79.974163))
                 .title("Civil Department")
-                .snippet("blahblah"));
+                .icon(main_marker));
         final Marker B4=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987402, 79.973321))
                 .title("Block 4")
-                .snippet("GGWP"));
+                .icon(main_marker));
         final Marker B3=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988063, 79.972637))
                 .title("Block 3")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker mech=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987663, 79.972658))
                 .title("Mech Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker itd=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987243, 79.972999))
                 .title("IT Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker eee=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987420, 79.972395))
                 .title("EEE Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker mca=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987287, 79.972495))
                 .title("MCA Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker appsc=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987358, 79.972621))
                 .title("Applied Science Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker chem=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987872, 79.972060))
                 .title("Chemical Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker biotech=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987459, 79.971524))
                 .title("BioTech Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker marine=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988024, 79.971411))
                 .title("Marine Department")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker B2=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986858, 79.972543))
                 .title("Block 2")
-                .snippet("GGWP"));
+                .icon(main_marker));
         final Marker B1=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986686, 79.972309))
                 .title("Block 1")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker maincan=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986547, 79.972199))
                 .title("Main Canteen")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker cenlib=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986822, 79.971497))
                 .title("Central Library")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker ad=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987039, 79.971937))
                 .title("Administration")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker off=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986979, 79.972071))
                 .title("Office")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker vidhal1=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986877, 79.972149))
                 .title("Video Hall 1")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker vidhal2=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.986814, 79.972208))
                 .title("Video Hall 2")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker oat=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987227, 79.971027))
                 .title("Open Air Theatre")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker mechws=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988319, 79.972250))
                 .title("Mechanical Workshop")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker autows=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988377, 79.971593))
                 .title("Automobile Workshop")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker marinews=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988163, 79.971140))
                 .title("Marine Workshop")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker chemlb=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988016, 79.971786))
                 .title("Chemical Lab")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker rnd=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.989007, 79.971148))
                 .title("Research and Development")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker mulhal=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.989318, 79.971486))
                 .title("Multipurpose Hall")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker swim=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.989822, 79.971234))
                 .title("Swimming Pool")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker clinic=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988229, 79.969861))
                 .title("SVCE Clinic")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker hstmen=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.988463, 79.970555))
                 .title("Mens Hostel")
-                .snippet("GG"));
+                .icon(main_marker));
         final Marker hstwomen=mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(12.987287, 79.969558))
                 .title("Ladies Hostel")
-                .snippet("GG"));
-
-
-
-
+                .icon(main_marker));
 
         //marker Animation
         final ValueAnimator va = ValueAnimator.ofFloat(20, 1);
@@ -237,6 +236,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                 B3.setAnchor(0f, (Float) animation.getAnimatedValue());
                 ec.setAnchor(0f, (Float) animation.getAnimatedValue());
                 civ.setAnchor(0f, (Float) animation.getAnimatedValue());
+                BB1.setAnchor(0f, (Float) animation.getAnimatedValue());
                 BB2.setAnchor(0f, (Float) animation.getAnimatedValue());
                 mech.setAnchor(0f,(Float) animation.getAnimatedValue());
                 itd.setAnchor(0f,(Float) animation.getAnimatedValue());
@@ -269,14 +269,12 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         });
         va.start();
 
-
         //pathways
-        final Dot DOT = new Dot();
         final Dash DASH = new Dash(30);
         final Gap GAP = new Gap(20);
         final List<PatternItem> PATTERN = Arrays.asList(GAP, DASH, GAP, DASH);
 
-        Polyline polyline = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(
@@ -287,46 +285,46 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.986386, 79.97136),
                         new LatLng(12.98716, 79.970745),
                         new LatLng(12.98762,79.970781),
-                        new LatLng(12.988213,79.970805),//cli
-                        new LatLng(12.988286,79.97081),//ws
-                        new LatLng(12.98918,79.970925),//mul
-                        new LatLng(12.989034,79.97283),//ct
+                        new LatLng(12.988213,79.970805),
+                        new LatLng(12.988286,79.97081),
+                        new LatLng(12.98918,79.970925),
+                        new LatLng(12.989034,79.97283),
                         new LatLng(12.988911,79.974692)));
-        Polyline polyline1 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.983294,79.97122),
                         new LatLng(12.983785, 79.971186)));
-        Polyline polyline2 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.986318, 79.971392),
                         new LatLng(12.986258,79.971837),
                         new LatLng(12.986723,79.971837),
                         new LatLng(12.986386, 79.97136)));
-        Polyline polyline3 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.98735, 79.969737),
                         new LatLng(12.987264,79.970756)));
-        Polyline polyline4 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.98762,79.970781),
                         new LatLng(12.987557,79.971926),
                         new LatLng(12.988208,79.972025),
                         new LatLng(12.988286,79.97081)));
-        Polyline polyline5 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.98832, 79.969702),
                         new LatLng(12.988285,79.97081)));
-        Polyline polyline6 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(20)
                 .color(Color.WHITE)
                 .add(new LatLng(12.98841, 79.970649),
                         new LatLng(12.988285,79.97081)));
-        Polyline polyline7 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -337,14 +335,14 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987154,79.973546),
                         new LatLng(12.987988,79.974533),
                         new LatLng(12.988171,79.974512)));
-        Polyline polyline8 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987988,79.974533),
                         new LatLng(12.988006,79.974611),
                         new LatLng(12.987949,79.974662)));
-        Polyline polyline9 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -352,7 +350,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988124,79.974608),
                         new LatLng(12.988106,79.974726),
                         new LatLng(12.988286,79.974914)));
-        Polyline polyline10 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -362,25 +360,25 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988438,79.973964),
                         new LatLng(12.987944,79.973288),
                         new LatLng(12.987698,79.972894)));
-        Polyline polyline11 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987944,79.973288),
                         new LatLng(12.988059,79.972822)));
-        Polyline polyline12 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.988132,79.972613),
                         new LatLng(12.988208,79.972025)));
-        Polyline polyline13 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.988205,79.972224),
                         new LatLng(12.987972,79.972216)));
-        Polyline polyline14 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -391,7 +389,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.986977,79.972739),
                         new LatLng(12.986971,79.972417),
                         new LatLng(12.986846,79.972265)));
-        Polyline polyline15 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -399,7 +397,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987263,79.972454),
                         new LatLng(12.987228,79.972065),
                         new LatLng(12.987557,79.971926)));
-        Polyline polyline16 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -407,62 +405,62 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987181,79.971982),
                         new LatLng(12.987181,79.971899),
                         new LatLng(12.987157,79.971899)));
-        Polyline polyline17 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.986971,79.972417),
                         new LatLng(12.986773,79.972358)));
-        Polyline polyline18 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.986815,79.972521),
                         new LatLng(12.986842,79.972375)));
-        Polyline polyline19 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987181,79.971982),
                         new LatLng(12.986864,79.972315)));
-        Polyline polyline20 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987528,79.97269),
                         new LatLng(12.987465,79.972621)));
-        Polyline polyline21 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987371,79.973342),
                         new LatLng(12.987149,79.973525)));
-        Polyline polyline22 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987275,79.972819),
                         new LatLng(12.987272,79.972929)));
-        Polyline polyline23 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.987275,79.972819),
                         new LatLng(12.987366,79.972881)));
-        Polyline polyline24 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.986977,79.972739),
                         new LatLng(12.98693,79.973224)));
-        Polyline polyline25 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
                 .add(new LatLng(12.986621,79.972221),
                         new LatLng(12.986723,79.971837),
                         new LatLng(12.986822,79.972159)));
-        Polyline polyline26 = googleMap.addPolyline(new PolylineOptions()
+        googleMap.addPolyline(new PolylineOptions()
                 .width(12)
                 .pattern(PATTERN)
                 .color(Color.WHITE)
@@ -470,11 +468,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.986723,79.971837),
                         new LatLng(12.986799,79.971542)));
 
-
-
-
         //Set Buildings
-        final PolygonOptions svcebound = new PolygonOptions()
+        //outline
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.982813, 79.970502),
                         new LatLng(12.98619,79.970915),
                         new LatLng(12.986577,79.968485),
@@ -490,8 +486,10 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.984381, 79.974101),
                         new LatLng(12.982813, 79.970502))
                 .strokeWidth(10)
-                .strokeColor(Color.BLACK);
-        final PolygonOptions eeedpt = new PolygonOptions()
+                .strokeColor(Color.BLACK)
+                .fillColor(Color.rgb(176,190,197)));
+        //eeedept
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987081, 79.972484),
                         new LatLng(12.987073,79.972731),
                         new LatLng(12.987311,79.972744),
@@ -507,8 +505,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987081, 79.972484))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions itdpt = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //itdept
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987303, 79.972934),
                         new LatLng(12.987301,79.973117),
                         new LatLng(12.98722,79.973122),
@@ -520,8 +519,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987303, 79.972934))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions csdpt = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //csedpt
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98735, 79.97306),
                         new LatLng(12.987609,79.97306),
                         new LatLng(12.987609,79.972945),
@@ -537,8 +537,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98735, 79.97306))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions bk4 = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //bk4
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98758,79.973224),
                         new LatLng(12.98758,79.973347),
                         new LatLng(12.987494,79.973347),
@@ -554,8 +555,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98758,79.973224))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions bk3 = new PolygonOptions()
+                .fillColor(Color.rgb(69,90,100)));
+        //bk3
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988192, 79.972559),
                         new LatLng(12.988263, 79.972645),
                         new LatLng(12.988196, 79.972704),
@@ -571,8 +573,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988192, 79.972559))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions bk5 = new PolygonOptions()
+                .fillColor(Color.rgb(69,90,100)));
+        //bk5
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988537, 79.974184),
                         new LatLng(12.988581, 79.974233),
                         new LatLng(12.988706, 79.974244),
@@ -596,8 +599,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988537, 79.974184))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions ecdpt = new PolygonOptions()
+                .fillColor(Color.rgb(69,90,100)));
+        //ecdpt
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988712, 79.974058),
                         new LatLng(12.988715, 79.974195),
                         new LatLng(12.98878, 79.974208),
@@ -612,8 +616,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988712, 79.974058))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions b5c = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //b5c
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987784, 79.974474),
                         new LatLng(12.98814, 79.974903),
                         new LatLng(12.988038, 79.974992),
@@ -621,8 +626,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987784, 79.974474 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions busb2 = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //busb2
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988994, 79.974825),
                         new LatLng(12.988537, 79.975204),
                         new LatLng(12.988281, 79.974903),
@@ -630,8 +636,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988994, 79.974825))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.DKGRAY);
-        final PolygonOptions busb1 = new PolygonOptions()
+                .fillColor(Color.rgb(55,71,79)));
+        //busb1
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.986417, 79.971288),
                         new LatLng(12.987157, 79.970663),
                         new LatLng(12.987157, 79.970435),
@@ -639,8 +646,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.986417, 79.971288))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.DKGRAY);
-        final PolygonOptions wsmech = new PolygonOptions()
+                .fillColor(Color.rgb(55,71,79)));
+        //wsmech
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988691, 79.972503),
                         new LatLng(12.988297, 79.972503),
                         new LatLng(12.988297, 79.971996),
@@ -648,8 +656,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988691, 79.972503 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions wsauto = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //wsauto
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988297, 79.971829),
                         new LatLng(12.988297, 79.971352),
                         new LatLng(12.988652, 79.971352),
@@ -657,8 +666,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988297, 79.971829 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions rndd = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //rndd
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988746, 79.971352),
                         new LatLng(12.989102, 79.971352),
                         new LatLng(12.989102, 79.971105),
@@ -666,8 +676,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988746, 79.971352 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions muhu = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //muhu
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.989253, 79.971738),
                         new LatLng(12.989716, 79.971738),
                         new LatLng(12.989716, 79.971183),
@@ -675,8 +686,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.989253, 79.971738 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions pl = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //pl
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.990061, 79.971188),
                         new LatLng(12.989755, 79.971188),
                         new LatLng(12.989755, 79.97144),
@@ -684,8 +696,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.990061, 79.971188 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.CYAN);
-        final PolygonOptions chelb = new PolygonOptions()
+                .fillColor(Color.rgb(129,212,250)));
+        //chelb
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98808, 79.971711),
                         new LatLng(12.988059, 79.971904),
                         new LatLng(12.987705, 79.971878),
@@ -693,8 +706,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98808, 79.971711))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions wsmar = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //wsmar
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988226, 79.971001),
                         new LatLng(12.988216, 79.971186),
                         new LatLng(12.987685, 79.971145),
@@ -702,8 +716,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988226, 79.971001 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions oatt = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //oatt
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987374, 79.971201),
                         new LatLng(12.987147, 79.971242),
                         new LatLng(12.987076, 79.970866),
@@ -711,8 +726,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987374, 79.971201 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions cl = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //cl
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98712, 79.971204),
                         new LatLng(12.98711, 79.97155),
                         new LatLng(12.98666, 79.971548),
@@ -720,8 +736,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98712, 79.971204 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions chemdpt = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //chemdpt
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98779, 79.972022),
                         new LatLng(12.987923, 79.972028),
                         new LatLng(12.987918, 79.972189),
@@ -733,8 +750,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98779, 79.972022))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions marb = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //marb
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988163, 79.971237),
                         new LatLng(12.988158, 79.971344),
                         new LatLng(12.988048, 79.971347),
@@ -748,8 +766,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988163, 79.971237))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions medbay = new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //medbay
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.988276, 79.969928),
                         new LatLng(12.988119, 79.969928),
                         new LatLng(12.988119, 79.969791),
@@ -757,16 +776,18 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.988276, 79.969928 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions hstm= new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //hstm
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.99056, 79.97063),
                         new LatLng(12.988396, 79.970738),
                         new LatLng(12.988396, 79.969268),
                         new LatLng(12.99056, 79.97063))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions hstw= new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //hstw
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987821, 79.969751),
                         new LatLng(12.987821, 79.968737),
                         new LatLng(12.986765, 79.968737),
@@ -774,8 +795,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987821, 79.969751 ))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions btb= new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //btb
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987238, 79.971333),
                         new LatLng(12.987238, 79.971636),
                         new LatLng(12.987413, 79.971636),
@@ -787,8 +809,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987238, 79.971333))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions maioff= new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //mainoff
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.987, 79.971626),
                         new LatLng(12.987, 79.971859),
                         new LatLng(12.987008, 79.971859),
@@ -813,8 +836,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.987, 79.971626))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-        final PolygonOptions bk2= new PolygonOptions()
+                .fillColor(Color.rgb(96,125,139)));
+        //bk2
+        googleMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(12.98687,79.972465),
                         new LatLng(12.986953, 79.972551),
                         new LatLng(12.986903, 79.972613),
@@ -830,36 +854,6 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         new LatLng(12.98687,79.972465))
                 .strokeWidth(5)
                 .strokeColor(Color.BLACK)
-                .fillColor(Color.LTGRAY);
-
-        Polygon polygon27=mMap.addPolygon(svcebound);
-        Polygon polygon=mMap.addPolygon(eeedpt);
-        Polygon polygon1=mMap.addPolygon(itdpt);
-        Polygon polygon2=mMap.addPolygon(csdpt);
-        Polygon polygon3=mMap.addPolygon(bk4);
-        Polygon polygon4=mMap.addPolygon(bk3);
-        Polygon polygon5=mMap.addPolygon(bk5);
-        Polygon polygon6=mMap.addPolygon(ecdpt);
-        Polygon polygon7=mMap.addPolygon(b5c);
-        Polygon polygon8=mMap.addPolygon(busb2);
-        Polygon polygon9=mMap.addPolygon(busb1);
-        Polygon polygon10=mMap.addPolygon(wsmech);
-        Polygon polygon11=mMap.addPolygon(wsauto);
-        Polygon polygon12=mMap.addPolygon(rndd);
-        Polygon polygon13=mMap.addPolygon(muhu);
-        Polygon polygon14=mMap.addPolygon(pl);
-        Polygon polygon15=mMap.addPolygon(wsmar);
-        Polygon polygon16=mMap.addPolygon(chelb);
-        Polygon polygon17=mMap.addPolygon(oatt);
-        Polygon polygon18=mMap.addPolygon(cl);
-        Polygon polygon19=mMap.addPolygon(chemdpt);
-        Polygon polygon20=mMap.addPolygon(marb);
-        Polygon polygon21=mMap.addPolygon(medbay);
-        Polygon polygon22=mMap.addPolygon(hstm);
-        Polygon polygon23=mMap.addPolygon(hstw);
-        Polygon polygon24=mMap.addPolygon(btb);
-        Polygon polygon25=mMap.addPolygon(maioff);
-        Polygon polygon26=mMap.addPolygon(bk2);
-
+                .fillColor(Color.rgb(69,90,100)));
     }
 }
