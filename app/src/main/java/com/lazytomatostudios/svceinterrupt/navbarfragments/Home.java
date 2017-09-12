@@ -31,21 +31,7 @@ public class Home extends Fragment implements MyInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        String user = getArguments().getString("uname");
-
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-
-        userName = v.findViewById(R.id.username);
-
-        try {
-            if (user.equals("anonymous")) {
-                userName.setText("");
-            } else {
-                userName.setText(user);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
         return v;
     }

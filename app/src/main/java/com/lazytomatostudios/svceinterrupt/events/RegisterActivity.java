@@ -5,11 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.lazytomatostudios.svceinterrupt.R;
+import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
+import com.lazytomatostudios.svceinterrupt.bridge.AppController;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,9 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
     Button button;
     StringBuffer sb1 = new StringBuffer("");
     Map<String, Integer> eventsMap = new HashMap<String, Integer>();
-    String name;
-    String mailId;
-    String phoneNum;
+    String mail;
+    String events;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -34,24 +43,28 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         Bundle userData = getIntent().getExtras();
-        if (userData == null) {
+        if (userData != null) {
+            mail = userData.getString("mail");
+            Log.d("TAG", mail);
         } else {
-            name = userData.getString("name");
-            mailId = userData.getString("usermail");
-            phoneNum = userData.getString("usernum");
+            Toast.makeText(RegisterActivity.this, "Please login to register.", Toast.LENGTH_SHORT).show();
+            finish();
         }
         button = (Button) findViewById(R.id.QR);
         recyclerView = (RecyclerView) findViewById(R.id.myRecyclerView2);
         final ArrayList<Events> myEvents = new ArrayList<Events>();
 
-        myEvents.add(new Events(1, "Code Ninja"));
-        myEvents.add(new Events(2, "Code Sprint"));
-        myEvents.add(new Events(3, "Cognition Quest"));
-        myEvents.add(new Events(4, "Data De-Queue"));
-        myEvents.add(new Events(5, "Don of Logic"));
-        myEvents.add(new Events(6, "Game of Archives"));
-        myEvents.add(new Events(7, "MYB"));
-        myEvents.add(new Events(8, "Picturesque"));
+        myEvents.add(new Events(1, "Battle Code"));
+        myEvents.add(new Events(2, "Flip a Table!"));
+        myEvents.add(new Events(3, "First Strike"));
+        myEvents.add(new Events(4, "Logician's Code"));
+        myEvents.add(new Events(5, "Presentation Park"));
+        myEvents.add(new Events(6, "Quiz Wiz"));
+        myEvents.add(new Events(7, "Mind your Business v4.0"));
+        myEvents.add(new Events(8, "Coder's Bay"));
+        myEvents.add(new Events(9, "Connect 4"));
+        myEvents.add(new Events(10, "Picturesque"));
+        myEvents.add(new Events(11, "Surprise Event"));
 
 
         adapter = new EventsAdapter(myEvents, new EventsAdapter.OnItemCheckListener() {
@@ -59,29 +72,37 @@ public class RegisterActivity extends AppCompatActivity {
             public void onItemCheck(Events item, int position) {
                 switch (position) {
                     case 0:
-                        inserToMap("Code Ninja");
+                        inserToMap("Battle Code");
                         break;
                     case 1:
-                        inserToMap("Code Sprint");
+                        inserToMap("Flip a Table!");
                         break;
                     case 2:
-                        inserToMap("Cognition Quest");
+                        inserToMap("First Strike");
                         break;
                     case 3:
-                        inserToMap("Data De-queue");
+                        inserToMap("Logician's Code");
                         break;
                     case 4:
-                        inserToMap("Don of Logic");
+                        inserToMap("Presentation Park");
                         break;
                     case 5:
-                        inserToMap("Game of Archives");
+                        inserToMap("Quiz Wiz");
                         break;
                     case 6:
-                        inserToMap("MYB");
+                        inserToMap("Mind Your Business v4.0");
                         break;
                     case 7:
+                        inserToMap("Coder's Bay");
+                        break;
+                    case 8:
+                        inserToMap("Connect 4");
+                        break;
+                    case 9:
                         inserToMap("Picturesque");
                         break;
+                    case 10:
+                        inserToMap("Surprise Event");
                     default:
                         break;
                 }
@@ -91,29 +112,37 @@ public class RegisterActivity extends AppCompatActivity {
             public void onItemUncheck(Events item, int position) {
                 switch (position) {
                     case 0:
-                        removeFromMap("Code Ninja");
+                        removeFromMap("Battle Code");
                         break;
                     case 1:
-                        removeFromMap("Code Sprint");
+                        removeFromMap("Flip a Table!");
                         break;
                     case 2:
-                        removeFromMap("Cognition Quest");
+                        removeFromMap("First Strike");
                         break;
                     case 3:
-                        removeFromMap("Data De-queue");
+                        removeFromMap("Logician's Code");
                         break;
                     case 4:
-                        removeFromMap("Don of Logic");
+                        removeFromMap("Presentation Park");
                         break;
                     case 5:
-                        removeFromMap("Game of Archives");
+                        removeFromMap("Quiz Wiz");
                         break;
                     case 6:
-                        removeFromMap("MYB");
+                        removeFromMap("Mind Your Business v4.0");
                         break;
                     case 7:
+                        removeFromMap("Coder's Bay");
+                        break;
+                    case 8:
+                        removeFromMap("Connect 4");
+                        break;
+                    case 9:
                         removeFromMap("Picturesque");
                         break;
+                    case 10:
+                        removeFromMap("Surprise Event");
                     default:
                         break;
                 }
@@ -131,12 +160,60 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 filterList();
                 if (sb1.length() >= 5) {
-                    sb1.deleteCharAt(sb1.length() - 2);
+                    sb1.deleteCharAt(sb1.length() - 1);
+                    events = sb1.toString();
+                    sendEvents();
                 } else if ((sb1.length()) == 0) {
                     Toast.makeText(RegisterActivity.this, "Please select the events.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    public void sendEvents() {
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, AppConfig.URL_EVENTS_UPDATE, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                Log.d("TAG", "Response: " + response.toString());
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    if (!error) {
+                        Log.d("TAG", "No error");
+                    } else {
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("TRY", "Response Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> param = new HashMap<String, String>();
+                param.put("email", mail);
+                param.put("eventslist", events);
+                return param;
+            }
+
+        };
+
+        AppController.getInstance().addToRequestQueue(strReq);
+
     }
 
     private void inserToMap(String event) {
@@ -164,7 +241,7 @@ public class RegisterActivity extends AppCompatActivity {
             System.out.println(singleEvent + singleEventCount);
 
             if ((singleEventCount % 2) != 0) {
-                sb1.append(singleEvent + ", ");
+                sb1.append(singleEvent + ",");
             }
         }
     }

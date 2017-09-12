@@ -1,6 +1,7 @@
 package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -24,6 +25,7 @@ import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
 import com.lazytomatostudios.svceinterrupt.bridge.AppController;
 import com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 
 import org.json.JSONException;
@@ -37,6 +39,8 @@ import java.util.Map;
  */
 public class Login extends Fragment implements MyInterface {
 
+    MailInterface mailInterface;
+
     private EditText emailText;
     private EditText passText;
     private Button loginButton, signoutButton;
@@ -44,9 +48,11 @@ public class Login extends Fragment implements MyInterface {
 
     SubmitProcessButton signupButton;
 
+    private static Login instance;
+
     ScrollView scrollView;
 
-    String name, email, phone, college, events;
+    String name, email = "null", phone, college, events;
 
     public LinearLayout loginPage, signupPage;
     public android.support.constraint.ConstraintLayout profilePage;
@@ -59,6 +65,20 @@ public class Login extends Fragment implements MyInterface {
 
     public Login() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mailInterface = (MailInterface) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement onFragmentChangeListener");
+        }
     }
 
 
@@ -101,9 +121,9 @@ public class Login extends Fragment implements MyInterface {
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                submitLogin(String.valueOf(emailText.getText()), String.valueOf(passText.getText()));
                 emailText.setText("");
                 passText.setText("");
-                submitLogin(String.valueOf(emailText.getText()), String.valueOf(passText.getText()));
             }
         });
 
@@ -133,6 +153,11 @@ public class Login extends Fragment implements MyInterface {
 
         return rootView;
 
+    }
+
+    public static synchronized Login getInstance()
+    {
+        return instance;
     }
 
     public void submitLogin(final String user, final String pass) {
@@ -176,6 +201,7 @@ public class Login extends Fragment implements MyInterface {
                 Map<String, String> param = new HashMap<String, String>();
                 param.put("email", user);
                 param.put("password", pass);
+                Log.d(TAG, user + pass);
                 return param;
             }
 
@@ -197,7 +223,11 @@ public class Login extends Fragment implements MyInterface {
             phone = jsonObject.getJSONObject("user").getString("phoneNumber");
             college = jsonObject.getJSONObject("user").getString("collegeName");
             events = jsonObject.getJSONObject("eventslist").toString();
+
             Log.d(TAG, name + " " + email + " " + phone + " " + college + " " + events);
+
+            mailInterface.getMail(email);
+
             refreshProfile();
         } catch (JSONException e) {
             e.printStackTrace();
@@ -305,6 +335,10 @@ public class Login extends Fragment implements MyInterface {
         loginPage.setVisibility(View.VISIBLE);
         profilePage.setVisibility(View.GONE);
         scrollView.setVisibility(View.GONE);
+    }
+
+    public String getMail() {
+        return email;
     }
 
 }

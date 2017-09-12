@@ -26,6 +26,7 @@ import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.C
 import com.lazytomatostudios.svceinterrupt.events.RegisterActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
 import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
@@ -41,15 +42,13 @@ import java.util.Map;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MailInterface{
 
     NavigationTabBar navigationTabBar;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
-    static String name = "anonymous";
-    static String mailId = "null";
-    static String phoneNum = "null";
+    String mail = "null";
 
     String pass, user;
 
@@ -61,13 +60,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Bundle userData = getIntent().getExtras();
-        if (userData != null) {
-            name = userData.getString("username");
-            mailId = userData.getString("usermail");
-            phoneNum = userData.getString("usernum");
-        }
 
         initNavBar();
     }
@@ -191,8 +183,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openRegister(View view) {
-        Intent intent = new Intent(this, RegisterActivity.class);
-        startActivity(intent);
+
+        if(mail.equals("null")) {
+
+            Toast.makeText(getApplicationContext(),
+                    "Please sign in to register", Toast.LENGTH_LONG).show();
+
+        } else {
+
+            Intent intent = new Intent(this, RegisterActivity.class);
+            intent.putExtra("mail", mail);
+            startActivity(intent);
+
+        }
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {
@@ -209,15 +212,9 @@ public class MainActivity extends AppCompatActivity {
             switch (position) {
                 case 0:
                     Home home = new Home();
-                    bundle.putString("uname", name);
-                    home.setArguments(bundle);
                     return home;
                 case 1:
                     Dashboard dashboard = new Dashboard();
-                    bundle.putString("uname", name);
-                    bundle.putString("umail", mailId);
-                    bundle.putString("unum", phoneNum);
-                    dashboard.setArguments(bundle);
                     return dashboard;
                 case 2:
                     return new Chat();
@@ -233,6 +230,11 @@ public class MainActivity extends AppCompatActivity {
             return 4;
         }
 
+    }
+
+    @Override
+    public void getMail(String string) {
+        mail = string;
     }
 
 }
