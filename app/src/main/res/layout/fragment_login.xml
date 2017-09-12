@@ -11,7 +11,7 @@
             android:id="@+id/login_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
@@ -91,22 +91,21 @@
         </LinearLayout>
 
         <android.support.constraint.ConstraintLayout
-        android:visibility="invisible"
+        android:visibility="visible"
         android:id="@+id/profile_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="25dp">
+        android:layout_height="match_parent">
 
         <android.support.v7.widget.CardView
             android:id="@+id/profle_cardview"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/signoutButton"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="60dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="12dp"
             app:cardBackgroundColor="@color/accent">
@@ -120,92 +119,115 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        style="@style/CategoryStyle"
-                        android:text="Name:"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
                         android:textColor="@color/black"/>
 
                     <TextView
-                        android:id="@+id/nameInput"
-                        style="@style/EditorFieldStyle"
-                        android:layout_marginLeft="10dp"
-                        android:background="#0a0"/>
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textAlignment="center"
+                        android:layout_weight="3"
+                        android:id="@+id/nameInput"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        style="@style/CategoryStyle"
-                        android:text="Mail_Id:"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mail"
+                        android:textAlignment="center"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/mailInput"
-                        style="@style/EditorFieldStyle"
-                        android:layout_marginLeft="10dp"
-                        android:background="#0a0"/>
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textAlignment="center"
+                        android:layout_weight="3"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        style="@style/CategoryStyle"
-                        android:text="Mobile_No:"
-                        android:textColor="@color/black" />
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/mobileInput"
-                        style="@style/EditorFieldStyle"
-                        android:layout_marginLeft="10dp"
-                        android:background="#0a0"/>
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textAlignment="center"
+                        android:layout_weight="3"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        style="@style/CategoryStyle"
-                        android:text="College:"
+                        android:layout_width="0dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="College"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/collegeInput"
-                        style="@style/EditorFieldStyle"
-                        android:layout_marginLeft="10dp"
-                        android:background="#0a0"
-                        android:lines="3"
-                        android:maxLines="4" />
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="3" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        style="@style/CategoryStyle"
-                        android:text="Events:"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Events"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/eventsInput"
-                        style="@style/EditorFieldStyle"
-                        android:layout_marginLeft="10dp"
-                        android:background="#0a0"/>
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"/>
 
                 </LinearLayout>
 
@@ -218,10 +240,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign out"
+            android:textColor="@color/white"
+            android:background="@color/primary"
             app:layout_constraintTop_toBottomOf="@id/profle_cardview"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="32dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 

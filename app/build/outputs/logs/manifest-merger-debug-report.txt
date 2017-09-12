@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:2:1-49:12
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:4:5-50
 		INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml
@@ -37,7 +37,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/drpayyne/.a
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:9:22-76
 application
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:13:5-47:19
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:13:5-46:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:20:5-24:19
 MERGED from [com.jakewharton.timber:timber:4.5.1] /home/drpayyne/.android/build-cache/d28e62811c49a68a0ddcd373ea6d029421cdeb98/output/AndroidManifest.xml:8:5-20
 MERGED from [com.mapzen.android:lost:1.1.1] /home/drpayyne/.android/build-cache/9e71b9e8b88d2c008d632d14f53cacdb6541c758/output/AndroidManifest.xml:23:5-20
@@ -131,18 +131,14 @@ activity#com.lazytomatostudios.svceinterrupt.profileactivities.SignUpActivity
 ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:43:9-70
 	android:name
 		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:43:19-67
-activity#com.lazytomatostudios.svceinterrupt.profileactivities.UpdateActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:44:9-70
-	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:44:19-67
 activity#com.lazytomatostudios.svceinterrupt.events.RegisterActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:45:9-61
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:44:9-61
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:45:19-58
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:44:19-58
 activity#com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity
-ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:46:9-81
+ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:45:9-81
 	android:name
-		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:46:19-69
+		ADDED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml:45:19-69
 uses-sdk
 INJECTED from /home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.2] /home/drpayyne/.android/build-cache/bf3a1bd28463a7f15df4bc361bd5e24bf4fab197/output/AndroidManifest.xml:5:5-7:41

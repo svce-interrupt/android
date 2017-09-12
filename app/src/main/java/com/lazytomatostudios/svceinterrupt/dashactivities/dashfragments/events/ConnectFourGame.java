@@ -67,9 +67,7 @@ public class ConnectFourGame extends Fragment {
         imageView = view.findViewById(R.id.image);
         dayView = view.findViewById(R.id.day);
         questionView = view.findViewById(R.id.question);
-        scoreView = view.findViewById(R.id.score);
         submitButton = view.findViewById(R.id.submit_answer);
-        konfettiView = view.findViewById(R.id.viewKonfetti);
 
         ((ConnectFourActivity)this.getActivity()).game_progress = true;
 
@@ -116,15 +114,11 @@ public class ConnectFourGame extends Fragment {
 
         ((ConnectFourActivity) this.getActivity()).attempted++;
         question = ((ConnectFourActivity) this.getActivity()).attempted;
-        score = ((ConnectFourActivity) this.getActivity()).score;
-
-        refreshScore();
 
         Log.d(TAG, String.valueOf(question));
         Log.d(TAG, String.valueOf(score));
 
         questionView.setText(String.valueOf(question));
-        scoreView.setText((String.valueOf(score)));
 
         Log.d(TAG, imageBaseURL + String.valueOf(question) + imageEndURL);
 
@@ -133,26 +127,17 @@ public class ConnectFourGame extends Fragment {
                 .load(imageBaseURL + String.valueOf(question) + imageEndURL)
                 .into(imageView);
 
+        imageView.setVisibility(View.VISIBLE);
+
         ((ConnectFourActivity) this.getActivity()).getData("attempt");
 
     }
 
     public void clearQuestion() {
 
-        konfettiView.build()
-                .addColors(Color.RED, Color.BLUE)
-                .setDirection(0.0, 359.0)
-                .setSpeed(4f, 7f)
-                .setFadeOutEnabled(true)
-                .setTimeToLive(2000L)
-                .addShapes(Shape.RECT, Shape.CIRCLE)
-                .setPosition(-50f, konfettiView.getWidth() + 50f, -50f, -50f)
-                .stream(300, 500L);
-
         ((ConnectFourActivity)this.getActivity()).game_progress = false;
         Glide.with(getContext()).clear(imageView);
         answer = ((EditText) view.findViewById(R.id.answer)).getText().toString();
-        ((ConnectFourActivity)this.getActivity()).getData("submit");
         submitButton.setText(String.valueOf("Next"));
         ((EditText) view.findViewById(R.id.answer)).setText("");
 
@@ -167,12 +152,6 @@ public class ConnectFourGame extends Fragment {
 
     public String getAnswer() {
         return answer;
-    }
-
-    public void refreshScore() {
-
-        scoreView.setText((String.valueOf(score)));
-
     }
 
 }

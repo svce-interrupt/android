@@ -19,7 +19,6 @@ import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
 import com.lazytomatostudios.svceinterrupt.bridge.AppController;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourGame;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.ConnectFourMain;
-import com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -194,6 +193,7 @@ public class ConnectFourActivity extends AppCompatActivity {
                     case "submit":
                         param.put("answer", answer);
                         param.put("qno", String.valueOf(attempted));
+                        param.put("email", mail);
                         break;
                     case "attempt":
                         param.put("attempt", String.valueOf(attempted));

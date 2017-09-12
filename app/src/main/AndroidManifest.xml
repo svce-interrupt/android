@@ -41,7 +41,6 @@
             android:label="@string/title_activity_map" />
         <activity android:name=".dashactivities.InstructionActivity" />
         <activity android:name=".profileactivities.SignUpActivity" />
-        <activity android:name=".profileactivities.UpdateActivity" />
         <activity android:name=".events.RegisterActivity" />
         <activity android:name=".dashactivities.ConnectFourActivity"></activity>
     </application>
