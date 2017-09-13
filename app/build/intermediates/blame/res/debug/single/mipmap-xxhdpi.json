@@ -24,6 +24,10 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xxhdpi/ic_main.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/acm.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xxhdpi/acm.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_mail.png",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xxhdpi/ic_mail.png"
     },

@@ -2,6 +2,7 @@ package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -32,6 +33,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -52,6 +54,8 @@ public class Login extends Fragment implements MyInterface {
 
     String name, email = "null", phone, college, events;
 
+    int[] event_list;
+
     public LinearLayout loginPage, signupPage;
     public android.support.constraint.ConstraintLayout profilePage;
 
@@ -60,6 +64,8 @@ public class Login extends Fragment implements MyInterface {
     TextView signupName, signupMail, signupPhone, signupCollege, signupPass, signupRepass;
 
     String TAG = "TRY";
+
+    String final_events;
 
     public Login() {
         // Required empty public constructor
@@ -85,6 +91,10 @@ public class Login extends Fragment implements MyInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_login, container, false);
+
+        final_events = "";
+
+        event_list = new int[11];
 
         email = mailInterface.sendMail();
 
@@ -130,8 +140,6 @@ public class Login extends Fragment implements MyInterface {
         loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 submitLogin(String.valueOf(emailText.getText()), String.valueOf(passText.getText()));
-                emailText.setText("");
-                passText.setText("");
             }
         });
 
@@ -169,6 +177,7 @@ public class Login extends Fragment implements MyInterface {
 
             @Override
             public void onResponse(String response) {
+
                 Log.d(TAG, "Response: " + response.toString());
 
                 try {
@@ -179,6 +188,8 @@ public class Login extends Fragment implements MyInterface {
                         loginPage.setVisibility(View.GONE);
                         profilePage.setVisibility(View.VISIBLE);
                         scrollView.setVisibility(View.GONE);
+                        emailText.setText("");
+                        passText.setText("");
                         Log.d(TAG, "No error");
                     } else {
                         String errorMsg = jObj.getString("error_msg");
@@ -201,6 +212,7 @@ public class Login extends Fragment implements MyInterface {
 
             @Override
             protected Map<String, String> getParams() {
+
                 Map<String, String> param = new HashMap<String, String>();
                 param.put("email", user);
                 param.put("password", pass);
@@ -228,6 +240,8 @@ public class Login extends Fragment implements MyInterface {
             college = jsonObject.getJSONObject("user").getString("collegeName");
             events = jsonObject.getJSONObject("eventslist").toString();
 
+            parseEvents(jsonObject);
+
             Log.d(TAG, name + " " + email + " " + phone + " " + college + " " + events);
 
             mailInterface.getMail(email);
@@ -236,6 +250,38 @@ public class Login extends Fragment implements MyInterface {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public void parseEvents(JSONObject jsonObject) {
+
+        final_events = "";
+
+        try {
+
+            JSONObject object = jsonObject.getJSONObject("eventslist");
+
+            Iterator<?> iterator = object.keys();
+            int i = 0;
+
+            while(iterator.hasNext()) {
+                String key = (String) iterator.next();
+                Log.d(TAG, key);
+                event_list[i] = Integer.parseInt(object.getString(key));
+                Log.d(TAG, object.getString(key));
+                i++;
+            }
+
+            for (int j = 0; j < event_list.length; j++) {
+                final_events.concat(String.valueOf(event_list[j]));
+                //final_events.concat("\n");
+            }
+
+            Log.d("HEYYO", final_events);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void refreshProfile() {
@@ -286,6 +332,7 @@ public class Login extends Fragment implements MyInterface {
 
                 @Override
                 public void onResponse(String response) {
+
                     Log.d(TAG, "Response: " + response.toString());
 
                     try {
@@ -315,6 +362,7 @@ public class Login extends Fragment implements MyInterface {
 
                 @Override
                 protected Map<String, String> getParams() {
+
                     Map<String, String> param = new HashMap<String, String>();
                     param.put("name", signupName.getText().toString());
                     param.put("email", signupMail.getText().toString());
@@ -340,5 +388,13 @@ public class Login extends Fragment implements MyInterface {
         profilePage.setVisibility(View.GONE);
         scrollView.setVisibility(View.GONE);
     }
+
+    /*public void showDia() {
+        progressDialog.show();
+    }
+
+    public void dismissDia() {
+        progressDialog.dismiss();
+    }*/
 
 }

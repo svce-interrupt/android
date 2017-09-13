@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="175dp"
             android:background="@color/accent"
-            android:src="@drawable/ic_blc_logo"/>
+            android:src="@drawable/ic_surprise"/>
 
         <ImageButton
             android:id="@+id/menu_icon"

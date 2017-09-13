@@ -1,10 +1,12 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -54,7 +56,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
         initMenu();
 
-        if(true) {
+        if(!string.equals("null")) {
 
             Log.d("TAG------", string+mail);
 
@@ -172,9 +174,38 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void startGame(View view) {
-        Intent intent = new Intent(this, ConnectFourActivity.class);
-        intent.putExtra("mail", mail);
-        startActivity(intent);
+
+        /*if (mail.equals("null")) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Alert")
+                    .setMessage("Please sign in to play the online game event.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                    .show();
+        } else {
+            Intent intent = new Intent(this, ConnectFourActivity.class);
+            intent.putExtra("mail", mail);
+            startActivity(intent);
+        }*/
+
+        new AlertDialog.Builder(this)
+                .setTitle("Alert")
+                    .setMessage("Game in alpha testing. Come back later.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                .show();
     }
 
     @Override

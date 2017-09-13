@@ -1085,7 +1085,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="instruct">1. All the participants must have their college ID card with them at all times.\n\n2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration.\n\n3. Private vehicles must be parked at the parking space provided.\n\n4. While inside the campus, please adhere to the rules and regulations provided by the management.\n\n5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n\n6. Participants must register before attending the symposium.\n\n7. Lunch will not be provided by the organisers.</string>
-    <string name="interrupt_desc"><b><i>Interrupt</i></b> has had students marking their calendars for years now and this year it\’s back and bigger than ever! Are you the <b><i>Quiz Wiz</i></b>? Can you make <b><i>Databases</i></b> dance to your tunes? Or is being in a <b><i>Battle Code</i></b> more your style?</string>
+    <string name="interrupt_desc"><b>Interrupt</b> has had students marking their calendars for years now and this year it’s back and bigger than ever! <b>Burgeoning</b> by leaps and bounds with more innovative events and our <b>Magnum Opus</b> attraction - the <b><i>Drone Event</i></b>. \n\n<b>Interrupt</b> is for and by the <i>Tech Enthusiasts, Geeks and Quizzers</i>!</string>
     <string name="library_processbutton_author">Dmytro Danylyk</string>
     <string name="library_processbutton_authorWebsite">http://dmytrodanylyk.com/</string>
     <string name="library_processbutton_isOpenSource">true</string>
@@ -1203,7 +1203,7 @@
 	    <item name="android:scaleType">centerInside</item>
 	</style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -2477,6 +2477,9 @@
     <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>

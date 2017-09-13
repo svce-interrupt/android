@@ -1,5 +1,6 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
@@ -39,6 +40,8 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     public boolean right = false;
 
+    int done = 0, left = -1;
+
     ConnectFourGame connectFourGame;
 
     public String mail;
@@ -67,36 +70,57 @@ public class ConnectFourActivity extends AppCompatActivity {
     }
 
     public void startGame(View view) {
-
-        if (mail.equals("null")) {
-            new AlertDialog.Builder(this)
-                    .setTitle("Alert")
-                    .setMessage("Please sign in to play the online game event.")
-                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
-
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            //
-                        }
-
-                    })
-                    .show();
-        } else {
-            try {
-                if(isConnected()) {
+        try {
+            if(isConnected()) {
+                if(isOpen()) {
                     getSupportFragmentManager()
                             .beginTransaction()
                             .replace(R.id.frame_layout_game, new ConnectFourGame())
                             .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .commit();
+                } else {
+                    new AlertDialog.Builder(this)
+                            .setTitle("Alert")
+                            .setMessage("Game is closed for today as yu have attempted all possible questions for the day.")
+                            .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    //
+                                }
+
+                            })
+                            .show();
                 }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
+    }
+
+    public boolean isOpen() {
+        switch (day) {
+            case "1":
+                if(attempted == 20) return false;
+                else return true;
+            case "2":
+                if(attempted == 40) return false;
+                else return true;
+            case "3":
+                if(attempted == 60) return false;
+                else return true;
+            case "4":
+                if(attempted == 80) return false;
+                else return true;
+            case "5":
+                if(attempted == 100) return false;
+                else return true;
+            default:
+                return false;
+        }
     }
 
     public boolean isConnected() throws InterruptedException, IOException {
@@ -139,6 +163,7 @@ public class ConnectFourActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(String response) {
+
                 Log.d(TAG, "Response: " + response.toString());
 
                 try {
@@ -153,7 +178,6 @@ public class ConnectFourActivity extends AppCompatActivity {
                                 calculateAttempts(jObj);
                                 break;
                             case "submit":
-                                getScore(jObj);
                                 break;
                             case "attempt":
                                 break;
@@ -181,6 +205,9 @@ public class ConnectFourActivity extends AppCompatActivity {
 
             @Override
             protected Map<String, String> getParams() {
+
+                
+
                 Map<String, String> param = new HashMap<String, String>();
                 param.put("data", data);
 
@@ -191,6 +218,7 @@ public class ConnectFourActivity extends AppCompatActivity {
                         param.put("email", mail);
                         break;
                     case "submit":
+                        Log.d(TAG, answer + " " + attempted + " " + mail);
                         param.put("answer", answer);
                         param.put("qno", String.valueOf(attempted));
                         param.put("email", mail);
@@ -216,6 +244,7 @@ public class ConnectFourActivity extends AppCompatActivity {
     }
 
     public void calculateDay(JSONObject jsonObject) {
+
         String mday;
 
         try {
@@ -233,28 +262,28 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     public void calculateAttempts(JSONObject jsonObject) {
 
-        int done = 0, left = 0;
+        done = 0;
+        left = 0;
 
         try {
             Log.d(TAG, "Attempts :" + String.valueOf(jsonObject));
-            done = Integer.parseInt(jsonObject.getString("attempted"));
+            attempted = Integer.parseInt(jsonObject.getString("attempted"));
             score = Integer.parseInt(jsonObject.getString("score"));
-            attempted = done;
             switch (day) {
                 case "1":
-                    left = 20 - done;
+                    left = 20 - attempted;
                     break;
                 case "2":
-                    left = 40 - done;
+                    left = 40 - attempted;
                     break;
                 case "3":
-                    left = 60 - done;
+                    left = 60 - attempted;
                     break;
                 case "4":
-                    left = 80 - done;
+                    left = 80 - attempted;
                     break;
                 case "5":
-                    left = 100 - done;
+                    left = 100 - attempted;
                     break;
                 default:
                     left = 0;
@@ -265,7 +294,7 @@ public class ConnectFourActivity extends AppCompatActivity {
         }
 
         ConnectFourMain connectFourMain = (ConnectFourMain) getSupportFragmentManager().findFragmentById(R.id.frame_layout_game);
-        connectFourMain.setNos(done, left);
+        connectFourMain.setNos(attempted, left);
 
     }
 
@@ -275,28 +304,15 @@ public class ConnectFourActivity extends AppCompatActivity {
 
         if(game_progress) {
 
-            connectFourGame.clearQuestion();
-            answer = connectFourGame.getAnswer();
-            getData("submit");
+            if(connectFourGame.clearQuestion()) {
+                answer = connectFourGame.getAnswer();
+                getData("submit");
+            }
 
         } else {
 
             connectFourGame.setQuestion();
 
-        }
-
-    }
-
-    public void getScore(JSONObject jsonObject) {
-
-        try {
-            right = jsonObject.getBoolean("answer");
-            if(right) {
-                score++;
-
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
 
     }

@@ -8,6 +8,10 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xhdpi/ic_svce_logo.png"
     },
     {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/acm.png",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xhdpi/acm.png"
+    },
+    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_facebook.png",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/mipmap-xhdpi/ic_facebook.png"
     },

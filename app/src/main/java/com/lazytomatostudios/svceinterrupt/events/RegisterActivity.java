@@ -1,6 +1,8 @@
 package com.lazytomatostudios.svceinterrupt.events;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -29,13 +32,17 @@ import java.util.Set;
 public class RegisterActivity extends AppCompatActivity {
 
     Button button;
-    StringBuffer sb1 = new StringBuffer("");
+    StringBuffer sb1;
     Map<String, Integer> eventsMap = new HashMap<String, Integer>();
     String mail;
     String events;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+
+    ScrollView scrollView;
+
+    String TAG1 = "mapping : ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +169,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if (sb1.length() >= 5) {
                     sb1.deleteCharAt(sb1.length() - 1);
                     events = sb1.toString();
+                    Log.d(TAG1, events);
                     sendEvents();
                 } else if ((sb1.length()) == 0) {
                     Toast.makeText(RegisterActivity.this, "Please select the events.", Toast.LENGTH_SHORT).show();
@@ -182,6 +190,7 @@ public class RegisterActivity extends AppCompatActivity {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
                     if (!error) {
+                        displaySuccess();
                         Log.d("TAG", "No error");
                     } else {
                         String errorMsg = jObj.getString("error_msg");
@@ -207,6 +216,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Map<String, String> param = new HashMap<String, String>();
                 param.put("email", mail);
                 param.put("eventslist", events);
+                Log.d("TRIAL", mail + " " + events);
                 return param;
             }
 
@@ -217,6 +227,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void inserToMap(String event) {
+        Log.d("MAP", event);
         if (!eventsMap.containsKey(event)) {
             eventsMap.put(event, 1);
         } else {
@@ -225,6 +236,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void removeFromMap(String event) {
+        Log.d("MAP", event);
         if (eventsMap.containsKey(event)) {
             eventsMap.remove(event);
         }
@@ -235,6 +247,8 @@ public class RegisterActivity extends AppCompatActivity {
         String singleEvent;
         int singleEventCount;
 
+        sb1 = new StringBuffer("");
+
         for (Map.Entry<String, Integer> ent : entires) {
             singleEvent = ent.getKey();
             singleEventCount = ent.getValue();
@@ -244,5 +258,20 @@ public class RegisterActivity extends AppCompatActivity {
                 sb1.append(singleEvent + ",");
             }
         }
+    }
+
+    public void displaySuccess() {
+        new AlertDialog.Builder(this)
+                .setTitle("Alert")
+                .setMessage("You have successfully registered.")
+                .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        RegisterActivity.super.onBackPressed();
+                    }
+
+                })
+                .show();
     }
 }

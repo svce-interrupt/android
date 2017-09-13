@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -45,8 +46,8 @@ public class ConnectFourGame extends Fragment {
 
     SubmitProcessButton submitButton;
 
-    String imageBaseURL = "http://192.168.1.10/res/";
-    String imageEndURL = ".png";
+    String imageBaseURL = "https://api.interrupt2k17.com//res/";
+    String imageEndURL = ".jpg";
 
     String answer;
 
@@ -109,44 +110,82 @@ public class ConnectFourGame extends Fragment {
 
     public void setQuestion() {
 
-        ((ConnectFourActivity)this.getActivity()).game_progress = true;
-        submitButton.setText(String.valueOf("Submit"));
+        if (((ConnectFourActivity) this.getActivity()).isOpen()) {
+            ((ConnectFourActivity)this.getActivity()).game_progress = true;
+            submitButton.setText(String.valueOf("Submit"));
 
-        ((ConnectFourActivity) this.getActivity()).attempted++;
-        question = ((ConnectFourActivity) this.getActivity()).attempted;
+            question = ((ConnectFourActivity) this.getActivity()).attempted + 1;
 
-        Log.d(TAG, String.valueOf(question));
-        Log.d(TAG, String.valueOf(score));
+            Log.d(TAG, String.valueOf(question));
+            Log.d(TAG, String.valueOf(score));
 
-        questionView.setText(String.valueOf(question));
+            questionView.setText(String.valueOf(question));
 
-        Log.d(TAG, imageBaseURL + String.valueOf(question) + imageEndURL);
+            Log.d(TAG, imageBaseURL + String.valueOf(question) + imageEndURL);
 
-        Glide
-                .with(getContext())
-                .load(imageBaseURL + String.valueOf(question) + imageEndURL)
-                .into(imageView);
+            Glide
+                    .with(getContext())
+                    .load(imageBaseURL + String.valueOf(question) + imageEndURL)
+                    .into(imageView);
 
-        imageView.setVisibility(View.VISIBLE);
+            imageView.setVisibility(View.VISIBLE);
 
-        ((ConnectFourActivity) this.getActivity()).getData("attempt");
+        } else {
+            new AlertDialog.Builder(getContext())
+                    .setTitle("Alert")
+                    .setMessage("Game is closed for today as yu have attempted all possible questions for the day.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            getFragmentManager()
+                                    .beginTransaction()
+                                    .add(R.id.frame_layout_game, new ConnectFourMain())
+                                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                    .commit();
+                        }
+
+                    })
+                    .show();
+        }
 
     }
 
-    public void clearQuestion() {
+    public boolean clearQuestion() {
 
-        ((ConnectFourActivity)this.getActivity()).game_progress = false;
-        Glide.with(getContext()).clear(imageView);
+        ((ConnectFourActivity) this.getActivity()).attempted++;
+        ((ConnectFourActivity) this.getActivity()).getData("attempt");
+
         answer = ((EditText) view.findViewById(R.id.answer)).getText().toString();
-        submitButton.setText(String.valueOf("Next"));
-        ((EditText) view.findViewById(R.id.answer)).setText("");
 
-        imageView.setVisibility(View.INVISIBLE);
+        if(!answer.matches(".*[a-z].*")) {
+            new AlertDialog.Builder(getContext())
+                    .setTitle("Alert")
+                    .setMessage("Please enter some answer.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
 
-        InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
 
-        inputManager.hideSoftInputFromWindow(submitButton.getWindowToken(),
-                InputMethodManager.HIDE_NOT_ALWAYS);
+                        }
+
+                    })
+                    .show();
+            return false;
+        } else {
+            ((ConnectFourActivity)this.getActivity()).game_progress = false;
+            Glide.with(getContext()).clear(imageView);
+            submitButton.setText(String.valueOf("Next"));
+            ((EditText) view.findViewById(R.id.answer)).setText("");
+
+            imageView.setVisibility(View.INVISIBLE);
+
+            InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+
+            inputManager.hideSoftInputFromWindow(submitButton.getWindowToken(),
+                    InputMethodManager.HIDE_NOT_ALWAYS);
+            return true;
+        }
 
     }
 

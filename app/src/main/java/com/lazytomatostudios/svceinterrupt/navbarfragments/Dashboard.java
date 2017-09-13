@@ -83,7 +83,7 @@ public class Dashboard extends Fragment implements MyInterface {
                     break;
                 case R.id.event2:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "flip a table");
+                    intent.putExtra("event", "connect4");
                     intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;
