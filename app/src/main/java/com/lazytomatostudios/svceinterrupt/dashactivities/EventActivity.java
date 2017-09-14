@@ -29,7 +29,7 @@ import com.special.ResideMenu.ResideMenuItem;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Battle Code", "Logician\'s Code", "Coder\'s Bay", "Connect 4", "Don of Logic", "Flip a Table!", "Code-O-Poly", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
+    String titles[] = { "Battle Code", "Logician\'s Code", "Coder\'s Bay", "Connect 4", "Surprise Event", "Flip a Table!", "First Strike", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
     ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, cop, cb, pctq, c4;
     Fragment initFrag;

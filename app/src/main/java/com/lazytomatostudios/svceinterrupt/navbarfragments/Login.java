@@ -276,7 +276,7 @@ public class Login extends Fragment implements MyInterface {
                 //final_events.concat("\n");
             }
 
-            Log.d("HEYYO", final_events);
+            Log.d("HEYY", final_events);
 
         } catch (JSONException e) {
             e.printStackTrace();

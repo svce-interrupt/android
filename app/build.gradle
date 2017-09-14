@@ -1,14 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword 'Neapol!tan1'
+            storeFile file('/home/drpayyne/AndroidStudioProjects/final.jks')
+            storePassword 'Neapol!tan1'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "com.lazytomatostudios.svceinterrupt"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.01"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -16,12 +16,12 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_quizwiz_logo.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/res/drawable/notification_tile_bg.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/home/drpayyne/.android/build-cache/cc472d908f0f1184e8a220f672f7f367d681826b/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/drpayyne/.android/build-cache/a145e0f26a76aa53b1083bb5c78bf4800584bf96/output/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
@@ -256,12 +256,12 @@
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_intel_logo.xml"
     },
     {
-        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_connect4_logo.xml",
-        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_connect4_logo.xml"
-    },
-    {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/splash.xml",
         "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/splash.xml"
+    },
+    {
+        "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_connect4_logo.xml",
+        "source": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/src/main/res/drawable/ic_connect4_logo.xml"
     },
     {
         "merged": "/home/drpayyne/AndroidStudioProjects/SVCEInterrupt1/final/android/app/build/intermediates/res/merged/debug/drawable/ic_home_black_24dp.xml",
