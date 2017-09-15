@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends AppCompatActivity implements MailInterface{
+public class MainActivity extends AppCompatActivity implements MailInterface {
 
     public NavigationTabBar navigationTabBar;
     public ViewPager viewPager;
@@ -270,5 +270,138 @@ public class MainActivity extends AppCompatActivity implements MailInterface{
     public String getPass() {
         return pass;
     }
+
+    public void contactV(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:9710960239"));
+        startActivity(intent);
+    }
+
+    public void contactC(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:9500132964"));
+        startActivity(intent);
+
+    }
+
+    public void contactA(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:8939227284"));
+        startActivity(intent);
+
+    }
+
+    public void viewAd(View view) {
+
+        Intent intent;
+        String url;
+
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setPackage("com.instagram.android");
+        url = "http://instagram.com/_u/dr_payyne";
+        intent.setData(Uri.parse(url));
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/dr_payyne")));
+        }
+
+    }
+
+    public void viewAb(View view) {
+
+        String url;
+        Intent intent;
+
+        url = "https://www.linkedin.com/in/abishaik-mohan-90513013a/";
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
+
+    }
+
+    public void viewJ(View view) {
+
+        Intent intent;
+        String url;
+
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setPackage("com.instagram.android");
+        url = "http://instagram.com/_u/jashaul_d";
+        intent.setData(Uri.parse(url));
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/jashaul_d")));
+        }
+
+    }
+
+    /*public void onClick(View view) {
+
+        Intent intent;
+        String url;
+
+        switch (view.getId()) {
+            case R.id.dev5:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:9710960239"));
+                startActivity(intent);
+                break;
+            case R.id.dev11:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:9500132965"));
+                startActivity(intent);
+                break;
+            case R.id.dev22:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:8939227284"));
+                startActivity(intent);
+                break;
+            case R.id.dev1:
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setPackage("com.instagram.android");
+                url = "http://instagram.com/_u/dr_payyne";
+                intent.setData(Uri.parse(url));
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/_u/dr_payyne")));
+                }
+                break;
+            case R.id.dev3:
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setPackage("com.instagram.android");
+                url = "http://instagram.com/_u/jashaul_d";
+                intent.setData(Uri.parse(url));
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/_u/jashaul_d")));
+                }
+                break;
+            case R.id.dev2:
+                url = "https://www.linkedin.com/in/abishaik-mohan-90513013a/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }*/
 
 }

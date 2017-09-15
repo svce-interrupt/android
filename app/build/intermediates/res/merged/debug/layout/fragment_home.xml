@@ -16,7 +16,8 @@
             android:layout_height="wrap_content"
             app:duration="2000"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -203,7 +204,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/svce_card"
             android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_height="175dp"
             app:layout_constraintTop_toBottomOf="@+id/def_title_real"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -321,118 +322,11 @@
         </android.support.v7.widget.CardView>
 
         <TextView
-            android:id="@+id/dev_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/int_time"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="20dp"
-            android:text="The Developers"
-            android:textStyle="bold"
-            android:textSize="30dp" />
-
-        <LinearLayout
-            android:id="@+id/dev_icons"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dev_title"
-            android:layout_marginTop="12dp">
-
-            <ImageView
-                android:id="@+id/dev1"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_account_circle_black_24dp"/>
-
-            <ImageView
-                android:id="@+id/dev2"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_account_circle_black_24dp"/>
-
-            <ImageView
-                android:id="@+id/dev3"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_account_circle_black_24dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/dev_names"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/dev_icons"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Adarsh M"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Abishaik M"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Jashaul D"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/dev_desc"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/dev_names"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Developer and Designer"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Developer"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Designer"
-                android:layout_weight="1"
-                android:textAlignment="center"/>
-
-        </LinearLayout>
-
-        <TextView
             android:id="@+id/con_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dev_desc"
+            app:layout_constraintTop_toBottomOf="@+id/int_time"
             android:layout_marginTop="32dp"
             android:layout_marginStart="20dp"
             android:text="Contact Us"
@@ -506,11 +400,11 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/con_title1"
             android:layout_marginStart="20dp"
-            android:text="Interrupt Us!"
+            android:text="Interrupt Us! (tap to call)"
             android:textSize="20dp" />
 
         <LinearLayout
-            android:id="@+id/con_icons2"
+            android:id="@+id/con_icons3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -520,18 +414,89 @@
             android:layout_marginTop="12dp">
 
             <ImageView
+                android:id="@+id/dev5"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:onClick="contactV"
+                android:src="@mipmap/vikkram"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/con_names3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/con_icons3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Vikkram Anand"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/con_desc3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/con_names3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="President, ACE"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/con_num3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/con_desc3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="97109 60239"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/con_icons2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/con_desc3">
+
+            <ImageView
                 android:id="@+id/dev11"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_account_circle_black_24dp"/>
+                android:onClick="contactC"
+                android:src="@mipmap/chran"/>
 
             <ImageView
                 android:id="@+id/dev22"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_account_circle_black_24dp"/>
+                android:onClick="contactA"
+                android:src="@mipmap/arjun"/>
 
         </LinearLayout>
 
@@ -546,7 +511,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="S.Chran"
+                android:text="S. Chran"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
 
@@ -565,7 +530,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/con_names2"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingBottom="32dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -583,7 +549,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
+        <!--<LinearLayout
             android:id="@+id/con_num"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -603,6 +569,117 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="89392 27284"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/dev_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/con_desc"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:text="The Developers"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/dev_icons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dev_title"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/dev1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:onClick="viewAd"
+                android:src="@mipmap/adarsh"/>
+
+            <ImageView
+                android:id="@+id/dev2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:onClick="viewAb"
+                android:src="@mipmap/abishaik"/>
+
+            <ImageView
+                android:id="@+id/dev3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:onClick="viewJ"
+                android:src="@mipmap/jashaul"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dev_names"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/dev_icons"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Adarsh M"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Abishaik M"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Jashaul D"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dev_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/dev_names"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Developer and Designer"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Developer"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Designer"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
 

@@ -41,22 +41,7 @@ public class ConnectFourMain extends Fragment {
 
         //Check for login state.
 
-        if (!((ConnectFourActivity) this.getActivity()).mail.equals("null")) {
-            ((ConnectFourActivity) this.getActivity()).getData("check_user");
-        } else {
-            new AlertDialog.Builder(getContext())
-                    .setTitle("Alert")
-                    .setMessage("Please sign in to play the online game event.")
-                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
-
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            //
-                        }
-
-                    })
-                    .show();
-        }
+        ((ConnectFourActivity) this.getActivity()).getData("check_user");
 
         return view;
     }

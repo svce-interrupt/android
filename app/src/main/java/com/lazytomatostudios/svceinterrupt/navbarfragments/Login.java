@@ -65,7 +65,9 @@ public class Login extends Fragment implements MyInterface {
 
     String TAG = "TRY";
 
-    String final_events;
+    String eventsText = "";
+
+    String[] final_events = {"Battle Code", "Flip A Table", "First Strike", "Logician's Code", "Presentation Park", "Quiz Wiz", "Surprise Event", "Mind Your Business v4.0", "Coder Bar", "Connect Four", "Picturesque"};
 
     public Login() {
         // Required empty public constructor
@@ -92,9 +94,9 @@ public class Login extends Fragment implements MyInterface {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_login, container, false);
 
-        final_events = "";
-
         event_list = new int[11];
+
+        eventsText = "";
 
         email = mailInterface.sendMail();
 
@@ -228,7 +230,7 @@ public class Login extends Fragment implements MyInterface {
 
     @Override
     public void fragmentNowVisible() {
-        Log.d("Debug", "Login isible");
+        Log.d("Debug", "Login visible");
     }
 
     public void fetchDetails(JSONObject jsonObject) {
@@ -254,8 +256,6 @@ public class Login extends Fragment implements MyInterface {
 
     public void parseEvents(JSONObject jsonObject) {
 
-        final_events = "";
-
         try {
 
             JSONObject object = jsonObject.getJSONObject("eventslist");
@@ -272,11 +272,13 @@ public class Login extends Fragment implements MyInterface {
             }
 
             for (int j = 0; j < event_list.length; j++) {
-                final_events.concat(String.valueOf(event_list[j]));
-                //final_events.concat("\n");
+                if(event_list[j] == 1) {
+                    eventsText = eventsText.concat(final_events[j]);
+                    eventsText = eventsText.concat("\n");
+                }
             }
 
-            Log.d("HEYY", final_events);
+            Log.d(TAG, eventsText);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -289,7 +291,7 @@ public class Login extends Fragment implements MyInterface {
         mailView.setText(email);
         mobileView.setText(phone);
         collegeView.setText(college);
-        eventView.setText(events);
+        eventView.setText(eventsText);
     }
 
     public void logout() {

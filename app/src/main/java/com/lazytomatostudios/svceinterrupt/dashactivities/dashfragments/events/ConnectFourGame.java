@@ -25,6 +25,7 @@ import com.bumptech.glide.Glide;
 import com.dd.processbutton.iml.SubmitProcessButton;
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity;
+import com.wang.avi.AVLoadingIndicatorView;
 
 import nl.dionsegijn.konfetti.KonfettiView;
 import nl.dionsegijn.konfetti.models.Shape;
@@ -40,7 +41,7 @@ public class ConnectFourGame extends Fragment {
     int question;
     int score;
     public View view;
-    TextView dayView, questionView, scoreView;
+    TextView dayView, questionView, scoreView, loadingView;
 
     KonfettiView konfettiView;
 
@@ -52,6 +53,8 @@ public class ConnectFourGame extends Fragment {
     String answer;
 
     ImageView imageView;
+
+    AVLoadingIndicatorView progress;
 
     String TAG = "PHP";
 
@@ -69,6 +72,7 @@ public class ConnectFourGame extends Fragment {
         dayView = view.findViewById(R.id.day);
         questionView = view.findViewById(R.id.question);
         submitButton = view.findViewById(R.id.submit_answer);
+        loadingView = view.findViewById(R.id.loading);
 
         ((ConnectFourActivity)this.getActivity()).game_progress = true;
 
@@ -111,8 +115,6 @@ public class ConnectFourGame extends Fragment {
     public void setQuestion() {
 
         if (((ConnectFourActivity) this.getActivity()).isOpen()) {
-            ((ConnectFourActivity)this.getActivity()).game_progress = true;
-            submitButton.setText(String.valueOf("Submit"));
 
             question = ((ConnectFourActivity) this.getActivity()).attempted + 1;
 
@@ -128,6 +130,7 @@ public class ConnectFourGame extends Fragment {
                     .load(imageBaseURL + String.valueOf(question) + imageEndURL)
                     .into(imageView);
 
+            loadingView.setVisibility(View.INVISIBLE);
             imageView.setVisibility(View.VISIBLE);
 
         } else {
@@ -140,7 +143,7 @@ public class ConnectFourGame extends Fragment {
                         public void onClick(DialogInterface dialog, int which) {
                             getFragmentManager()
                                     .beginTransaction()
-                                    .add(R.id.frame_layout_game, new ConnectFourMain())
+                                    .replace(R.id.frame_layout_game, new ConnectFourMain())
                                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                     .commit();
                         }
@@ -152,9 +155,6 @@ public class ConnectFourGame extends Fragment {
     }
 
     public boolean clearQuestion() {
-
-        ((ConnectFourActivity) this.getActivity()).attempted++;
-        ((ConnectFourActivity) this.getActivity()).getData("attempt");
 
         answer = ((EditText) view.findViewById(R.id.answer)).getText().toString();
 
@@ -171,19 +171,19 @@ public class ConnectFourGame extends Fragment {
 
                     })
                     .show();
+
             return false;
         } else {
-            ((ConnectFourActivity)this.getActivity()).game_progress = false;
-            Glide.with(getContext()).clear(imageView);
-            submitButton.setText(String.valueOf("Next"));
-            ((EditText) view.findViewById(R.id.answer)).setText("");
-
+            loadingView.setVisibility(View.VISIBLE);
             imageView.setVisibility(View.INVISIBLE);
 
-            InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+            Glide.with(getContext()).clear(imageView);
+            ((EditText) view.findViewById(R.id.answer)).setText("");
 
+            InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
             inputManager.hideSoftInputFromWindow(submitButton.getWindowToken(),
                     InputMethodManager.HIDE_NOT_ALWAYS);
+
             return true;
         }
 

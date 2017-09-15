@@ -2,6 +2,7 @@ package com.lazytomatostudios.svceinterrupt.dashactivities;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -73,11 +74,13 @@ public class ConnectFourActivity extends AppCompatActivity {
         try {
             if(isConnected()) {
                 if(isOpen()) {
+
                     getSupportFragmentManager()
                             .beginTransaction()
                             .replace(R.id.frame_layout_game, new ConnectFourGame())
                             .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .commit();
+
                 } else {
                     new AlertDialog.Builder(this)
                             .setTitle("Alert")
@@ -178,8 +181,10 @@ public class ConnectFourActivity extends AppCompatActivity {
                                 calculateAttempts(jObj);
                                 break;
                             case "submit":
+                                nextQuestion();
                                 break;
                             case "attempt":
+                                submitCall();
                                 break;
                             default:
                                 break;
@@ -224,6 +229,7 @@ public class ConnectFourActivity extends AppCompatActivity {
                         param.put("email", mail);
                         break;
                     case "attempt":
+                        Log.d(TAG, attempted + " ---------- ");
                         param.put("attempt", String.valueOf(attempted));
                         param.put("email", mail);
                         break;
@@ -262,7 +268,6 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     public void calculateAttempts(JSONObject jsonObject) {
 
-        done = 0;
         left = 0;
 
         try {
@@ -300,20 +305,29 @@ public class ConnectFourActivity extends AppCompatActivity {
 
     public void submitAnswer(View view) {
 
+        attempted++;
+
         connectFourGame = (ConnectFourGame) getSupportFragmentManager().findFragmentById(R.id.frame_layout_game);
 
-        if(game_progress) {
-
-            if(connectFourGame.clearQuestion()) {
-                answer = connectFourGame.getAnswer();
-                getData("submit");
-            }
-
-        } else {
-
-            connectFourGame.setQuestion();
-
+        if(connectFourGame.clearQuestion()) {
+            answer = connectFourGame.getAnswer();
+            getData("attempt");
         }
+
+    }
+
+    public void submitCall() {
+        getData("submit");
+    }
+
+    public void nextQuestion() {
+
+        connectFourGame = (ConnectFourGame) getSupportFragmentManager().findFragmentById(R.id.frame_layout_game);
+
+        Toast.makeText(getApplicationContext(), "Successfully submitted", Toast.LENGTH_SHORT).show();
+
+        connectFourGame.setQuestion();
+
 
     }
 }

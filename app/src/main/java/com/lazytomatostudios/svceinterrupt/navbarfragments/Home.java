@@ -1,6 +1,9 @@
 package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -20,6 +23,8 @@ import com.lazytomatostudios.svceinterrupt.R;
  */
 public class Home extends Fragment implements MyInterface {
 
+    ImageView con1, con2, con3, dev1, dev2, dev3;
+
     public Home() {
         // Required empty public constructor
     }
@@ -33,7 +38,7 @@ public class Home extends Fragment implements MyInterface {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         ShimmerFrameLayout shimmerFrameLayout = (ShimmerFrameLayout) v.findViewById(R.id.shimmer);
-        shimmerFrameLayout.startShimmerAnimation();
+
         return v;
     }
 

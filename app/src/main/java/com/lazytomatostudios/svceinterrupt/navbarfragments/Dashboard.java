@@ -89,7 +89,7 @@ public class Dashboard extends Fragment implements MyInterface {
                     break;
                 case R.id.event3:
                     intent = new Intent(getActivity(), EventActivity.class);
-                    intent.putExtra("event", "Mind Your Business v3.0");
+                    intent.putExtra("event", "Mind Your Business v4.0");
                     intent.putExtra("mail", mail);
                     startActivity(intent);
                     break;

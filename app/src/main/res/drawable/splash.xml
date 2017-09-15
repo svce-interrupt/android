@@ -10,4 +10,6 @@
         android:gravity="center"
         android:drawable="@drawable/ic_logo3" />
 
+
+
 </layer-list>

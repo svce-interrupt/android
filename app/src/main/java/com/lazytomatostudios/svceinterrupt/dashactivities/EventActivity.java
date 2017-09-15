@@ -29,7 +29,7 @@ import com.special.ResideMenu.ResideMenuItem;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Battle Code", "Logician\'s Code", "Coder\'s Bay", "Connect 4", "Surprise Event", "Flip a Table!", "First Strike", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
+    String titles[] = { "Battle Code", "Logician\'s Code", "Coder\'s Bay", "Connect 4", "Surprise Event", "Flip a Table!", "First Strike", "Mind Your Business v4.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
     ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, cop, cb, pctq, c4;
     Fragment initFrag;
@@ -82,7 +82,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 case "game of archives":
                     initFrag = new CodeOPoly();
                     break;
-                case "Mind Your Business v3.0":
+                case "Mind Your Business v4.0":
                     initFrag = new MindYourBusiness();
                     break;
                 case "presentation park":
@@ -175,7 +175,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
     public void startGame(View view) {
 
-        /*if (mail.equals("null")) {
+        if (mail.equals("null")) {
             new AlertDialog.Builder(this)
                     .setTitle("Alert")
                     .setMessage("Please sign in to play the online game event.")
@@ -192,9 +192,9 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
             Intent intent = new Intent(this, ConnectFourActivity.class);
             intent.putExtra("mail", mail);
             startActivity(intent);
-        }*/
+        }
 
-        new AlertDialog.Builder(this)
+        /*new AlertDialog.Builder(this)
                 .setTitle("Alert")
                     .setMessage("Game in alpha testing. Come back later.")
                     .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
@@ -205,7 +205,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                         }
 
                     })
-                .show();
+                .show();*/
     }
 
     @Override

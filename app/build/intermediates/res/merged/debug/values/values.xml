@@ -1080,7 +1080,7 @@
     <string name="flip">A SQL query walks into a bar and sees two tables. He walked up to them and says \'Can I join you?\'\n\nIf you got that, you may have what it takes to tackle insane databases with queries that will search the word \"supercalifragilisticexpialidocious\" like a walk in the park.\n\nThis event comprises of 2 rounds, with General MCQs and a querying round where you get to bring your A - Game and add it to a primary key. Register here to flip the tables in your favor!</string>
     <string name="flip_rules">Rules:\n\nBasic knowledge of MySQL queries is expected.\n1.Team of 2\n2. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyCaRDQQ3aUgNGw8N27Lgo9q3AmQw9C-Pkw
+        AIzaSyAKWiw7CNs85C2L3TlwJbJiwCP-eltRy1M
     </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>

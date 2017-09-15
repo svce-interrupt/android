@@ -1,6 +1,7 @@
 package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -28,6 +29,7 @@ import co.intentservice.chatui.models.ChatMessage;
 import com.lazytomatostudios.svceinterrupt.MainActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.R;
 
@@ -41,9 +43,25 @@ public class Chat extends Fragment implements MyInterface, AIListener {
     ChatView chatView;
     String mapsUri = "http://maps.google.com/maps?daddr=12.983120,79.971160 (Interrupt)";
 
+    MailInterface mailInterface;
+
 
     public Chat() {
         // Required empty public consructor
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mailInterface = (MailInterface) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement onFragmentChangeListener");
+        }
     }
 
     @Override
@@ -140,11 +158,13 @@ public class Chat extends Fragment implements MyInterface, AIListener {
                 startActivity(intent);
                 break;
             case "events":
+                String mail = mailInterface.sendMail();
                 intent = new Intent(getActivity(), EventActivity.class);
                 String extra = result.getStringParameter("event");
                 Log.d("TAG", extra);
                 if(extra != null)
                     intent.putExtra("event", extra);
+                    intent.putExtra("mail", mail);
                 startActivity(intent);
                 break;
             case "about":
