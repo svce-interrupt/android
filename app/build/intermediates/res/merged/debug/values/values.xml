@@ -985,13 +985,13 @@
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="BLC">\"Imagination takes you everywhere\" - Albert Einstein. Are you a person who agrees to disagree with him on this and prove that it is logic that takes you everywhere and beyond? Take part in this coding event comprising of 2 rounds - a logical puzzle solving round followed by a Room Escape style round where you\'ll have to find clues to escape and win. It doesn\'t get better than this! Register here!</string>
-    <string name="BLC_rules">Rules:\n1. Team must consists of maximum 2 members.\n2. Organisers decision is final.</string>
+    <string name="BLC_rules">Rules:\n1. Participants will have to solve logical puzzles.\n2. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="Connect4">Is the Jumble totally your thing? Do you love guessing games? Four clues, one word and a ticking clock. How quickly can your brain put two and two together? Come show us at Connect4!</string>
-    <string name="Connect4_rules">Rules:\n1. The participant with the highest points will be declared the winner and in case of a tie the person finishing the event first will be declared the winner.\n2. Certificate of participation will not be awarded for this event</string>
+    <string name="Connect4_rules">Rules:\n1. Participants will have images to connect and guess the word.\n2. Top 3 participants, based on the points will be selected.</string>
     <string name="Picturesque">In a world where creatives often only have a couple of minutes to view your site, the photographs on the site can play a major role. Many people will quickly abandon a website to jump to the next, so you have to make sure your entire site is not only engaging, but successfully portrays your personality. So here\'s an extraordinary opportunity for y\'all to grab in this year\'s interrupt. An innovative, inventive and prolific photograph of our symposium on  Facebook; can help y\'all to showcase your talent to the outer world. Hurry up, what are you waiting for?</string>
-    <string name="Picturesque_rules">Theme:\nComputer Science\nRobots\nGadgets\n\nRules:\n1. Any photo should be sent to the page after which you can share it after being uploaded.\n2. Winner will be selected based on the number of likes and the maximum relevance to the theme provided.</string>
+    <string name="Picturesque_rules">Theme:\nComputer Science\nRobots\nGadgets\n\nRules:\n1. Only 1 submission per participant.\n2. Mail your photo to the interrupt mail-ID.\n3. Photos will get shared on the Interrupt Svce Facebook Page.\n4. The Top 3 photographs with the most number of likes on the post will be selected.</string>
     <string name="Quiz_wiz">Are you a fount of computer knowledge? Do you feel that you\'re a \'A walking computer encyclopedia\'? If so, then let your inner quiz enthusiast come out and take part in this quiz event. This event comprises of 2 rounds- the prelims and the finals. In each round, you\'ll be asked a number of questions of different types testing your knowledge. If you win, you earn from it. Even otherwise, you learn from it. It\'s always gonna be a win for you. Register here!</string>
-    <string name="Quiz_wiz_rules">Rules:\n1. Team must consist of maximum 3 members.\n2. Quiz master\'s decision is final.</string>
+    <string name="Quiz_wiz_rules">Rules:\n1. It\'s a General Technology-based Quiz.\n2. Team of 2.\n3. Participants will have to answer 20 questions for prelims.\n4. 1 point will be awarded per correct answer.\n5. The decisions of the quiz masters are considered to be final decisions and shall permit no changes to it.</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1029,15 +1029,15 @@
     <string name="app_name">SVCE Interrupt</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="battlecode">Take up arms (and your keyboards) to fight an all-out war against teams to rise as the Champion of the land of JAVArosa.\n\nAs army generals, command your prompts as you clash in two rounds, filled with coding and sharp C/ C++ snippets, and strategize your structures to form a Victory array!\n\nRegister now, and join the war for the Interrup-Throne!</string>
-    <string name="battlecode_rules">Rules:\n1. Team must consists of maximum 3 members.\n2. Organisers decision is final.</string>
+    <string name="battlecode_rules">Rules:\nThe Partipants will have to solve 30 mcqs for 35 mins (aptitude and c jargons).\n\n-> 1 point for correct answer.\n-> 0 points for unanswered questions and wrong answers.</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="bus_schedule"><a href="http://www.google.com">Google</a></string>
     <string name="call">Need More Help?</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="code_o_poly">Were you born to code?\n\nThen grab two of your friends and head on down to Code-o-poly!\nPlayers who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.\n\nRegistrations open now!</string>
-    <string name="code_o_poly_rules">Rules\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
+    <string name="code_o_poly_rules">Rules\n1. Players who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.\n2. The Participants will have to solve 30 MCQs(Programming) for 30 mins.\n3. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="coders_bay">Ahoy! Anchor up at the C-Port, where everyone goes \"Arr!\" as you take out your computers and venture into the Web, ready to code your way to victory. Swim through the Torrents and fight the Pythons of the sea as you search for that right algorithm to reach for Davy Jones\' Locker!\nRegister now, weigh your anchors, and Give No Quarter.</string>
-    <string name="coders_bay_rules">Rules:\n1. The competition will be held on hacker rank platform. The participants must have a hackerrank account prior to participating in the event.\n2. Plagiarism of code will be viewed strictly.</string>
+    <string name="coders_bay_rules">Rules:\n1. This event is an online coding event conducted on HackerRank.\n2. The participant is required to have a HackerRank account to participate in this event.\n3. The Top 3 participants will be judged by the number of points they acquire.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -1062,18 +1062,30 @@
     <string name="contact_mail">Mail</string>
     <string name="contact_mailid">interrupt2k17@gmail.com</string>
     <string name="cs_def"><sup>1</sup> signal to the processor emitted by hardware or software indicating an event that needs immediate attention</string>
+    <string name="day1">Day 1 of 5</string>
+    <string name="day1s">1</string>
+    <string name="day2">Day 2 of 5</string>
+    <string name="day2s">2</string>
+    <string name="day3">Day 3 of 5</string>
+    <string name="day3s">3</string>
+    <string name="day4">Day 4 of 5</string>
+    <string name="day4s">4</string>
+    <string name="day5">Day 5 of 5</string>
+    <string name="day5s">5</string>
+    <string name="daynull">Day 0 of 5</string>
+    <string name="daynulls">0</string>
     <string name="default_aidialog_title">Speak</string>
     <string name="default_input_hint">Type your message</string>
     <string name="define_processbutton">processbutton</string>
     <string name="flip">A SQL query walks into a bar and sees two tables. He walked up to them and says \'Can I join you?\'\n\nIf you got that, you may have what it takes to tackle insane databases with queries that will search the word \"supercalifragilisticexpialidocious\" like a walk in the park.\n\nThis event comprises of 2 rounds, with General MCQs and a querying round where you get to bring your A - Game and add it to a primary key. Register here to flip the tables in your favor!</string>
-    <string name="flip_rules">Rules:\n1. Team must consists of minimum 2 members and maximum 3 members.\n2. Organisers decision is final.</string>
+    <string name="flip_rules">Rules:\n\nBasic knowledge of MySQL queries is expected.\n1.Team of 2\n2. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyCaRDQQ3aUgNGw8N27Lgo9q3AmQw9C-Pkw
+        AIzaSyAKWiw7CNs85C2L3TlwJbJiwCP-eltRy1M
     </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="instruct">1. All the participants must have their college ID card with them at all times.\n\n2. The participants must follow the dress code as per Anna University rules. Any violation may result in denial of registration.\n\n3. Private vehicles must be parked at the parking space provided.\n\n4. While inside the campus, please adhere to the rules and regulations provided by the management.\n\n5. Refrain from arguing or fighting with the organisers. We are, after all, here to help you have a pleasant experience.\n\n6. Participants must register before attending the symposium.\n\n7. Lunch will not be provided by the organisers.</string>
-    <string name="interrupt_desc"><b><i>Interrupt</i></b> has had students marking their calendars for years now and this year it\’s back and bigger than ever! Are you the <b><i>Don of Logic</i></b>? Can you make <b><i>Databases</i></b> dance to your tunes? Or is being a <b><i>Code Ninja</i></b> more your style?</string>
+    <string name="interrupt_desc"><b>Interrupt</b> has had students marking their calendars for years now and this year it’s back and bigger than ever! <b>Burgeoning</b> by leaps and bounds with more innovative events and our <b>Magnum Opus</b> attraction - the <b><i>Drone Event</i></b>. \n\n<b>Interrupt</b> is for and by the <i>Tech Enthusiasts, Geeks and Quizzers</i>!</string>
     <string name="library_processbutton_author">Dmytro Danylyk</string>
     <string name="library_processbutton_authorWebsite">http://dmytrodanylyk.com/</string>
     <string name="library_processbutton_isOpenSource">true</string>
@@ -1106,7 +1118,7 @@
     <string name="mapbox_telemetryLink" translatable="false">https://www.mapbox.com/telemetry/</string>
     <string name="mapbox_telemetrySettings">Telemetry Settings</string>
     <string name="myobv2">Welcome to the mothership of all events. This challenge is not for the weak, but for those who\'ve embraced their light and dark side. That\'s right, watch as all your \"other\" skills being tested through rounds varying from playing dumb in charades to coming up with a creative ad for Adzap. Register now if you think you\'ve got what it takes to Mind Your Business.\n\nRounds will be announced on-spot.</string>
-    <string name="myobv2_rules">Rules:\n1. Teams of 2 or 3 is required.\n2. The organisers decision is final.</string>
+    <string name="myobv2_rules">Rules:\n1. A written test will be conducted to test the logical and analytical skills.It would also gauge your personality.\n1. Most innovative team wins.2. Participants with higher scores will be selected for the next round\n3. The decisions of the judges and the organizers are considered to be the final decisions and shall permit no changes to it.</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
@@ -1115,10 +1127,11 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="presentation_park">Are you a visionary keen on computer science? Then this event is the perfect platform for you to exhibit your knowledge. You are required to choose and present a paper on any one of the given topics. Fascinate the judges by sharing your in depth knowledge and unique insights on the chosen topic are prove to them that you are worthy of being \'the chosen one\'! Register here!</string>
-    <string name="presentation_park_rules">Rules:\n1. Team must be of 2 members.\n2. Plagiarism may result in disqualification.\n3. Judge\'s decision is final.</string>
+    <string name="presentation_park_rules">Rules:\n1. Abstracts (size : 100 - 150 words) should be sent before 19/09/2017 at  paperinterrupt17@gmail.com:\n1. Team of 2P\n2. PT :Maximum of 15 slides.\n\nTopics:\n-> Artificial Intelligence\n-> Networks\n-> Image Processing\n-> Data Analytics\n-> Machine Learning\n-> Internet Of Things\n-> Cloud\n\nMaximum time for presentation: 15 mins. ( 10 for presentation + 5 for questioning)</string>
     <string name="search_menu_title">Search</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="suprise_rules">Rules:\nThe decisions of the judges and the organizers are considered to be final decisions and shall permit no changes to it.</string>
     <string name="svce_def"><sup>1</sup> <b><i>the</i></b> place to be for anyone with a passion in Computer Science</string>
     <string name="title_activity_dummy">dummy</string>
     <string name="title_activity_event">EventActivity</string>
@@ -1198,9 +1211,14 @@
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
         <item name="android:textColorPrimary">@color/primary_text</item>
-
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -2461,6 +2479,9 @@
     <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>

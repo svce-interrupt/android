@@ -1,14 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword 'Neapol!tan1'
+            storeFile file('/home/drpayyne/AndroidStudioProjects/final.jks')
+            storePassword 'Neapol!tan1'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "com.lazytomatostudios.svceinterrupt"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName "1.04"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -53,5 +61,9 @@ dependencies {
     compile 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
     compile 'com.github.florent37:materialtextfield:1.0.7'
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    compile 'nl.dionsegijn:konfetti:1.1.0'
+    compile 'com.android.support:support-v4:26.0.2'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
 }

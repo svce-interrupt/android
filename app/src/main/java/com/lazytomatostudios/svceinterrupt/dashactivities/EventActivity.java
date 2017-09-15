@@ -1,11 +1,14 @@
 package com.lazytomatostudios.svceinterrupt.dashactivities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.lazytomatostudios.svceinterrupt.R;
@@ -17,7 +20,7 @@ import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.C
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Connect4;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.PresentationPark;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.QuizWiz;
-import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.DonOfLogic;
+import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.SurpriseEvent;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.FlipATable;
 import com.lazytomatostudios.svceinterrupt.dashactivities.dashfragments.events.Picturesque;
 import com.special.ResideMenu.ResideMenu;
@@ -26,10 +29,12 @@ import com.special.ResideMenu.ResideMenuItem;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
 
     ResideMenu resideMenu;
-    String titles[] = { "Battle Code", "Breaking the Logician\'s Code", "Coder\'s Bay", "Connect 4", "Don of Logic", "Flip a Table!", "Code-O-Poly", "Mind Your Business v3.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
+    String titles[] = { "Battle Code", "Logician\'s Code", "Coder\'s Bay", "Connect 4", "Surprise Event", "Flip a Table!", "First Strike", "Mind Your Business v4.0", "Picturesque", "Presentation Park", "Quiz Wiz"};
     int icon[] = { R.drawable.ic_account_circle_black_24dp };
     ResideMenuItem btc, fat, mybv, blc, pp, qw, dlgc, cop, cb, pctq, c4;
     Fragment initFrag;
+
+    String string, mail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +42,23 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_event);
 
         Bundle bundle = getIntent().getExtras();
-        String string;
+
+        string = bundle.getString("event");
+        mail = bundle.getString("mail");
+
+        Log.d("TAG-", string+mail);
+
+        if(mail.equals("null")) {
+            Log.d("TAG--", mail);
+        } else {
+            Log.d("TAG***", mail);
+        }
 
         initMenu();
 
-        if(bundle != null) {
-            string = bundle.getString("event");
+        if(!string.equals("null")) {
+
+            Log.d("TAG------", string+mail);
 
             switch (string) {
                 case "battle code":
@@ -58,7 +74,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                     initFrag = new Connect4();
                     break;
                 case "don of logic":
-                    initFrag = new DonOfLogic();
+                    initFrag = new SurpriseEvent();
                     break;
                 case "flip a table":
                     initFrag = new FlipATable();
@@ -66,7 +82,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 case "game of archives":
                     initFrag = new CodeOPoly();
                     break;
-                case "Mind Your Business v3.0":
+                case "Mind Your Business v4.0":
                     initFrag = new MindYourBusiness();
                     break;
                 case "presentation park":
@@ -158,8 +174,38 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void startGame(View view) {
-        Intent intent = new Intent(this, ConnectFourActivity.class);
-        startActivity(intent);
+
+        if (mail.equals("null")) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Alert")
+                    .setMessage("Please sign in to play the online game event.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                    .show();
+        } else {
+            Intent intent = new Intent(this, ConnectFourActivity.class);
+            intent.putExtra("mail", mail);
+            startActivity(intent);
+        }
+
+        /*new AlertDialog.Builder(this)
+                .setTitle("Alert")
+                    .setMessage("Game in alpha testing. Come back later.")
+                    .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //
+                        }
+
+                    })
+                .show();*/
     }
 
     @Override
@@ -210,7 +256,7 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         } else if (view == dlgc) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame_layout, new DonOfLogic())
+                    .replace(R.id.frame_layout, new SurpriseEvent())
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
             resideMenu.closeMenu();

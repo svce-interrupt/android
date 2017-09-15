@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lazytomatostudios.svceinterrupt"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="5"
+    android:versionName="1.04" >
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -30,9 +29,7 @@
     <uses-feature android:name="android.hardware.location.gps" />
     <uses-feature
         android:name="android.hardware.telephony"
-        android:required="false" />
-
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+        android:required="false" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -51,36 +48,23 @@
         android:required="false" />
 
     <application
+        android:name="com.lazytomatostudios.svceinterrupt.bridge.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.lazytomatostudios.svceinterrupt.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity" />
         <activity
             android:name="com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity"
             android:label="@string/title_activity_transport"
             android:theme="@style/AppTheme" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
-        -->
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -90,11 +74,18 @@
             android:label="@string/title_activity_map" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.profileactivities.SignUpActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.profileactivities.UpdateActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.events.RegisterActivity" />
-        <activity android:name="com.lazytomatostudios.svceinterrupt.events.QRActivity" />
         <activity android:name="com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity" />
+        <activity
+            android:name="com.lazytomatostudios.svceinterrupt.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- Include the telemetry service to simplify set up (https://www.mapbox.com/telemetry) -->
         <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />
 

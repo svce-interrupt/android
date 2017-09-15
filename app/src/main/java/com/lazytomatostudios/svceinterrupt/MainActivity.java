@@ -1,6 +1,10 @@
 package com.lazytomatostudios.svceinterrupt;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,34 +14,35 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.lazytomatostudios.svceinterrupt.dashactivities.EventActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.InstructionActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.MapActivity;
 import com.lazytomatostudios.svceinterrupt.dashactivities.TransportActivity;
 import com.lazytomatostudios.svceinterrupt.events.RegisterActivity;
-import com.lazytomatostudios.svceinterrupt.homeactivities.AboutActivity;
-import com.lazytomatostudios.svceinterrupt.homeactivities.ContactActivity;
+import com.lazytomatostudios.svceinterrupt.interfaces.MailInterface;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Chat;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Dashboard;
 import com.lazytomatostudios.svceinterrupt.navbarfragments.Home;
-import com.lazytomatostudios.svceinterrupt.navbarfragments.PostLogin;
-import com.lazytomatostudios.svceinterrupt.navbarfragments.Profile;
+import com.lazytomatostudios.svceinterrupt.navbarfragments.Login;
 
 import java.util.ArrayList;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MailInterface {
 
-    NavigationTabBar navigationTabBar;
-    ViewPager viewPager;
+    public NavigationTabBar navigationTabBar;
+    public ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
-    static String name = "anonymous";
-    static String mailId = "null";
-    static String phoneNum = "null";
+    String mail = "null", event = "null", pass = "null";
+    static String FACEBOOK_URL = "https://www.facebook.com/svceinterrupt";
+    static String FACEBOOK_PAGE_ID = "svceinterrupt";
+
+    String TAG = "Hello";
 
     ArrayList<NavigationTabBar.Model> barModel;
 
@@ -45,13 +50,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Bundle userData = getIntent().getExtras();
-        if (userData != null) {
-            name = userData.getString("username");
-            mailId = userData.getString("usermail");
-            phoneNum = userData.getString("usernum");
-        }
 
         initNavBar();
     }
@@ -129,26 +127,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openAbout(View view) {
-        Log.d("Debug", "About visible");
-
-        Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void openContact(View view) {
-        Log.d("Debug", "Contact visible");
-
-        Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
-
-    }
-
     public void openEvent(View view) {
         Log.d("Debug", "Events visible");
 
         Intent intent = new Intent(this, EventActivity.class);
+        intent.putExtra("mail", mail);
+        intent.putExtra("event", event);
+
+        Log.d("TAG", event+mail);
+
         startActivity(intent);
     }
 
@@ -175,13 +162,64 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openRegister(View view) {
-        Intent intent = new Intent(this, RegisterActivity.class);
-        startActivity(intent);
+
+        if(mail.equals("null")) {
+
+            Toast.makeText(getApplicationContext(),
+                    "Please sign in to register", Toast.LENGTH_LONG).show();
+
+        } else {
+
+            Intent intent = new Intent(this, RegisterActivity.class);
+            intent.putExtra("mail", mail);
+            startActivity(intent);
+
+        }
+    }
+
+    public void openFacebook(View view) {
+        Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
+        String facebookUrl = getFacebookPageURL(this);
+        facebookIntent.setData(Uri.parse(facebookUrl));
+        startActivity(facebookIntent);
+    }
+
+    public void openInstagram(View view) {
+        Intent instagramIntent = new Intent(Intent.ACTION_VIEW);
+        instagramIntent.setPackage("com.instagram.android");
+        String instagramUrl = "http://instagram.com/_u/interrupt_svce";
+        instagramIntent.setData(Uri.parse(instagramUrl));
+        try {
+            startActivity(instagramIntent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/interrupt_svce")));
+        }
+    }
+
+    public void openMail(View view) {
+        String email[] = { "interrupt2k17@gmail.com" };
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, email);
+        startActivity(emailIntent);
+    }
+
+    public String getFacebookPageURL(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            int versionCode = packageManager.getPackageInfo("com.facebook.katana", 0).versionCode;
+            if (versionCode >= 3002850) { //newer versions of fb app
+                return "fb://facewebmodal/f?href=" + FACEBOOK_URL;
+            } else { //older versions of fb app
+                return "fb://page/" + FACEBOOK_PAGE_ID;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            return FACEBOOK_URL; //normal web url
+        }
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {
-
-        Bundle bundle = new Bundle();
 
         private MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
@@ -193,31 +231,14 @@ public class MainActivity extends AppCompatActivity {
             switch (position) {
                 case 0:
                     Home home = new Home();
-                    bundle.putString("uname", name);
-                    home.setArguments(bundle);
                     return home;
                 case 1:
                     Dashboard dashboard = new Dashboard();
-                    bundle.putString("uname", name);
-                    bundle.putString("umail", mailId);
-                    bundle.putString("unum", phoneNum);
-                    dashboard.setArguments(bundle);
                     return dashboard;
                 case 2:
                     return new Chat();
                 case 3:
-                    try {
-                        if (name.equals("anonymous")) {
-                            return new Profile();
-                        } else {
-                            PostLogin postLogin = new PostLogin();
-                            bundle.putString("umail", mailId);
-                            postLogin.setArguments(bundle);
-                            return postLogin;
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    return new Login();
                 default:
                     return null;
             }
@@ -229,5 +250,158 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    @Override
+    public void getMail(String string) {
+        mail = string;
+    }
+
+    @Override
+    public String sendMail() {
+        return mail;
+    }
+
+    @Override
+    public void storePass(String string) {
+        pass = string;
+    }
+
+    @Override
+    public String getPass() {
+        return pass;
+    }
+
+    public void contactV(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:9710960239"));
+        startActivity(intent);
+    }
+
+    public void contactC(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:9500132964"));
+        startActivity(intent);
+
+    }
+
+    public void contactA(View view) {
+
+        Intent intent;
+
+        intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:8939227284"));
+        startActivity(intent);
+
+    }
+
+    public void viewAd(View view) {
+
+        Intent intent;
+        String url;
+
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setPackage("com.instagram.android");
+        url = "http://instagram.com/_u/dr_payyne";
+        intent.setData(Uri.parse(url));
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/dr_payyne")));
+        }
+
+    }
+
+    public void viewAb(View view) {
+
+        String url;
+        Intent intent;
+
+        url = "https://www.linkedin.com/in/abishaik-mohan-90513013a/";
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
+
+    }
+
+    public void viewJ(View view) {
+
+        Intent intent;
+        String url;
+
+        intent = new Intent(Intent.ACTION_VIEW);
+        intent.setPackage("com.instagram.android");
+        url = "http://instagram.com/_u/jashaul_d";
+        intent.setData(Uri.parse(url));
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/_u/jashaul_d")));
+        }
+
+    }
+
+    /*public void onClick(View view) {
+
+        Intent intent;
+        String url;
+
+        switch (view.getId()) {
+            case R.id.dev5:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:9710960239"));
+                startActivity(intent);
+                break;
+            case R.id.dev11:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:9500132965"));
+                startActivity(intent);
+                break;
+            case R.id.dev22:
+                intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:8939227284"));
+                startActivity(intent);
+                break;
+            case R.id.dev1:
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setPackage("com.instagram.android");
+                url = "http://instagram.com/_u/dr_payyne";
+                intent.setData(Uri.parse(url));
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/_u/dr_payyne")));
+                }
+                break;
+            case R.id.dev3:
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setPackage("com.instagram.android");
+                url = "http://instagram.com/_u/jashaul_d";
+                intent.setData(Uri.parse(url));
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/_u/jashaul_d")));
+                }
+                break;
+            case R.id.dev2:
+                url = "https://www.linkedin.com/in/abishaik-mohan-90513013a/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }*/
 
 }

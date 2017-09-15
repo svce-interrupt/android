@@ -14,7 +14,8 @@
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="175dp"
-            android:background="@color/accent" />
+            android:background="@color/accent"
+            android:src="@drawable/ic_first_strike_logo"/>
 
         <ImageButton
             android:id="@+id/menu_icon"
@@ -47,7 +48,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_marginStart="20dp"
                     android:paddingTop="20dp"
-                    android:text="Code -O- Poly"
+                    android:text="First Strike"
                     android:textSize="30dp"
                     android:textStyle="bold"/>
 
@@ -79,7 +80,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/code_o_poly"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>
@@ -128,7 +129,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/code_o_poly_rules"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>

@@ -21,12 +21,9 @@ import com.lazytomatostudios.svceinterrupt.MainActivity;
 import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.bridge.AppConfig;
 import com.lazytomatostudios.svceinterrupt.bridge.AppController;
-import com.lazytomatostudios.svceinterrupt.userinfo.UserContact;
-import com.lazytomatostudios.svceinterrupt.userinfo.UserDBHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -43,7 +40,6 @@ public class SignUpActivity extends AppCompatActivity {
     private TextView loginLink;
     private EditText collegeNameText;
     private Button createAccount;
-    private UserDBHelper mUserDbHelper;
     private int flag = 0;
     private String name;
     private ProgressDialog progressDialog;
@@ -61,7 +57,6 @@ public class SignUpActivity extends AppCompatActivity {
         collegeNameText = (EditText) findViewById(R.id.input_collegeName);
         loginLink = (TextView) findViewById(R.id.link_login);
         createAccount = (Button) findViewById(R.id.btn_signup);
-        mUserDbHelper = new UserDBHelper(getApplicationContext());
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
 
@@ -149,8 +144,8 @@ public class SignUpActivity extends AppCompatActivity {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
-                    if (!error) {
 
+                    if (!error) {
 
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
@@ -158,17 +153,6 @@ public class SignUpActivity extends AppCompatActivity {
                         String password = user.getString("password");
                         String mobile = user.getString("phoneNumber");
                         String collegeName = user.getString("collegeName");
-
-
-                        ContentValues values = new ContentValues();
-                        values.put(UserContact.UserEntry.COLUMN_USER_NAME, name);
-                        values.put(UserContact.UserEntry.COLUMN_USER_MAIL, email);
-                        values.put(UserContact.UserEntry.COLUMN_USER_PASSWORD, password);
-                        values.put(UserContact.UserEntry.COLUMN_USER_MOBILE_NUMBER, mobile);
-                        values.put(UserContact.UserEntry.COLUMN_COLLEGE_NAME, collegeName);
-                        values.put(UserContact.UserEntry.COLUMN_USER_EVENTS, "Nil");
-
-                        getContentResolver().insert(UserContact.UserEntry.CONTENT_URI, values);
 
                         Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
 

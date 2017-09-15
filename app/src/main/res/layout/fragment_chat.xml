@@ -11,6 +11,9 @@
         android:layout_height="match_parent"
         app:backgroundColor="#f8f8f8"
         app:sendBtnBackgroundTint="@color/accent"
+        app:bubbleBackgroundRcv="@color/primary"
+        app:bubbleBackgroundSend="@color/accent"
+        app:tStampTextColorSend="@color/black"
         app:sendBtnIconTint="#fff"/>
 
 </LinearLayout>

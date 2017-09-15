@@ -17,7 +17,8 @@
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="175dp"
-            android:background="@color/accent" />
+            android:background="@color/accent"
+            android:src="@drawable/ic_surprise"/>
 
         <ImageButton
             android:id="@+id/menu_icon"
@@ -50,7 +51,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_marginStart="20dp"
                     android:paddingTop="20dp"
-                    android:text="Breaking The Logician's Code"
+                    android:text="Logician's Code"
                     android:textSize="30dp"
                     android:textStyle="bold"/>
 
@@ -82,7 +83,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/BLC"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>
@@ -131,7 +132,7 @@
                             android:paddingEnd="20dp"
                             android:text="@string/BLC_rules"
                             android:textSize="18dp"
-                            android:textColor="@color/primary_text"
+                            android:textColor="@color/white"
                             android:fontFamily="sans-serif-condensed" />
 
                     </LinearLayout>

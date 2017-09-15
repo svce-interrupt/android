@@ -1,6 +1,9 @@
 package com.lazytomatostudios.svceinterrupt.navbarfragments;
 
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -10,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.lazytomatostudios.svceinterrupt.interfaces.MyInterface;
 import com.lazytomatostudios.svceinterrupt.R;
 
@@ -19,7 +23,7 @@ import com.lazytomatostudios.svceinterrupt.R;
  */
 public class Home extends Fragment implements MyInterface {
 
-    TextView userName;
+    ImageView con1, con2, con3, dev1, dev2, dev3;
 
     public Home() {
         // Required empty public constructor
@@ -31,21 +35,9 @@ public class Home extends Fragment implements MyInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        String user = getArguments().getString("uname");
-
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
-        userName = v.findViewById(R.id.username);
-
-        try {
-            if (user.equals("anonymous")) {
-                userName.setText("");
-            } else {
-                userName.setText(user);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        ShimmerFrameLayout shimmerFrameLayout = (ShimmerFrameLayout) v.findViewById(R.id.shimmer);
 
         return v;
     }

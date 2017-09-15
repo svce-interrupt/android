@@ -17,7 +17,9 @@
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="175dp"
-            android:background="@color/accent" />
+            android:background="@color/accent"
+            android:src="@drawable/ic_battlecode_icon"
+            android:padding="20dp"/>
 
         <ImageButton
             android:id="@+id/menu_icon"
