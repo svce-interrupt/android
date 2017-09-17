@@ -67,7 +67,7 @@ public class Login extends Fragment implements MyInterface {
 
     String eventsText = "";
 
-    String[] final_events = {"Battle Code", "Flip A Table", "First Strike", "Logician's Code", "Presentation Park", "Quiz Wiz", "Surprise Event", "Mind Your Business v4.0", "Coder Bar", "Connect Four", "Picturesque"};
+    String[] final_events = {"Battle Code", "Flip A Table", "First Strike", "Logician's Code", "Presentation Park", "Quiz Wiz", "Surprise Event", "Mind Your Business v4.0", "Coder's Bay", "Connect Four", "Picturesque"};
 
     public Login() {
         // Required empty public constructor
@@ -270,6 +270,8 @@ public class Login extends Fragment implements MyInterface {
                 Log.d(TAG, object.getString(key));
                 i++;
             }
+
+            eventsText = "";
 
             for (int j = 0; j < event_list.length; j++) {
                 if(event_list[j] == 1) {

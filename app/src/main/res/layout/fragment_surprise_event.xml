@@ -50,7 +50,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_marginStart="20dp"
                     android:paddingTop="20dp"
-                    android:text="Don Of Logic"
+                    android:text="Surprise Event"
                     android:textSize="30dp"
                     android:textStyle="bold"/>
 
@@ -80,7 +80,7 @@
                             android:gravity="center"
                             android:paddingStart="20dp"
                             android:paddingEnd="20dp"
-                            android:text="@string/battlecode"
+                            android:text="It's a surprise!"
                             android:textSize="18dp"
                             android:textColor="@color/primary_text"
                             android:fontFamily="sans-serif-condensed" />
@@ -129,7 +129,7 @@
                             android:gravity="center"
                             android:paddingStart="20dp"
                             android:paddingEnd="20dp"
-                            android:text="@string/battlecode_rules"
+                            android:text="@string/suprise_rules"
                             android:textSize="18dp"
                             android:textColor="@color/primary_text"
                             android:fontFamily="sans-serif-condensed" />
