@@ -2,8 +2,11 @@ package com.lazytomatostudios.svceinterrupt.dashactivities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
@@ -36,6 +39,8 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
 
     String string, mail;
 
+    CoordinatorLayout coordinatorLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +58,8 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         } else {
             Log.d("TAG***", mail);
         }
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorlayout);
 
         initMenu();
 
@@ -122,6 +129,21 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
             }, 250);
 
         }
+
+        Snackbar.make(coordinatorLayout,
+                "Check out this fun workshop on web dev!", Snackbar.LENGTH_LONG)
+                .setAction("Okay!", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("http://svce.acm.org/webbed/"));
+                        startActivity(intent);
+
+                    }
+                }).show();
+
+
     }
 
     public void initMenu() {
