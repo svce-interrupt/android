@@ -27,9 +27,6 @@ import com.lazytomatostudios.svceinterrupt.R;
 import com.lazytomatostudios.svceinterrupt.dashactivities.ConnectFourActivity;
 import com.wang.avi.AVLoadingIndicatorView;
 
-import nl.dionsegijn.konfetti.KonfettiView;
-import nl.dionsegijn.konfetti.models.Shape;
-
 import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 
 /**
@@ -42,8 +39,6 @@ public class ConnectFourGame extends Fragment {
     int score;
     public View view;
     TextView dayView, questionView, scoreView, loadingView;
-
-    KonfettiView konfettiView;
 
     SubmitProcessButton submitButton;
 

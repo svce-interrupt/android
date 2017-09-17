@@ -96,11 +96,9 @@
     <orderEntry type="library" exported="" name="support-vector-drawable-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="annotations-4.1.1" level="project" />
-    <orderEntry type="library" exported="" name="konfetti-1.1.0" level="project" />
     <orderEntry type="library" exported="" name="gifdecoder-4.1.1" level="project" />
     <orderEntry type="library" exported="" name="waitingdots-0.2.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" name="circleimageview-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="log4j-api-2.2" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="library-aar-1.0.0" level="project" />
@@ -121,14 +119,11 @@
     <orderEntry type="library" exported="" name="transition-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-11.0.4" level="project" />
     <orderEntry type="library" exported="" name="library-2.1.3" level="project" />
-    <orderEntry type="library" exported="" name="kotlin-stdlib-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" name="kotlin-stdlib-jre7-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="sdk-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="okio-1.13.0" level="project" />
     <orderEntry type="library" exported="" name="zxing-android-embedded-3.2.0" level="project" />
-    <orderEntry type="library" exported="" name="annotations-13.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-26.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-v4-26.0.2" level="project" />

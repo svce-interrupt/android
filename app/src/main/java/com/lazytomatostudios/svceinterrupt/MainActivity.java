@@ -332,6 +332,14 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
 
     }
 
+    public void openWebsite(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://interrupt2k17.com/"));
+        startActivity(intent);
+
+    }
+
     public void viewJ(View view) {
 
         Intent intent;
@@ -364,7 +372,6 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
                     }
 
                 })
-                .setNegativeButton("No! I wanna be interrupted!", null)
                 .show();
     }
 
