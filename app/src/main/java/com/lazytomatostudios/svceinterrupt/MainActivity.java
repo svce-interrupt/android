@@ -2,6 +2,7 @@ package com.lazytomatostudios.svceinterrupt;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -11,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -346,6 +348,24 @@ public class MainActivity extends AppCompatActivity implements MailInterface {
                     Uri.parse("http://instagram.com/_u/jashaul_d")));
         }
 
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        new AlertDialog.Builder(this)
+                .setTitle("Whoa there!")
+                .setMessage("Are yu sure yu don't want to be interrupted anymore?")
+                .setPositiveButton("Get me out please.", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.super.onBackPressed();
+                    }
+
+                })
+                .setNegativeButton("No! I wanna be interrupted!", null)
+                .show();
     }
 
     /*public void onClick(View view) {

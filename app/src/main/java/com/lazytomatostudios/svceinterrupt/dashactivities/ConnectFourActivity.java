@@ -84,7 +84,7 @@ public class ConnectFourActivity extends AppCompatActivity {
                 } else {
                     new AlertDialog.Builder(this)
                             .setTitle("Alert")
-                            .setMessage("Game is closed for today as yu have attempted all possible questions for the day.")
+                            .setMessage("Game is closed. Check again later!")
                             .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
 
                                 @Override
@@ -121,6 +121,8 @@ public class ConnectFourActivity extends AppCompatActivity {
             case "5":
                 if(attempted == 100) return false;
                 else return true;
+            case "6":
+                return false;
             default:
                 return false;
         }
@@ -289,6 +291,9 @@ public class ConnectFourActivity extends AppCompatActivity {
                     break;
                 case "5":
                     left = 100 - attempted;
+                    break;
+                case "6":
+                    left = 0;
                     break;
                 default:
                     left = 0;

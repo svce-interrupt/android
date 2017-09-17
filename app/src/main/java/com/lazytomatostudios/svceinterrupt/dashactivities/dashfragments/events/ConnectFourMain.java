@@ -67,8 +67,10 @@ public class ConnectFourMain extends Fragment {
             case "5":
                 dayText.setText(getString(R.string.day5));
                 break;
+            case "6":
+                dayText.setText(getString(R.string.day6));
             default:
-                dayText.setText(getString(R.string.daynull));
+                dayText.setText(getString(R.string.day0));
                 break;
         }
 
