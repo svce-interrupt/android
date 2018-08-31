@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:chatview="http://schemes.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <co.intentservice.chatui.ChatView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="#f8f8f8"
+        app:sendBtnBackgroundTint="@color/accent"
+        app:bubbleBackgroundRcv="@color/primary"
+        app:bubbleBackgroundSend="@color/accent"
+        app:tStampTextColorSend="@color/black"
+        app:sendBtnIconTint="#fff"/>
+
+</LinearLayout>

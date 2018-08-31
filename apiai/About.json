@@ -1,0 +1,67 @@
+{
+  "templates": [
+    "What is @interrupt:interrupt ?"
+  ],
+  "userSays": [
+    {
+      "id": "71bc9638-9155-4021-9e69-022a6d929803",
+      "data": [
+        {
+          "text": "What is "
+        },
+        {
+          "text": "Interrupt",
+          "alias": "interrupt",
+          "meta": "@interrupt",
+          "userDefined": false
+        },
+        {
+          "text": "?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e0ac81f8-cb00-42aa-9fae-75b60a47257c",
+  "name": "About",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "About-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@interrupt",
+          "name": "interrupt",
+          "value": "$interrupt",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Interrupt is a national level CS tech symposium held in SVCE conducted by ACM and ACE. Would yu like to know more?"
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,2 @@
+include ':app', ':ResideMenu'
+project(':ResideMenu').projectDir = new File('lib/AndroidResideMenu/ResideMenu')
